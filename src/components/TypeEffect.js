@@ -6,7 +6,6 @@ const TypingEffect = () => {
 
   useEffect(() => {
     const options = {
-      strings: ["Elevate Your Data Journey \nwith the Right Mentorship"],
       strings: ["Elevate Your Data Journey\nwith the Right Mentorship"],
 
       typeSpeed: 100,
