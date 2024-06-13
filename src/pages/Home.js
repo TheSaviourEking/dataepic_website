@@ -16,12 +16,11 @@ import entrylevel1 from "../images/entrylevel1.png";
 import entrylevel2 from "../images/entrylevel2.png";
 import polygondeep from "../images/Polygon_deep.png"
 import polygonlight from "../images/Polygon_light.png"
-import Footer from "../pages/Footer";
+// import Footer from "../pages/Footer";
 import "../styles/Tracks.css";
 import "../styles/Home.css";
 import {motion} from "framer-motion"
-
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const data = [
   {
@@ -247,7 +246,7 @@ function Home() {
 
             <div className="mentors_container">
               <div className="mentor_wraps">
-                <img src={sogo} alt="Sogo Image" className="mentor_images" />
+                <img src={sogo} alt="Sogo" className="mentor_images" />
 
                 <div className="mentor_para">
                   <h3>Sogo Ogundowole</h3>
@@ -256,7 +255,7 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img src={toba} alt="Toba Image" className="mentor_images" />
+                <img src={toba} alt="Toba" className="mentor_images" />
                 <div className="mentor_para">
                   <h3>Oluwatoba Adesugba</h3>
                   <p>ML Engineer and Technical Writer</p>
@@ -264,7 +263,7 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img src={eri} alt="Eri Image" className="mentor_images" />
+                <img src={eri} alt="Eri" className="mentor_images" />
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>
@@ -272,7 +271,7 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img src={ag} alt="Ag Image" className="mentor_images" />
+                <img src={ag} alt="Ag" className="mentor_images" />
                 <div className="mentor_para">
                   <h3>Amazing-Grace Olutomilayo</h3>
                   <p>Data Engineer</p>
@@ -282,7 +281,7 @@ function Home() {
               <div className="mentor_wraps">
                 <img
                   src={bushro}
-                  alt="Bushro Image"
+                  alt="Bushro"
                   className="mentor_images"
                 />
                 <div className="mentor_para">

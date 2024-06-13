@@ -107,14 +107,7 @@ input {
   color: #ff8f27;
   font-weight: 600;
 }
-.forminput-container {
-  /* background: linear-gradient(0deg, #1c1b26, #1c1b26),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ); */
-}
+
 
 .btn-container {
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
@@ -137,13 +130,7 @@ input {
   padding-bottom: 14px;
   font-family: Ezcar;
 }
-.form-text p {
-  /* font-family: Eczar;
-  font-size: 15px;
-  color: #b3b3b3;
-  line-height: 22px;
-  padding-bottom: 10px; */
-}
+
 
 @media screen and (max-width: 767.98px) {
   .forminput-container {

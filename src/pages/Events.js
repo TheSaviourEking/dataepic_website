@@ -69,7 +69,7 @@ function Events() {
                   Wednesday at 10:15 AM.
                 </p>
                 <button className="session_link">
-                  <a href="#">Join Session</a>
+                  <a href="#form">Join Session</a>
                 </button>
               </div>
             </div>
@@ -82,7 +82,7 @@ function Events() {
                   intermediates on Saturdays and beginners on Sundays.
                 </p>
                 <button className="session_link">
-                  <a href="#">Join Session</a>
+                  <a href="#form">Join Session</a>
                 </button>
               </div>
             </div>

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import sogo from "../images/image1.png";
 import toba from "../images/image2.png";
 import eri from "../images/image3.png";
-import ag from "../images/image4.png";
-import {motion} from "framer-motion"
+// import ag from "../images/image4.png";
+import { motion } from "framer-motion";
 
 function IntermediateTrack() {
   const [selected, setSelected] = useState(null);
@@ -145,7 +145,7 @@ function IntermediateTrack() {
               <div className="beginners_mentor_wraps">
                 <img
                   src={sogo}
-                  alt="Sogo Image"
+                  alt="Sogo"
                   className="beginners_mentor_images"
                 />
 
@@ -158,7 +158,7 @@ function IntermediateTrack() {
               <div className="beginners_mentor_wraps">
                 <img
                   src={toba}
-                  alt="Toba Image"
+                  alt="Toba"
                   className="beginners_mentor_images"
                 />
                 <div className="mentor_para">
@@ -168,11 +168,7 @@ function IntermediateTrack() {
               </div>
 
               <div className="beginners_mentor_wraps">
-                <img
-                  src={eri}
-                  alt="Eri Image"
-                  className="beginners_mentor_images"
-                />
+                <img src={eri} alt="Eri" className="beginners_mentor_images" />
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>

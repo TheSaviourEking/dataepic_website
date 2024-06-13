@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Tracks from "./pages/Tracks";
@@ -35,7 +35,7 @@ function App() {
           <Route path="forminput" exact element={<FormInput />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

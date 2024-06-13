@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "../images/Vector Lines.png";
+// import bg from "../images/Vector Lines.png";
 import star1 from "../images/star-img.png"
 import white_star from "../images/white_star.png";
 import polygon_deep from "../images/Polygon_deep.png";

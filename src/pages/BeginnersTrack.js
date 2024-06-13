@@ -133,7 +133,7 @@ function BeginnersTrack() {
               <div className="beginners_mentor_wraps">
                 <img
                   src={sogo}
-                  alt="Sogo Image"
+                  alt="Sogo"
                   className="beginners_mentor_images"
                 />
 
@@ -146,7 +146,7 @@ function BeginnersTrack() {
               <div className="beginners_mentor_wraps">
                 <img
                   src={toba}
-                  alt="Toba Image"
+                  alt="Toba"
                   className="beginners_mentor_images"
                 />
                 <div className="mentor_para">
@@ -158,7 +158,7 @@ function BeginnersTrack() {
               <div className="beginners_mentor_wraps">
                 <img
                   src={eri}
-                  alt="Eri Image"
+                  alt="Eri"
                   className="beginners_mentor_images"
                 />
                 <div className="mentor_para">

@@ -14,7 +14,7 @@ import image9 from "../images/image9.png";
 import image10 from "../images/image10.png";
 import entrylevel1 from "../images/entrylevel1.png";
 import entrylevel2 from "../images/entrylevel2.png";
-import HeroSection from "./HeroSection";
+// import HeroSection from "./HeroSection";
 
 function About() {
   return (

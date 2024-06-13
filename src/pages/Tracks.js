@@ -1,26 +1,15 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import sogo from "../images/image1.png";
 import toba from "../images/image2.png";
 import eri from "../images/image3.png";
-import ag from "../images/image4.png";
 import "../styles/Tracks.css";
 import "../styles/Home.css";
 import "../styles/BeginnersTrack.css";
-import {motion} from "framer-motion"
 
 const Tracks = () => {
-  const [selected, setSelected] = useState(null);
-
-  const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-
-    setSelected(i);
-  };
-
   return (
     <div className="trackmain_container">
       <div className="track-container">
@@ -85,7 +74,7 @@ const Tracks = () => {
                   </div>
                 </div>
 
-                <div to="" className="track_btn">
+                <div className="track_btn">
                   <div className="track_modules">
                     <div className="week-button">
                       <button>3 to 4 weeks</button>
@@ -117,7 +106,7 @@ const Tracks = () => {
                   </div>
                 </div>
 
-                <div to="" className="track_btn">
+                <div className="track_btn">
                   <div className="track_modules">
                     <div className="week-button">
                       <button>3 to 4 weeks</button>
@@ -128,7 +117,8 @@ const Tracks = () => {
                   </div>
                 </div>
               </div>
-
+              
+              {/* Duplicate intermediate track */}
               <div className="track">
                 <div className="track_info">
                   <div className="intermediate-type">
@@ -146,7 +136,7 @@ const Tracks = () => {
                   </div>
                 </div>
 
-                <div to="" className="track_btn">
+                <div className="track_btn">
                   <div className="track_modules">
                     <div className="week-button">
                       <button>3 to 4 weeks</button>
@@ -157,6 +147,7 @@ const Tracks = () => {
                   </div>
                 </div>
               </div>
+              {/* End duplicate intermediate track */}
             </div>
           </div>
         </div>
@@ -178,7 +169,7 @@ const Tracks = () => {
 
           <div className="mentors_container">
             <div className="mentor_wraps">
-              <img src={sogo} alt="Sogo Image" className="mentor_images" />
+              <img src={sogo} alt="Sogo" className="mentor_images" />
 
               <div className="mentor_para">
                 <h3>Sogo Ogundowole</h3>
@@ -187,7 +178,7 @@ const Tracks = () => {
             </div>
 
             <div className="mentor_wraps">
-              <img src={toba} alt="Toba Image" className="mentor_images" />
+              <img src={toba} alt="Toba" className="mentor_images" />
               <div className="mentor_para">
                 <h3>Oluwatoba Adesugba</h3>
                 <p>ML Engineer and Technical Writer</p>
@@ -195,7 +186,7 @@ const Tracks = () => {
             </div>
 
             <div className="mentor_wraps">
-              <img src={eri} alt="Eri Image" className="mentor_images" />
+              <img src={eri} alt="Eri" className="mentor_images" />
               <div className="mentor_para">
                 <h3>Erioluwa Asiru</h3>
                 <p>Backend Developer</p>

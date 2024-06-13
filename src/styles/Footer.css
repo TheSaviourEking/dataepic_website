@@ -1,19 +1,16 @@
 
 .footer {
-    /* background-color: rgb(51, 255, 0); */
-  /* background: linear-gradient(
-    90deg,
-    rgb(21, 20, 29, 1) 0%,
-    rgba(21, 20, 29, 1) 100%
-  ); */
+  
   height: 80px;
-  width: 80%;
+  width: 90%;
   margin: 100px auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
+  bottom: 0;
+  /* padding: 0 40px; */
 }
 
 
@@ -28,16 +25,6 @@
   align-items: center;
 }
 
-/* .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 50px;
-  list-style: none;
-  text-align: center;
-  width: 75vw;
-  justify-content: end;
-  margin-right: 1rem;
-} */
 
 .nav-menuuu{
   font-family: inter;
