@@ -12,55 +12,51 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar_line">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src={logo} alt="Logo" className="logo" />
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img src={logo} alt="Logo" className="logo" />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item">
-            <ScrollLink
-              to="about_scroll"
-              smooth={true}
-              duration={500}
-              onClick={closeMobileMenu}
-              className="nav-links"
-            >
-              About
-            </ScrollLink>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="Tracks#about"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Tracks
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/Events" className="nav-links" onClick={closeMobileMenu}>
-              Events
-            </Link>
-          </li>
-          <li className="nav-item">
-            <ScrollLink
-              to="faq-wrapper"
-              smooth={true}
-              duration={500}
-              onClick={closeMobileMenu}
-              className="nav-links"
-            >
-              FAQs
-            </ScrollLink>
-          </li>
-        </ul>
       </div>
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <li className="nav-item">
+          <ScrollLink
+            to="about_scroll"
+            smooth={true}
+            duration={500}
+            onClick={closeMobileMenu}
+            className="nav-links"
+          >
+            About
+          </ScrollLink>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="Tracks#about"
+            className="nav-links"
+            onClick={closeMobileMenu}
+          >
+            Tracks
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/Events" className="nav-links" onClick={closeMobileMenu}>
+            Events
+          </Link>
+        </li>
+        <li className="nav-item">
+          <ScrollLink
+            to="faq-wrapper"
+            smooth={true}
+            duration={500}
+            onClick={closeMobileMenu}
+            className="nav-links"
+          >
+            FAQs
+          </ScrollLink>
+        </li>
+      </ul>
     </nav>
   );
 };
