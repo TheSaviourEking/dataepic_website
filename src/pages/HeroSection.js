@@ -1,19 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import bg from "../images/Vector Lines.png";
-import star1 from "../images/star-img.png"
+import star1 from "../images/star-img.png";
 import white_star from "../images/white_star.png";
 import polygon_deep from "../images/Polygon_deep.png";
-
-
 import "../styles/Home.css";
-import {motion} from "framer-motion"
-import TypeEffect from "../components/TypeEffect";
-
+import { motion } from "framer-motion";
+// import TypeEffect from "../components/TypeEffect";
 
 function HeroSection() {
   return (
-    /* HERO SECTION */
     <div className="web_container">
       <div className="hero-container">
         <div className="hero-content">
@@ -21,13 +16,11 @@ function HeroSection() {
             <div className="whitestar">
               <img src={white_star} alt="" />
             </div>
-
             <span className="hero_font">
-              <TypeEffect />
+              {/* <TypeEffect className="custom-type-effect" /> */}
             </span>
-            {/* Elevate Your Data Journey <span className="break-point"></span>
-            with the Right <span className="break-point"></span>Mentorship */}
           </h1>
+          
           <div>
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />

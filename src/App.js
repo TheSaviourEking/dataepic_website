@@ -35,7 +35,7 @@ function App() {
           <Route path="forminput" exact element={<FormInput />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

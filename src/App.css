@@ -9,6 +9,25 @@
   background: rgba(21, 20, 29, 1);
 }
 
+/* footer,track, home{
+    padding: 20px;
+} */
+
+@media (max-width: 767.98px) {
+    header, nav, main, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        flex: 1 0 100%;
+        /* margin: 10px 0; */
+    }
+}
 
 
 

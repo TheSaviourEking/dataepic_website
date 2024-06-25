@@ -21,18 +21,17 @@ const Tracks = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-          >
+            transition={{ duration: 1 }}>
             <h1>
-              Elevate your data career with <br /> our well curated
+              Elevate your data career with our well curated
               <span className="orange"> dual tracks </span>
             </h1>
 
             <p>
               Our dual tracks, designed for both beginners and intermediates,
               are the gateways
-              <br /> to a transformative learning experience. Pick a track to
-              join and go through the <br />
+              to a transformative learning experience. Pick a track to
+              join and go through the 
               curriculum planned out and be part of the cohorts
             </p>
           </motion.div>
@@ -117,7 +116,7 @@ const Tracks = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Duplicate intermediate track */}
               <div className="track">
                 <div className="track_info">

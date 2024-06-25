@@ -418,70 +418,10 @@
 
 
 @media screen and (min-width: 2000px) {
-.track-type{
-background-color: purple;
-}
-.track{
-  /* width: 500px; */
-}
-.track_info{
-  
-}
-
-
-
-
 
 @media screen and (min-width: 800px) {
-  .main_wrapper{
-    /* height: auto; */
-        /* margin-top: 10%; */
-
-  }
-
-  .datamastery-container {
-    /* margin-bottom: 15%;
-    height: 100vh;
-  width: 70%; */
-  }
-
   .datamastery-info p{
     font-size: 22px;
   }
-
-  .datamastery-info p{
-  }
-  .track{
-    /* height: 30vh; */
-  }
-
-  .track_btn button {
-  /* width: 180px;
-  height: 42px;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center; */
-}
-
-.track_btn {
-    /* margin: auto; */
-  /* height: 20vh; */
-}
-.mentors_text{
-        /* padding-bottom: 15%; */
-
-
-}
-.mentors .mentors_text p{
-  /* margin: auto 2rem ; */
-  /* height: 30vh; */
-
-  /* background-color: red; */
-}
-
-.mentors_container{
-  /* padding-top: 5%;
-  margin-bottom: 7%; */
-}
 }
 }
