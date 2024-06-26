@@ -606,12 +606,17 @@ html {
   width: 60%;
 }
 
+
+
 /* dataepic */
 
+.main_wrapper .data_new {
+  width: 100%;
+
+}
+
 .main_wrapper .data_epic {
-  color: #f4f4f4;
   border-radius: 16px;
-  /* linear-gradient: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0); */
   height: 70%;
   width: 80%;
   align-items: center;
@@ -640,7 +645,6 @@ html {
   height: 190px;
   margin-bottom: 30px;
   margin-top: 72px;
-  /* background-color: yellow; */
 }
 
 .data_new {
@@ -652,10 +656,10 @@ html {
   transition: 0.8s;
   border: 3px solid rgba(245, 238, 238, 0.035);
   border-radius: 16px;
+  color: #fff;
   /* margin: 20px; */
   width: 80%;
   margin-bottom: 20px;
-  color: #f4f4f4;
   justify-content: space-between;
   align-content: space-between;
   text-align: center;
@@ -795,8 +799,6 @@ html {
   margin: 10px;
 }
 
-
-
 .main_faqwrapper .mentors_textt {
   justify-content: center;
   display: flex;
@@ -909,8 +911,6 @@ html {
 
 
 
-
-
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
 
@@ -1015,22 +1015,19 @@ html {
     width: 96%;
     height: auto;
     border: 1px solid #ffffff;
+    margin: 0 auto;
   }
 
   .datamastery-wrapper {
     border-radius: 30px;
-    height: 1580px;
-  }
-
-  .main_wrapper .datamastery-info {
-    height: 50vh;
+    height: 1480px;
   }
 
   .datamastery-wrapper .datamastery-info h2 {
     font-size: 22px;
     width: auto;
     padding: 0 2%;
-    line-height: 44px;
+    line-height: 1.8;
     margin: 24px auto 34px;
     height: 80px;
   }
@@ -1041,9 +1038,10 @@ html {
 
   .datamastery-wrapper .datamastery-info p {
     font-size: 16px;
-    width: 76vw;
-    line-height: 32px;
+    width: 90%;
+    line-height: 1.5;
     text-align: justify;
+    margin: 0 auto;
   }
 
   .track-type {
@@ -1052,17 +1050,19 @@ html {
   .wrapper {
     width: 100%;
     background-color: burlywood;
+    padding: 20px 0;
   }
 
   .main_wrapper .track {
-    width: 80vw;
+    width: 94%;
     height: auto;
-
     border: 3px solid #4b4b4b73;
+    margin: 10px auto;
+    padding: 10px;
   }
 
   .main_wrapper .track_info {
-    height: 250px;
+    height: auto;
     margin: auto;
     text-align: justify;
   }
@@ -1070,19 +1070,15 @@ html {
   .beginner-type,
   .intermediate-type {
     width: 100%;
-    height: 90px;
+    height: auto;
+    /* height: 90px; */
   }
 
-  .beginner-type h2 {
-    height: 90px;
-    font-size: 24px;
-    text-align: justify;
-  }
+  .beginner-type h2,
   .intermediate-type h2 {
-    height: 90px;
+    height: auto;
     font-size: 24px;
     text-align: justify;
-    margin-top: 0;
   }
 
   .notes {
@@ -1092,12 +1088,14 @@ html {
 
   .notes h4 {
     width: 100%;
-    margin: 0 auto 24px;
+    margin: 0 auto 12px;
     align-items: center;
     justify-content: center;
     padding: 0;
     text-align: justify;
-    line-height: 26px;
+    line-height: 1.7;
+
+
   }
 
   .notes p {
@@ -1152,7 +1150,6 @@ html {
     align-items: center;
     margin: 14px auto;
   }
-  
 
   .mentors_container {
     display: flex;
@@ -1188,13 +1185,14 @@ html {
     font-size: 14px;
   }
 
+
+
   /* DATAEPIC AREA */
   .main_wrapper .data_new {
     width: 100%;
   }
 
   .main_wrapper .data_epic {
-    width: 90vw;
     width: 96%;
     padding: 0;
   }
@@ -1202,7 +1200,7 @@ html {
   .dataepic_container {
     flex-direction: column;
     width: 96%;
-    gap: 10px;
+    gap: 20px;
   }
 
   .dataepic_wrap {
@@ -1210,6 +1208,10 @@ html {
     margin: 0 auto;
   }
 
+    .dataepic_mentors_text  {
+color: red;
+
+    }
   .dataepic_mentors_text p {
     width: 100%;
   }
@@ -1233,24 +1235,28 @@ html {
   }
 
   .dataepic_para {
-    padding: 0px 8px 0px 8px;
+    color: red;
+    padding: 0px 0px 0px 0px;
     /* margin: 0 auto; */
   }
 
   .dataepic_para h3 {
-    padding: 0 0 0 0;
+    padding: 0px 0px 0px 0px;
     margin-top: 0;
+    background-color: yellow;
   }
 
   .dataepic_para p {
+    text-align: justify;
     width: 100%;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 28px;
     padding: 0;
+    background-color: aqua;
   }
 
   .dataepic_images {
-    padding: 0px 8px 0px 8px;
+    padding: 0px 0px 0px 4px;
   }
 
   .dataepic_images img {
@@ -1266,7 +1272,6 @@ html {
     height: auto;
     width: 96%;
   }
-
 
   .playback {
     height: 100%;
@@ -1295,15 +1300,12 @@ html {
 
   .main_wrapper .oranges {
     font-size: 26px;
-    
   }
-  
+
   .main_wrapper .playback {
     width: 100%;
     height: auto;
   }
-  
-
 
   /* FAQ AREA */
   /* .main_faqwrapper {
@@ -1315,7 +1317,6 @@ html {
     flex-direction: column;
   } */
 
-  
   .main_faqwrapper .mentors_textt {
     margin: 0 auto 4px;
   }
@@ -1335,7 +1336,7 @@ html {
     width: 96%;
   }
 
-  .accordion_three h2{
+  .accordion_three h2 {
     font-size: 18px;
   }
   .footer {

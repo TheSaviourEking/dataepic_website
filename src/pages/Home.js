@@ -14,12 +14,12 @@ import image9 from "../images/image9.png";
 import image10 from "../images/image10.png";
 import entrylevel1 from "../images/entrylevel1.png";
 import entrylevel2 from "../images/entrylevel2.png";
-import polygondeep from "../images/Polygon_deep.png";
-import polygonlight from "../images/Polygon_light.png";
+import polygondeep from "../images/Polygon_deep.png"
+import polygonlight from "../images/Polygon_light.png"
 // import Footer from "../pages/Footer";
 import "../styles/Tracks.css";
 import "../styles/Home.css";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion"
 // import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const data = [
@@ -102,6 +102,7 @@ function Home() {
 
         <div className="datamastery-container">
           <div className="datamastery-wrapper">
+
             <div className="datamastery-info">
               <h2>
                 <span className="orange">Beginner and Intermediate</span> Paths
@@ -226,6 +227,8 @@ function Home() {
           </div>
         </div>
 
+
+
         <div className="mentors">
           <div className="ment">
             <div className="new_mentor_para">
@@ -279,7 +282,11 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img src={bushro} alt="Bushro" className="mentor_images" />
+                <img
+                  src={bushro}
+                  alt="Bushro"
+                  className="mentor_images"
+                />
                 <div className="mentor_para">
                   <h3>Hammed Bushira</h3>
                   <p>DataOps Engineer</p>
@@ -288,6 +295,11 @@ function Home() {
             </div>
           </div>
         </div>
+
+
+
+
+
 
         {/* Why data epic */}
         <div className="data_epic">
@@ -303,6 +315,7 @@ function Home() {
                 Intermediate Tracks.
               </p>
             </div>
+
 
             <div className="dataepic_container">
               <div className="dataepic_wrap">
@@ -410,6 +423,10 @@ function Home() {
           </div>
         </div>
 
+
+
+
+
         {/* play session */}
         <div className="session_container">
           <h1>
@@ -419,17 +436,27 @@ function Home() {
           </h1>
         </div>
 
+
+
         <div className="play_session">
           <div className="playback_sessions">
             <div className="playback">
-              <img src={entrylevel1} alt="" className="entry_level" />
+
+             
+                <img src={entrylevel1} alt="" className="entry_level" />
+             
+
             </div>
             <div className="playback">
-              <img src={entrylevel2} alt="" className="entry_level" />
+             
+                <img src={entrylevel2} alt="" className="entry_level" />
+             
             </div>
 
             <div className="playback">
-              <img src={entrylevel1} alt="" className="entry_level" />
+             
+                <img src={entrylevel1} alt="" className="entry_level" />
+          
             </div>
           </div>
         </div>
@@ -446,7 +473,6 @@ function Home() {
               </div>
             </div>
           </div>
-
 
           <div className="accordion_one">
             <div className="accordion_two">
