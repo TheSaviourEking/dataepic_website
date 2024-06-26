@@ -1,8 +1,30 @@
 .type-wrap span {
   width: 100%;
-  font-size: 24px;
-  line-height: 0.2;
-  background-color: red;
+  font-size: 50px;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+
+.type-wrap{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+     transform: translateX(-50%);
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767.98px){
+    .type-wrap span {
+
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .type-wrap{
+        top: 14%;
+    }
 }

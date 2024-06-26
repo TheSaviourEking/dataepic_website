@@ -74,7 +74,7 @@ function Home() {
             a platform that empowers <span className="yellow"> beginners </span>{" "}
             and
             <span className="blue"> intermediate data specialists </span>
-            to harness the full potential of{" "}
+            to harness the full potential of
             <span className="orange"> data </span>
           </h1>
 
@@ -99,6 +99,8 @@ function Home() {
             </motion.p>
           </div>
         </div>
+
+
 
         <div className="datamastery-container">
           <div className="datamastery-wrapper">

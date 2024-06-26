@@ -42,6 +42,7 @@ html {
   /* word-break: break-all; */
   display: inline-block;
   width: 60vw;
+  
   margin-top: 12rem;
   font-family: Eczar;
   font-size: 56px;
@@ -606,13 +607,10 @@ html {
   width: 60%;
 }
 
-
-
 /* dataepic */
 
 .main_wrapper .data_new {
   width: 100%;
-
 }
 
 .main_wrapper .data_epic {
@@ -911,17 +909,26 @@ html {
 
 
 
+
+
+
+
+
+
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
+
 
   .web_container {
     width: 100%;
     align-items: center;
+    top: 0;
   }
 
   .hero-container {
     width: 100%;
   }
+
   .hero-content img {
     width: 22px;
     height: 22px;
@@ -930,20 +937,40 @@ html {
     position: relative;
   }
 
-  .bluestar img {
+  .hero_font{
+    position: sticky;
+  }
+.whitestar{
+  position: relative;
+ top: -50px;
+  right: 90px;
+}
+  .bluestar {
     position: relative;
-    left: 10%;
-    width: 22px;
-    height: 22px;
+    width: 8px;
+    height: 6px;
+    top: 60px;
+   left: 130px;
+  }
+
+
+  .bluestar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .polygondeep {
+    position: relative;
+    width: 8px;
+    height: 6px;
+    left: -4%;
+    top: 45%;
   }
 
   .polygondeep img {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    left: -20%;
+    width: 14px;
+    height: 14px;
   }
-
   .hero-content {
     margin-top: 10px;
   }
@@ -1094,8 +1121,6 @@ html {
     padding: 0;
     text-align: justify;
     line-height: 1.7;
-
-
   }
 
   .notes p {
@@ -1185,8 +1210,6 @@ html {
     font-size: 14px;
   }
 
-
-
   /* DATAEPIC AREA */
   .main_wrapper .data_new {
     width: 100%;
@@ -1208,10 +1231,9 @@ html {
     margin: 0 auto;
   }
 
-    .dataepic_mentors_text  {
-color: red;
-
-    }
+  .dataepic_mentors_text {
+    color: red;
+  }
   .dataepic_mentors_text p {
     width: 100%;
   }
