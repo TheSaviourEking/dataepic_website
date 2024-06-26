@@ -7,9 +7,6 @@ import "../styles/Home.css";
 import { motion } from "framer-motion";
 import TypeEffect from "../components/TypeEffect";
 
-
-
-
 function HeroSection() {
   return (
     <div className="web_container">
@@ -23,7 +20,7 @@ function HeroSection() {
               <TypeEffect className="custom-type-effect" />
             </span>
           </h1>
-          
+
           <div className="maintext_para">
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />
