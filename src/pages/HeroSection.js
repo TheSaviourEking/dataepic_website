@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import star1 from "../images/star-img.png";
-import white_star from "../images/white_star.png";
+// import white_star from "../images/white_star.png";
 import polygon_deep from "../images/Polygon_deep.png";
 import "../styles/Home.css";
 import { motion } from "framer-motion";
