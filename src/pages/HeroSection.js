@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import star1 from "../images/star-img.png";
-// import white_star from "../images/white_star.png";
+import white_star from "../images/white_star.png";
 import polygon_deep from "../images/Polygon_deep.png";
 import "../styles/Home.css";
 import { motion } from "framer-motion";
 import TypeEffect from "../components/TypeEffect";
+
+
+
 
 function HeroSection() {
   return (
@@ -14,14 +17,14 @@ function HeroSection() {
         <div className="hero-content">
           <h1 className="custom-heading">
             <div className="whitestar">
-              {/* <img src={white_star} alt="" /> */}
+              <img src={white_star} alt="" />
             </div>
             <span className="hero_font">
               <TypeEffect className="custom-type-effect" />
             </span>
           </h1>
           
-          <div>
+          <div className="maintext_para">
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />
             </div>

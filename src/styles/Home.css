@@ -18,7 +18,7 @@ html {
 
 .hero-container {
   scroll-snap-align: center;
-  margin-top: 40px;
+  margin-top: 120px;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ html {
   color: #f4f4f4;
   height: 100vh;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .hero-content h1 {
@@ -42,8 +42,8 @@ html {
   /* word-break: break-all; */
   display: inline-block;
   width: 60vw;
-  
-  margin-top: 12rem;
+
+  margin-top: 4rem;
   font-family: Eczar;
   font-size: 56px;
   font-weight: 600;
@@ -66,10 +66,9 @@ html {
   word-spacing: 1px;
   font-weight: 400;
   height: 64px;
-  line-height: 32px;
+  line-height: 34px;
   text-align: center;
   color: #b3b3b3;
-  /* margin-top: 2.5rem; */
 }
 
 .reserve-btns button {
@@ -80,19 +79,20 @@ html {
   border-radius: 64px;
   border: solid 1px rgba(255, 223, 188, 1);
   justify-content: center;
-  /* margin-top: 20px; */
-  gap: 10px;
   padding: 0;
   width: 192px;
-  background-color: rgba(251, 133, 0, 1);
 }
 
 .whitestar {
   position: absolute;
-  right: 23%;
-  top: 23%;
+  right: 18%;
+  top: 16%;
 }
 
+.hero-content img{
+  width: 30px;
+  height: 30px;
+}
 .polygondeep {
   position: absolute;
   left: 20%;
@@ -101,7 +101,7 @@ html {
 
 .bluestar {
   position: absolute;
-  right: 14%;
+  right: 10%;
   bottom: 8%;
 }
 
@@ -117,6 +117,9 @@ html {
   bottom: -37%;
 }
 
+.maintext_para p{
+  margin-top: 20px;
+}
 .about_scroll {
   width: 80%;
   align-items: center;
@@ -127,6 +130,7 @@ html {
 .about_scroll h1 {
   width: 90%;
   margin: 12px auto;
+
 }
 
 .main_wrapper {
@@ -927,6 +931,8 @@ html {
 
   .hero-container {
     width: 100%;
+    margin-top: 0;
+    top: 0;
   }
 
   .hero-content img {
@@ -940,9 +946,10 @@ html {
   .hero_font{
     position: sticky;
   }
+  
 .whitestar{
   position: relative;
- top: -50px;
+ top: -150px;
   right: 90px;
 }
   .bluestar {
@@ -971,9 +978,8 @@ html {
     width: 14px;
     height: 14px;
   }
-  .hero-content {
-    margin-top: 10px;
-  }
+  
+  
 
   .hero-content h1 {
     padding: 0;
@@ -996,9 +1002,8 @@ html {
     font-size: 16px;
     height: auto;
     width: 90vw;
-    margin-top: 32px;
+    margin-top: 2px;
     word-break: break-word;
-    /* background-color: yellow; */
   }
 
   .hero-content .reserve-btns button {
@@ -1014,11 +1019,11 @@ html {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    display: inline-block;
+    /* display: inline-block; */
   }
 
   .about_scroll {
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
   }
   .about_scroll h1 {
@@ -1026,7 +1031,7 @@ html {
     width: 90vw;
     height: 20%;
     text-align: center;
-    margin: 10px auto 5px;
+    /* margin: 10px auto 5px; */
   }
 
   .main_wrapper .about_scroll p {
