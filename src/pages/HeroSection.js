@@ -16,8 +16,9 @@ function HeroSection() {
             <div className="whitestar">
               <img src={white_star} alt="" />
             </div>
-            <TypeEffect />
           </div>
+          <TypeEffect />
+
           <div className="maintext_para">
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />
@@ -31,6 +32,7 @@ function HeroSection() {
               DataEpic <br />
               provides tailored mentorship to suit your needs
             </motion.p>
+
             <motion.p
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}

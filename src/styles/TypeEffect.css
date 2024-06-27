@@ -16,6 +16,7 @@
   height: 10px;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 
@@ -24,6 +25,7 @@
   .web_container{
     height: auto;
 }
+  
     .type-wrap span {
     font-size: 26px;
     margin: 0;
@@ -31,17 +33,17 @@
 
   .type-wrap {
     transform: translateX(-50%);
-    padding-bottom: 20%;
+    padding-bottom: 40%;
     position: relative;
     height: 0;
-    margin: 20% auto;
-    height: 0;
+    top: 0;
+    margin: 0 auto;
     line-height: 38px;
-    background-color: blueviolet;
 
   }
 
   .reserve-btns Link{
+background-color: olivedrab;
 margin-top: 0;
 padding: 0;
   }
