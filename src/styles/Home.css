@@ -23,6 +23,7 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 .hero-content {
   background-image: url(../images/Vector\ Lines.png);
   background-position: center;
@@ -39,10 +40,8 @@ html {
 
 .hero-content h1 {
   word-break: keep-all;
-  /* word-break: break-all; */
   display: inline-block;
   width: 60vw;
-
   margin-top: 4rem;
   font-family: Eczar;
   font-size: 56px;
@@ -93,6 +92,7 @@ html {
   width: 30px;
   height: 30px;
 }
+
 .polygondeep {
   position: absolute;
   left: 20%;
@@ -109,6 +109,7 @@ html {
   position: absolute;
   left: 14%;
 }
+
 
 .deep {
   /* position: relative; */
@@ -136,6 +137,7 @@ html {
 .main_wrapper {
   margin-top: 72px;
 }
+
 .main_wrapper .about_scroll p {
   background: #15141d;
   color: #b3b3b3;
@@ -149,6 +151,7 @@ html {
   line-height: 30px;
   text-align: center;
 }
+
 .main_wrapper h1 {
   font-family: "Eczar";
   text-align: center;
@@ -185,6 +188,7 @@ html {
   color: rgba(33, 158, 188, 1);
 }
 
+
 /* DATA MASTERY AND TRACK */
 .main_wrapper .datamastery-container {
   color: #fff;
@@ -201,10 +205,6 @@ html {
   justify-content: center;
   flex-direction: column;
   margin: 2rem auto;
-
-  /* i changed this from 835px to 100% */
-
-  /* border: 1px solid  linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%); */
   border: 3px solid rgba(245, 238, 238, 0.035);
 }
 
@@ -221,6 +221,7 @@ html {
 .main_wrapper .datamastery-info {
   height: 40vh;
 }
+
 .datamastery-info,
 .data-firsttext {
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
@@ -287,6 +288,12 @@ html {
       rgba(255, 255, 255, 0) 100%
     );
 }
+
+
+
+
+
+
 .track-type {
   /* margin-top: 50px; */
   border-radius: 16px;
