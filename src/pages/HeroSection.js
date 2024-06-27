@@ -12,20 +12,16 @@ function HeroSection() {
     <div className="web_container">
       <div className="hero-container">
         <div className="hero-content">
-          <h1 className="custom-heading">
+          <div className="typewriter-container">
             <div className="whitestar">
               <img src={white_star} alt="" />
             </div>
-            <span className="hero_font">
-              <TypeEffect className="custom-type-effect" />
-            </span>
-          </h1>
-
+            <TypeEffect />
+          </div>
           <div className="maintext_para">
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />
             </div>
-
             <motion.p
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}

@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import "../styles/TypeEffect.css"
+import "../styles/TypeEffect.css";
 
-
-const TypingEffect = () => {
+const TypeEffect = () => {
   const el = useRef(null);
 
   useEffect(() => {
@@ -29,4 +28,4 @@ const TypingEffect = () => {
   );
 };
 
-export default TypingEffect;
+export default TypeEffect;
