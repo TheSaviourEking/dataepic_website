@@ -12,10 +12,9 @@ function HeroSection() {
     <div className="web_container">
       <div className="hero-container">
         <div className="hero-content">
+          
+            <TypeEffect />
           <div className="typewriter-container">
-            <span>
-              <TypeEffect />
-            </span>
             <div className="whitestar">
               <img src={white_star} alt="" />
             </div>
