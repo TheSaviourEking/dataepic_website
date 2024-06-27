@@ -5,12 +5,16 @@
   margin: 0 auto;
   position: relative;
   top: 0;
+    background-color: yellow;
+    justify-content: center;
+    display: flex;
+
 }
 
 .type-wrap {
   font-family: "Eczar";
   font-size: 56px;
-  position: relative;
+  position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -27,6 +31,8 @@
   .type-wrap span {
     font-size: 26px;
     margin: 0;
+    background-color: red;
+    width: 90vw;
   }
 
   .type-wrap {

@@ -9,7 +9,7 @@ import BeginnersTrack from "./pages/BeginnersTrack";
 import IntermediateTrack from "./pages/IntermediateTrack";
 // import Footer from "./pages/Footer";
 import FormInput from "./pages/FormInput";
-import About from "./pages/About";
+// import About from "./pages/About";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="tracks" exact element={<Tracks />} />
           <Route path="beginnerstrack" exact element={<BeginnersTrack />} />
           <Route path="/formInput" exact element={<FormInput />} />
-          <Route path="/about" exact element={<About />} />
+          {/* <Route path="/about" exact element={<About />} /> */}
 
           <Route
             path="intermediatetrack"
