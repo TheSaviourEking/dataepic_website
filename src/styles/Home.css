@@ -12,7 +12,6 @@ html {
 
 .container{
   height: auto;
-  background-color: plum;
 }
 .web_container {
   scroll-behavior: smooth;
@@ -101,6 +100,11 @@ html {
   height: 30px;
 }
 
+.hero-content span{
+  font-size: 56px;
+  font-family: Ezcar;
+}
+
 .polygondeep {
   position: absolute;
   left: 20%;
@@ -129,7 +133,7 @@ html {
 .maintext_para p{
   margin-top: 12px;
   margin-bottom: 0;
-  background-color: red;
+
 }
 .about_scroll {
   width: 80%;
@@ -163,7 +167,7 @@ html {
 }
 
 .main_wrapper h1 {
-  font-family: "Eczar";
+  font-family: Eczar;
   text-align: center;
   /* width: 1153px; */
   height: 340px;

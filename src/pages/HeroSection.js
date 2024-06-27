@@ -13,11 +13,13 @@ function HeroSection() {
       <div className="hero-container">
         <div className="hero-content">
           <div className="typewriter-container">
+            <span>
+              <TypeEffect />
+            </span>
             <div className="whitestar">
               <img src={white_star} alt="" />
             </div>
           </div>
-          <TypeEffect />
 
           <div className="maintext_para">
             <div className="polygondeep">

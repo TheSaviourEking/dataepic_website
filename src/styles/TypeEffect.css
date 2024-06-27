@@ -1,4 +1,3 @@
-
 .type-wrap span {
   width: 100%;
   font-size: 50px;
@@ -9,24 +8,23 @@
 }
 
 .type-wrap {
-  position: absolute;
+  font-family: "Eczar";
+  font-size: 56px;
+  position: relative;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   height: 10px;
   align-items: center;
   justify-content: center;
-  color: white;
 }
-
-
 
 @media screen and (max-width: 767.98px) {
-  .web_container{
+  .web_container {
     height: auto;
-}
-  
-    .type-wrap span {
+  }
+
+  .type-wrap span {
     font-size: 26px;
     margin: 0;
   }
@@ -39,12 +37,10 @@
     top: 0;
     margin: 0 auto;
     line-height: 38px;
-
   }
 
-  .reserve-btns Link{
-background-color: olivedrab;
-margin-top: 0;
-padding: 0;
+  .reserve-btns Link {
+    margin-top: 0;
+    padding: 0;
   }
 }
