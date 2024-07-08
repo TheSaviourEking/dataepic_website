@@ -73,6 +73,9 @@ html {
   color: #b3b3b3;
 }
 
+.reserve-btns{
+  background: transparent;
+}
 .reserve-btns button {
   height: 48px;
   font-size: 16px;
@@ -126,8 +129,10 @@ html {
 }
 
 .maintext_para p {
-  margin-top: 12px;
-  margin-bottom: 0;
+  width: 80%;
+  margin: 5% auto;
+  justify-content: center;
+  display: flex;
 }
 
 /* about section */
@@ -748,9 +753,6 @@ html {
 
 .play_session {
   color: #f4f4f4;
-  /* linear-gradient: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0); */
-  /* height: 70%; */
-  /* width: 80%; */
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -813,10 +815,7 @@ html {
 
 .accordion_one {
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
   width: 80%;
   justify-content: center;
   align-items: center;
@@ -830,6 +829,7 @@ html {
 }
 
 .accordion_three {
+  
   display: flex;
   background-color: rgba(28, 27, 38, 1);
   justify-content: space-between;
@@ -842,16 +842,19 @@ html {
 }
 
 .item {
+  
   cursor: pointer;
   margin-bottom: 5px;
-  padding: 30px 40px;
+  /* padding: 30px 40px; */
 }
+
 
 .accordion_three h2 {
   background-color: rgba(28, 27, 38, 1);
   font-family: Eczar;
   font-size: 24px;
   font-weight: 400;
+  
 }
 .accordion_four {
   background-color: rgba(28, 27, 38, 1);
@@ -866,9 +869,11 @@ html {
 }
 
 .accordion_four p {
+  
   background-color: rgba(28, 27, 38, 1);
   text-align: left;
 }
+
 .accordion_three h2:hover {
   background-color: rgba(28, 27, 38, 1);
   transform: scale(1);
@@ -892,6 +897,9 @@ html {
   padding-right: 12px;
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
+
+
+
 
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
@@ -919,11 +927,21 @@ html {
   .hero_font {
     position: sticky;
   }
+.maintext_para p {
+  width: 100%;
+  margin-bottom: 12px;
 
+}
   .whitestar {
     position: relative;
-    top: -100px;
+    top: -105px;
     right: -124px;
+   
+  }
+
+  .whitestar img{
+ width: 18px;
+    height: 18px;
   }
   .bluestar {
     position: relative;
@@ -992,7 +1010,7 @@ html {
   }
 
   #about {
-    width: 90%;
+    width: 100%;
    margin-top: 10px;
   }
 
@@ -1006,9 +1024,9 @@ html {
 
   .about_scroll h1 {
     font-size: 24px;
-    width: 100%;
+    width: 90%;
     text-align: center;
-    margin: 10 auto;
+    margin: 10px auto;
   }
 
   .main_wrapper .about_scroll p {
@@ -1057,13 +1075,15 @@ html {
     border-radius: 30px;
     border: 1px solid #ffffff;
     margin: 0 auto;
-    height: 1480px;
+    height: 1400px;  /* i really dont know how to fix this  */
   }
 
-  .main_wrapper .datamastery-info {
-    /* height: auto; */
-    margin: 12% auto;
-  }
+    .main_wrapper .datamastery-wrapper {
+    /* margin: 12% auto; */
+margin-top: 12%;
+    }
+
+
   .datamastery-wrapper .datamastery-info h2 {
     font-size: 22px;
     width: 80%;
@@ -1078,6 +1098,7 @@ html {
     line-height: 1.5;
     text-align: justify;
     margin: 10% auto;
+    
   }
 
   .wrapper {
@@ -1086,9 +1107,8 @@ html {
 
   .main_wrapper .track {
     width: 90%;
-    height: auto;
+    /* height: auto; */
     border: 3px solid #4b4b4b73;
-    padding: 10px;
   }
 
   .main_wrapper .track_info {
@@ -1348,19 +1368,34 @@ html {
   }
 
   .item {
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
+  .item p{
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    
+}
+#faq_ans{
+margin-top: 20px;
+}
   .accordion_one {
-    width: 90%;
-    background-color: red;
+    width: 96%;
+    align-items: center;
+    margin:  0 auto;
   }
 
   .accordion_three {
-    /* padding: 15px; */
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s ease;
   }
@@ -1373,8 +1408,10 @@ html {
     font-size: 8px;
   }
 
+  .accordion_four{
+    margin: 0 auto;
+  }
   .accordion_five {
-    color: green;
     font-size: 8px;
   }
   .footer {

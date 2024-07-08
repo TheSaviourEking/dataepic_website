@@ -5,6 +5,8 @@
   margin: 0 auto;
   position: relative;
   justify-content: center;
+      background-color: transparent;
+
 }
 
 .type-wrap {
@@ -15,6 +17,7 @@
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
+  background: transparent;
 
   margin: 0 auto;
 }
@@ -26,6 +29,7 @@
 
   .type-wrap span {
     font-size: 26px;
+
     /* margin: 0 auto; */
     /* width: 100%; */
     /* padding: 0; */

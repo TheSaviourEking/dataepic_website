@@ -63,8 +63,6 @@ function Home() {
     setSelected(i);
   };
 
- 
-
   return (
     <div className="container">
       <HeroSection />
@@ -73,9 +71,8 @@ function Home() {
         <div className="about_scroll" id="about">
           <h1>
             We are <span className="orange"> passionate </span> about providing
-            a platform that empowers <span className="yellow"> beginners </span>{" "}
-            and
-            <span className="blue"> intermediate data specialists </span>
+            a platform that empowers <span className="yellow"> beginners </span>
+            and <span className="blue"> intermediate data specialists </span>
             to harness the full potential of{" "}
             <span className="orange"> data </span>
           </h1>
@@ -404,8 +401,6 @@ function Home() {
           </div>
         </div>
 
-
-
         {/* play session */}
         <div className="session_container">
           <h1>
@@ -430,7 +425,7 @@ function Home() {
           </div>
         </div>
 
-{/* faq */}
+        {/* faq */}
         <div className="main_faqwrapper">
           <div className="faq-wrappers">
             <div className="faq-wrapper">
@@ -454,7 +449,8 @@ function Home() {
                     <h2>{item.question}</h2>
                     <span className="sign">{selected === i ? "-" : "+"} </span>
                   </div>
-                  <div
+
+                  <div id="faq_ans"
                     className={
                       selected === i ? "accordion_four" : "accordion_five"
                     }

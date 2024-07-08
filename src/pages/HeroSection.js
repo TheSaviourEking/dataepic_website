@@ -12,8 +12,7 @@ function HeroSection() {
     <div className="web_container">
       <div className="hero-container">
         <div className="hero-content">
-          
-            <TypeEffect />
+          <TypeEffect />
           <div className="typewriter-container">
             <div className="whitestar">
               <img src={white_star} alt="" />
@@ -24,14 +23,14 @@ function HeroSection() {
             <div className="polygondeep">
               <img src={polygon_deep} alt="" />
             </div>
+
             <motion.p
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
             >
               Whether you're a budding analyst or an intermediate data wizard,
-              DataEpic <br />
-              provides tailored mentorship to suit your needs
+              DataEpic provides tailored mentorship to suit your needs
             </motion.p>
 
             <motion.p
@@ -40,8 +39,7 @@ function HeroSection() {
               transition={{ duration: 1 }}
             >
               Whether you're a budding analyst or an intermediate data wizard,
-              DataEpic <br />
-              provides tailored mentorship to suit your needs
+              DataEpic provides tailored mentorship to suit your needs
             </motion.p>
           </div>
           <Link to="/FormInput" className="reserve-btns">
