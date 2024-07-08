@@ -73,7 +73,7 @@ html {
   color: #b3b3b3;
 }
 
-.reserve-btns{
+.reserve-btns {
   background: transparent;
 }
 .reserve-btns button {
@@ -829,7 +829,6 @@ html {
 }
 
 .accordion_three {
-  
   display: flex;
   background-color: rgba(28, 27, 38, 1);
   justify-content: space-between;
@@ -842,19 +841,16 @@ html {
 }
 
 .item {
-  
   cursor: pointer;
   margin-bottom: 5px;
   /* padding: 30px 40px; */
 }
-
 
 .accordion_three h2 {
   background-color: rgba(28, 27, 38, 1);
   font-family: Eczar;
   font-size: 24px;
   font-weight: 400;
-  
 }
 .accordion_four {
   background-color: rgba(28, 27, 38, 1);
@@ -869,7 +865,6 @@ html {
 }
 
 .accordion_four p {
-  
   background-color: rgba(28, 27, 38, 1);
   text-align: left;
 }
@@ -898,9 +893,6 @@ html {
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
 
-
-
-
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
 
@@ -927,20 +919,18 @@ html {
   .hero_font {
     position: sticky;
   }
-.maintext_para p {
-  width: 100%;
-  margin-bottom: 12px;
-
-}
+  .maintext_para p {
+    width: 100%;
+    margin-bottom: 12px;
+  }
   .whitestar {
     position: relative;
-    top: -105px;
-    right: -124px;
-   
+    top: 20px;
+    left: 144px;
   }
 
-  .whitestar img{
- width: 18px;
+  .whitestar img {
+    width: 18px;
     height: 18px;
   }
   .bluestar {
@@ -1002,7 +992,6 @@ html {
     margin-top: 60px;
   }
 
-  
   /* about section */
   .main_wrapper {
     width: 100%;
@@ -1011,7 +1000,7 @@ html {
 
   #about {
     width: 100%;
-   margin-top: 10px;
+    margin-top: 10px;
   }
 
   .about_scroll {
@@ -1056,8 +1045,7 @@ html {
   .deep {
     width: 8px;
     height: 8px;
-      bottom: -40%;
-
+    bottom: -40%;
   }
 
   .deep img {
@@ -1066,27 +1054,23 @@ html {
     height: 10px;
   }
 
-
-
   /* DATAMASTERY AREA */
   .main_wrapper .datamastery-container {
     width: 96%;
     height: auto;
     border-radius: 30px;
-    border: 1px solid #ffffff;
     margin: 0 auto;
-    height: 1400px;  /* i really dont know how to fix this  */
+    height: 1400px; /* i really dont know how to fix this  */
   }
 
-    .main_wrapper .datamastery-wrapper {
-    /* margin: 12% auto; */
-margin-top: 12%;
-    }
-
+  .main_wrapper .datamastery-wrapper {
+    margin: 12% auto;
+    /* margin-top: 12%; */
+  }
 
   .datamastery-wrapper .datamastery-info h2 {
     font-size: 22px;
-    width: 80%;
+    width: 90%;
     line-height: 1.8;
     height: 80px;
     margin: 2% auto;
@@ -1098,7 +1082,6 @@ margin-top: 12%;
     line-height: 1.5;
     text-align: justify;
     margin: 10% auto;
-    
   }
 
   .wrapper {
@@ -1374,7 +1357,7 @@ margin-top: 12%;
     width: 100%;
   }
 
-  .item p{
+  .item p {
     font-size: 16px;
     width: 100%;
     margin: 0 auto;
@@ -1382,15 +1365,14 @@ margin-top: 12%;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    
-}
-#faq_ans{
-margin-top: 20px;
-}
+  }
+  #faq_ans {
+    margin-top: 20px;
+  }
   .accordion_one {
     width: 96%;
     align-items: center;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 
   .accordion_three {
@@ -1408,7 +1390,7 @@ margin-top: 20px;
     font-size: 8px;
   }
 
-  .accordion_four{
+  .accordion_four {
     margin: 0 auto;
   }
   .accordion_five {
