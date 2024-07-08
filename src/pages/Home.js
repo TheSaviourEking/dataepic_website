@@ -14,12 +14,12 @@ import image9 from "../images/image9.png";
 import image10 from "../images/image10.png";
 import entrylevel1 from "../images/entrylevel1.png";
 import entrylevel2 from "../images/entrylevel2.png";
-import polygondeep from "../images/Polygon_deep.png"
-import polygonlight from "../images/Polygon_light.png"
+import polygondeep from "../images/Polygon_deep.png";
+import polygonlight from "../images/Polygon_light.png";
 // import Footer from "../pages/Footer";
 import "../styles/Tracks.css";
 import "../styles/Home.css";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 // import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const data = [
@@ -63,6 +63,8 @@ function Home() {
     setSelected(i);
   };
 
+ 
+
   return (
     <div className="container">
       <HeroSection />
@@ -82,7 +84,7 @@ function Home() {
             <img src={polygondeep} alt="" />
           </div>
 
-          <div>
+          <div className="mini-text">
             <div className="light">
               <img src={polygonlight} alt="" />
             </div>
@@ -100,15 +102,14 @@ function Home() {
           </div>
         </div>
 
-
         <div className="datamastery-container">
           <div className="datamastery-wrapper">
-
             <div className="datamastery-info">
               <h2>
                 <span className="orange">Beginner and Intermediate</span> Paths
                 to Data Mastery
               </h2>
+
               <motion.p
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -146,7 +147,7 @@ function Home() {
                         <button>3 to 4 weeks</button>
                       </div>
 
-                      <div>
+                      <div className="click_button">
                         <Link to="/BeginnersTrack" className="track_select_btn">
                           <button>View track modules</button>
                         </Link>
@@ -180,7 +181,7 @@ function Home() {
                         <button>3 to 4 weeks</button>
                       </div>
 
-                      <div>
+                      <div className="click_button">
                         <Link
                           to="/IntermediateTrack"
                           className="track_select_btn2"
@@ -214,12 +215,15 @@ function Home() {
                       <div className="week-button">
                         <button>3 to 4 weeks</button>
                       </div>
-                      <Link
-                        to="/IntermediateTrack"
-                        className="track_select_btn2"
-                      >
-                        <button>View track modules</button>
-                      </Link>
+
+                      <div className="click_button">
+                        <Link
+                          to="/IntermediateTrack"
+                          className="track_select_btn2"
+                        >
+                          <button> View track modules </button>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -227,8 +231,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-
 
         <div className="mentors">
           <div className="ment">
@@ -283,11 +285,7 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img
-                  src={bushro}
-                  alt="Bushro"
-                  className="mentor_images"
-                />
+                <img src={bushro} alt="Bushro" className="mentor_images" />
                 <div className="mentor_para">
                   <h3>Hammed Bushira</h3>
                   <p>DataOps Engineer</p>
@@ -296,11 +294,6 @@ function Home() {
             </div>
           </div>
         </div>
-
-
-
-
-
 
         {/* Why data epic */}
         <div className="data_epic">
@@ -317,7 +310,6 @@ function Home() {
               </p>
             </div>
 
-
             <div className="dataepic_container">
               <div className="dataepic_wrap">
                 <div className="dataepic_images">
@@ -326,13 +318,9 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>World-Class Mentors</h3>
                   <p>
-                    Our Mentors are industry experts and they
-                    <br />
-                    play a pivotal role in shaping the next
-                    <br /> generation of data enthusiasts and guide
-                    <br />
-                    them on their journey to becoming a Data <br />
-                    Specialists
+                    Our Mentors are industry experts and they play a pivotal
+                    role in shaping the next generation of data enthusiasts and
+                    guide them on their journey to becoming a Data Specialists
                   </p>
                 </div>
               </div>
@@ -344,11 +332,10 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>Hands - On - Project</h3>
                   <p>
-                    Apply your newfound knowledge to <br />
-                    real-world scenarios through hands-on
-                    <br /> projects. These projects are designed to <br />
-                    reinforce your learning and give you
-                    <br /> practical experience in working with data.
+                    Apply your newfound knowledge to real-world scenarios
+                    through hands-on projects. These projects are designed to
+                    reinforce your learning and give you practical experience in
+                    working with data.
                   </p>
                 </div>
               </div>
@@ -360,12 +347,10 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>Collaborative Learning</h3>
                   <p>
-                    Mentors foster a collaborative learning
-                    <br /> culture, encouraging learners to engage
-                    <br /> with each other, share experiences, and
-                    <br />
-                    work together on projects, creating a <br />
-                    supportive community of data enthusiasts.
+                    Mentors foster a collaborative learning culture, encouraging
+                    learners to engage with each other, share experiences, and
+                    work together on projects, creating a supportive community
+                    of data enthusiasts.
                   </p>
                 </div>
               </div>
@@ -379,11 +364,9 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>Tailored Mentorship</h3>
                   <p>
-                    Tailoring their approach to the individual <br />
-                    needs of each learner, mentors offer <br />
-                    personalized guidance to ensure a <br />
-                    meaningful and impactful learning
-                    <br /> experience.
+                    Tailoring their approach to the individual needs of each
+                    learner, mentors offer personalized guidance to ensure a
+                    meaningful and impactful learning experience.
                   </p>
                 </div>
               </div>
@@ -395,11 +378,10 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>Network Building</h3>
                   <p>
-                    Mentors foster a collaborative learning <br />
-                    culture, encouraging learners to engage <br />
-                    with each other, share experiences, and
-                    <br /> work together on projects, creating a <br />
-                    supportive community of data enthusiasts.
+                    Mentors foster a collaborative learning culture, encouraging
+                    learners to engage with each other, share experiences, and
+                    work together on projects, creating a supportive community
+                    of data enthusiasts.
                   </p>
                 </div>
               </div>
@@ -411,20 +393,16 @@ function Home() {
                 <div className="dataepic_para">
                   <h3>Community Engagement</h3>
                   <p>
-                    Join a vibrant community of like-minded <br />
-                    mentors dedicated to fostering a culture of
-                    <br /> learning and collaboration. Engage with <br />
-                    fellow mentors, share insights, and <br />
-                    collectively contribute to the success of
-                    <br /> our learners.
+                    Join a vibrant community of like-minded mentors dedicated to
+                    fostering a culture of learning and collaboration. Engage
+                    with fellow mentors, share insights, and collectively
+                    contribute to the success of our learners.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
 
 
 
@@ -437,38 +415,31 @@ function Home() {
           </h1>
         </div>
 
-
-
         <div className="play_session">
           <div className="playback_sessions">
             <div className="playback">
-
-             
-                <img src={entrylevel1} alt="" className="entry_level" />
-             
-
+              <img src={entrylevel1} alt="" className="entry_level" />
             </div>
             <div className="playback">
-             
-                <img src={entrylevel2} alt="" className="entry_level" />
-             
+              <img src={entrylevel2} alt="" className="entry_level" />
             </div>
 
             <div className="playback">
-             
-                <img src={entrylevel1} alt="" className="entry_level" />
-          
+              <img src={entrylevel1} alt="" className="entry_level" />
             </div>
           </div>
         </div>
 
+{/* faq */}
         <div className="main_faqwrapper">
           <div className="faq-wrappers">
             <div className="faq-wrapper">
               <div className="mentors_textt">
                 <h1>
                   Some of our
-                  <span className="oranges"> Frequently <br /> Asked Questions
+                  <span className="oranges">
+                    {" "}
+                    Frequently <br /> Asked Questions
                   </span>
                 </h1>
               </div>

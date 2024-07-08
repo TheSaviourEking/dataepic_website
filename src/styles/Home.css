@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.container{
+.container {
   height: auto;
 }
 .web_container {
@@ -28,7 +28,6 @@ html {
   flex-direction: column;
 }
 
-
 .hero-content {
   background-image: url(../images/Vector\ Lines.png);
   background-position: center;
@@ -43,7 +42,6 @@ html {
   margin: 0 auto;
 }
 
-
 .hero-content h1 {
   word-break: keep-all;
   display: inline-block;
@@ -55,7 +53,6 @@ html {
   letter-spacing: 0em;
   text-align: center;
   line-height: 100px;
-  /* margin-bottom: 12px; */
   overflow-wrap: break-word;
 }
 
@@ -63,7 +60,6 @@ html {
   font-family: Eczar;
   font-size: 56px;
 }
-
 
 .hero-content p {
   font-size: 18px;
@@ -95,12 +91,12 @@ html {
   top: 16%;
 }
 
-.hero-content img{
+.hero-content img {
   width: 30px;
   height: 30px;
 }
 
-.hero-content span{
+.hero-content span {
   font-size: 56px;
   font-family: Ezcar;
 }
@@ -122,7 +118,6 @@ html {
   left: 14%;
 }
 
-
 .deep {
   /* position: relative; */
   position: absolute;
@@ -130,22 +125,22 @@ html {
   bottom: -37%;
 }
 
-.maintext_para p{
+.maintext_para p {
   margin-top: 12px;
   margin-bottom: 0;
-
 }
+
+/* about section */
 .about_scroll {
   width: 80%;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }
 .about_scroll h1 {
   width: 90%;
   margin: 12px auto;
-
 }
 
 /* .main_wrapper {
@@ -158,10 +153,11 @@ html {
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
-  width: 888px;
+  width: 80%;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  /* margin: 0 auto 100px; */
   line-height: 30px;
   text-align: center;
 }
@@ -170,7 +166,7 @@ html {
   font-family: Eczar;
   text-align: center;
   /* width: 1153px; */
-  height: 340px;
+  /* height: 340px; */
   justify-content: center;
   align-items: center;
   /* margin: 8rem auto; */
@@ -201,7 +197,6 @@ html {
 .blue {
   color: rgba(33, 158, 188, 1);
 }
-
 
 /* DATA MASTERY AND TRACK */
 .main_wrapper .datamastery-container {
@@ -303,13 +298,7 @@ html {
     );
 }
 
-
-
-
-
-
 .track-type {
-  /* margin-top: 50px; */
   border-radius: 16px;
   color: #f4f4f4;
   height: 450px;
@@ -326,10 +315,7 @@ html {
   /* margin-bottom: 14px; */
   justify-content: center;
   align-items: center;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 2px 12px;
   height: 50vh;
   width: 350px;
   border: 4px solid rgba(75, 75, 75, 0.25);
@@ -340,13 +326,11 @@ html {
 .wrapper {
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
   align-items: center;
   height: 280px;
   margin: 0 auto;
   gap: 20px;
-  /* padding: 24px; */
-  /* background: #1805eb; */
 }
 
 .track_info {
@@ -405,7 +389,6 @@ html {
 .notes h4 {
   width: 300px;
   font-size: 17px;
-  /* font size iyanu gave is too big 24px */
   font-weight: 600;
   font-family: Eczar;
   line-height: 32px;
@@ -429,18 +412,14 @@ html {
 .track_btn .track_modules {
   height: 40px;
   margin: 1rem auto;
-  /* width: 300px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-top: 58px; */
 }
 
 .track_modules .week-button {
-  /* width: 223px; */
   margin: 1rem auto;
-  /* background-color: blue; */
 }
 .track_btn button {
   background-color: rgba(75, 75, 75, 0.5);
@@ -476,15 +455,11 @@ html {
   font-family: Eczar;
 }
 
-
-
-
 /* Mentor's info section */
 
 .main_wrapper .mentors {
   color: #fff;
   border-radius: 16px;
-  /* linear-gradient: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0); */
   height: 70%;
   width: 90%;
   align-items: center;
@@ -494,7 +469,6 @@ html {
 }
 
 .mentors_images_container {
-  /* background-color: purple; */
   margin: 0 auto;
 }
 .ment .mentors_container h3 {
@@ -523,12 +497,8 @@ html {
   border-radius: 16px;
   gap: 20px;
   height: 373px;
-  /* width: 200px; */
   background-color: rgba(28, 27, 38, 1);
   width: 30%;
-  /* background-color: red; */
-
-  /* this width and height is what Iyanu designed */
 }
 .mentor_wraps:hover {
   transform: scale(1.01);
@@ -590,13 +560,10 @@ html {
   align-items: center;
   text-align: center;
   margin: 72px auto 0;
-
-  /* height: 180px; */
 }
 
 .ment .mentors_text {
   margin-bottom: 18px;
-  /* background-color: red; */
 }
 .mentors_text h1 {
   font-family: Eczar;
@@ -611,12 +578,6 @@ html {
   color: rgba(251, 133, 0, 1);
   font-family: Eczar;
 }
-/* .mentors_text .oranges {
-  font-size: 48px;
-  height: 85px;
-  color: rgba(251, 133, 0, 1);
-  font-family: Eczar;
-} */
 
 .dataepic_mentors_text .oranges {
   font-size: 48px;
@@ -634,12 +595,6 @@ html {
   margin-bottom: 40px;
   width: 60%;
 }
-
-
-
-
-
-
 
 /* dataepic */
 
@@ -660,7 +615,6 @@ html {
 .dataepic_container {
   width: 100%;
   gap: 20px;
-  /* margin-top: 40px; */
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -673,7 +627,6 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* margin:  10px auto 0; */
   height: 190px;
   margin-bottom: 30px;
   margin-top: 72px;
@@ -684,19 +637,18 @@ html {
 }
 
 .dataepic_wrap {
+  box-sizing: border-box;
   flex-wrap: wrap;
   transition: 0.8s;
   border: 3px solid rgba(245, 238, 238, 0.035);
   border-radius: 16px;
   color: #fff;
-  /* margin: 20px; */
   width: 80%;
   margin-bottom: 20px;
   justify-content: space-between;
   align-content: space-between;
   text-align: center;
   text-align: left;
-  white-space: nowrap;
   background-color: rgba(28, 27, 38, 1);
 }
 
@@ -724,9 +676,12 @@ html {
   border-radius: 12px;
   /* color: green; */
   /* height: 229px; */
-
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
   margin-left: 0.5rem;
 }
+
 .dataepic_para h3 {
   /* margin-top: 10px; */
   justify-content: center;
@@ -760,10 +715,6 @@ html {
   justify-items: center;
   background-color: rgba(28, 27, 38, 1);
 }
-
-
-
-
 
 /* play session */
 
@@ -871,6 +822,7 @@ html {
   align-items: center;
   margin: 50px auto 0;
 }
+
 .accordion_two {
   width: 100%;
   color: #b3b3b3;
@@ -884,11 +836,11 @@ html {
   align-items: center;
   cursor: pointer;
   padding-bottom: 8px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .item {
   cursor: pointer;
   margin-bottom: 5px;
@@ -910,7 +862,6 @@ html {
 
 .accordion_four:hover {
   background-color: rgba(28, 27, 38, 1);
-
   transform: scale(0.8);
 }
 
@@ -920,7 +871,6 @@ html {
 }
 .accordion_three h2:hover {
   background-color: rgba(28, 27, 38, 1);
-
   transform: scale(1);
   box-shadow: 0 0 40px -10px rgba(8, 8, 6, 0.25);
   transition: (1.5s);
@@ -943,19 +893,8 @@ html {
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
 
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
-
 
   .web_container {
     width: 100%;
@@ -965,7 +904,7 @@ html {
 
   .hero-container {
     width: 100%;
-    margin-top: 0;
+    /* margin-top: 0; */
     top: 0;
   }
 
@@ -977,23 +916,22 @@ html {
     position: relative;
   }
 
-  .hero_font{
+  .hero_font {
     position: sticky;
   }
-  
-.whitestar{
-  position: relative;
- top: -150px;
-  right: 90px;
-}
+
+  .whitestar {
+    position: relative;
+    top: -100px;
+    right: -124px;
+  }
   .bluestar {
     position: relative;
     width: 8px;
     height: 6px;
     top: 60px;
-   left: 130px;
+    left: 130px;
   }
-
 
   .bluestar img {
     width: 20px;
@@ -1012,8 +950,6 @@ html {
     width: 14px;
     height: 14px;
   }
-  
-  
 
   .hero-content h1 {
     padding: 0;
@@ -1048,58 +984,92 @@ html {
     margin-top: 60px;
   }
 
+  
+  /* about section */
   .main_wrapper {
     width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    /* display: inline-block; */
+  }
+
+  #about {
+    width: 90%;
+   margin-top: 10px;
   }
 
   .about_scroll {
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     width: 100%;
+    height: 100%;
   }
+
   .about_scroll h1 {
     font-size: 24px;
-    width: 90vw;
-    height: 20%;
+    width: 100%;
     text-align: center;
-    /* margin: 10px auto 5px; */
+    margin: 10 auto;
   }
 
   .main_wrapper .about_scroll p {
     font-size: 16px;
-    width: 90vw;
-    margin: 24px auto 24px;
+    width: 100%;
     text-align: justify;
+    padding: 0 20px;
   }
+
+  .main_wrapper .mini-text p {
+    margin: 40px auto;
+  }
+
+  .light {
+    position: relative;
+    width: 8px;
+    height: 6px;
+    left: 1%;
+    top: 25%;
+  }
+
+  .light img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .deep {
+    width: 8px;
+    height: 8px;
+      bottom: -40%;
+
+  }
+
+  .deep img {
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+
+
 
   /* DATAMASTERY AREA */
   .main_wrapper .datamastery-container {
-    background-color: yelllow;
     width: 96%;
     height: auto;
+    border-radius: 30px;
     border: 1px solid #ffffff;
     margin: 0 auto;
-  }
-
-  .datamastery-wrapper {
-    border-radius: 30px;
     height: 1480px;
   }
 
+  .main_wrapper .datamastery-info {
+    /* height: auto; */
+    margin: 12% auto;
+  }
   .datamastery-wrapper .datamastery-info h2 {
     font-size: 22px;
-    width: auto;
-    padding: 0 2%;
+    width: 80%;
     line-height: 1.8;
-    margin: 24px auto 34px;
     height: 80px;
-  }
-
-  .breakWord {
-    word-break: break-word;
+    margin: 2% auto;
   }
 
   .datamastery-wrapper .datamastery-info p {
@@ -1107,23 +1077,17 @@ html {
     width: 90%;
     line-height: 1.5;
     text-align: justify;
-    margin: 0 auto;
+    margin: 10% auto;
   }
 
-  .track-type {
-    margin-top: auto;
-  }
   .wrapper {
     width: 100%;
-    background-color: burlywood;
-    padding: 20px 0;
   }
 
   .main_wrapper .track {
-    width: 94%;
+    width: 90%;
     height: auto;
     border: 3px solid #4b4b4b73;
-    margin: 10px auto;
     padding: 10px;
   }
 
@@ -1137,13 +1101,12 @@ html {
   .intermediate-type {
     width: 100%;
     height: auto;
-    /* height: 90px; */
   }
 
   .beginner-type h2,
   .intermediate-type h2 {
     height: auto;
-    font-size: 24px;
+    font-size: 28px;
     text-align: justify;
   }
 
@@ -1173,23 +1136,28 @@ html {
     width: 100%;
   }
   .track_btn .track_modules {
-    margin-top: 40px;
-
     width: 100%;
   }
 
   .track_modules .week-button {
-    width: 140px;
     margin-right: 8px;
+    width: 45%;
   }
+
+  .track_modules .week-button button {
+    width: 100%;
+  }
+
+  .track_modules .click_button {
+    width: 55%;
+  }
+
   .track_select_btn button {
-    width: 140px;
+    width: 100%;
   }
 
   .track_select_btn2 button {
-    width: 140px;
-    font-size: 14px;
-    line-height: 16px;
+    width: 100%;
   }
 
   /* MENTORS AREA */
@@ -1210,9 +1178,10 @@ html {
 
   .mentors .new_mentor_para p {
     font-size: 16px;
-    width: 100%;
     align-items: center;
-    margin: 14px auto;
+    text-align: justify;
+    padding: 10px;
+    margin: 6% auto;
   }
 
   .mentors_container {
@@ -1222,8 +1191,8 @@ html {
   }
 
   .mentors_container .mentor_wraps {
-    width: 300px;
-    height: 300px;
+    width: 90%;
+    height: 100%;
     transition: 0.9s;
     border-radius: 18px;
     justify-content: center;
@@ -1236,9 +1205,9 @@ html {
     box-shadow: 0 0 40px -10px rgba(8, 8, 6, 0.25);
   }
 
-  .mentor_wraps img {
+  /* .mentor_wraps img {
     height: 220px;
-  }
+  } */
 
   .mentors_container .mentor_para h3 {
     font-size: 16px;
@@ -1270,11 +1239,10 @@ html {
     margin: 0 auto;
   }
 
-  .dataepic_mentors_text {
-    color: red;
-  }
   .dataepic_mentors_text p {
     width: 100%;
+    text-align: justify;
+    padding: 10px;
   }
 
   .dataepic_wrap p {
@@ -1296,24 +1264,21 @@ html {
   }
 
   .dataepic_para {
-    color: red;
-    padding: 0px 0px 0px 0px;
-    /* margin: 0 auto; */
+    padding: 0px 10px;
+    margin: 0 auto;
   }
 
   .dataepic_para h3 {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     margin-top: 0;
-    background-color: yellow;
   }
 
   .dataepic_para p {
     text-align: justify;
     width: 100%;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 28px;
     padding: 0;
-    background-color: aqua;
   }
 
   .dataepic_images {
@@ -1322,40 +1287,22 @@ html {
 
   .dataepic_images img {
     margin: 10px 0;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
   }
 
   /* PLAYBACK SESSION */
 
   .main_wrapper .session_container {
     margin: 24px auto;
-    /* padding: 0; */
     height: auto;
-    width: 96%;
-  }
-
-  .playback {
-    height: 100%;
     width: 100%;
-  }
-
-  .playback .entry img {
-    height: auto;
-    width: 80%;
-  }
-
-  .playback_sessions {
-    display: flex;
-    flex-direction: column;
-    width: 96%;
-    border: 3px #4b4b4b73 solid;
   }
 
   .session_container h1 {
     line-height: 20px;
     font-size: 26px;
     height: auto;
-    width: 90vw;
+    width: 90%;
     margin: 0;
   }
 
@@ -1364,8 +1311,15 @@ html {
   }
 
   .main_wrapper .playback {
-    width: 100%;
+    width: 96%;
     height: auto;
+  }
+
+  .playback_sessions {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 3px #4b4b4b73 solid;
   }
 
   /* FAQ AREA */
@@ -1393,12 +1347,35 @@ html {
     font-size: 26px;
   }
 
+  .item {
+    padding: 0;
+  }
+
   .accordion_one {
-    width: 96%;
+    width: 90%;
+    background-color: red;
+  }
+
+  .accordion_three {
+    /* padding: 15px; */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
   }
 
   .accordion_three h2 {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .accordion_three p {
+    font-size: 8px;
+  }
+
+  .accordion_five {
+    color: green;
+    font-size: 8px;
   }
   .footer {
     height: 100%;

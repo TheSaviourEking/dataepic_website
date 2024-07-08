@@ -13,7 +13,7 @@
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Ensure space between logo and icon */
+  justify-content: space-between; 
   align-items: center;
   height: 80px;
   width: 100%;
