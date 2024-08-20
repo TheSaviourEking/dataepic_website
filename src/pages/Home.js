@@ -121,7 +121,7 @@ function Home() {
 
             <div className="track-type">
               <div className="wrapper">
-                <div className="track">
+                <div className="track" id="track">
                   <div className="track_info">
                     <div className="beginner-type">
                       <h2> Beginners Track</h2>
@@ -155,7 +155,7 @@ function Home() {
 
                 {/* intermediate track */}
 
-                <div className="track">
+                <div className="track" id="track_second">
                   <div className="track_info">
                     <div className="intermediate-type">
                       <h2> Intermediate Track</h2>
@@ -190,7 +190,7 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="track">
+                <div className="track" id="last_track">
                   <div className="track_info">
                     <div className="intermediate-type">
                       <h2> Intermediate Track</h2>
@@ -401,6 +401,7 @@ function Home() {
           </div>
         </div>
 
+
         {/* play session */}
         <div className="session_container">
           <h1>
@@ -468,3 +469,4 @@ function Home() {
 }
 
 export default Home;
+

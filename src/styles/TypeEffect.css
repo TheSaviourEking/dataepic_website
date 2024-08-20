@@ -53,3 +53,21 @@
     padding: 0;
   }
 }
+
+@media (min-width: 768px) and (max-width:991.98px){
+.type-wrap{
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+}
+
+@media (min-width: 991.9px) and (max-width: 1400px) {
+.type-wrap{
+  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+}

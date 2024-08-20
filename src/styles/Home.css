@@ -893,9 +893,6 @@ html {
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
 
-
-
-
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
 
@@ -1111,9 +1108,9 @@ html {
 
   .beginner-type h2,
   .intermediate-type h2 {
-    height: auto;
+    /* height: auto; */
     font-size: 28px;
-    text-align: justify;
+    /* text-align: justify; */
   }
 
   .notes {
@@ -1206,6 +1203,11 @@ html {
     margin: 0 auto 8px;
   }
 
+  .mentors_container .mentor_wraps img {
+    width: 100%;
+    height: 100%;
+    /* i just added this */
+  }
   .mentor_wrap:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(8, 8, 6, 0.25);
@@ -1401,6 +1403,397 @@ html {
   }
   .footer {
     height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .web_container {
+    width: 100%;
+  }
+
+  .hero-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-content {
+    width: 100%;
+  }
+
+  .maintext_para #first_para {
+    padding-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  #about {
+    width: 90%;
+  }
+
+  .main_wrapper .datamastery-container {
+    width: 80%;
+    height: 1600px;
+  }
+
+  .datamastery-wrapper .datamastery-info h2 {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .datamastery-wrapper .datamastery-info p {
+    position: relative;
+    width: 80%;
+  }
+
+  .main_wrapper .track {
+    height: auto;
+    width: 70%;
+  }
+
+  #track {
+    margin-top: 10%;
+  }
+
+  .wrapper #last_track {
+    margin-bottom: 10%;
+  }
+  .track .track_modules {
+    margin-top: 20%;
+  }
+
+  .beginner-type,
+  .intermediate-type {
+    width: 96%;
+    /* i changed this from 90 */
+  }
+
+  .beginner-type h2,
+  .intermediate-type h2 {
+    font-size: 36px;
+  }
+
+  .notes h4 {
+    width: 90%;
+    display: flex;
+    margin: 4% auto;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .notes p {
+    font-size: 14px;
+    width: 90%;
+    margin-top: 4%;
+  }
+
+  .track_btn .track_modules {
+    width: 90%;
+    margin-top: 12%;
+    gap: 12px;
+  }
+  .track_modules .week-button {
+    width: 45%;
+  }
+
+  .track_modules .week-button button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .track_modules .click_button {
+    width: 55%;
+  }
+  .track_modules .click_button button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .track_modules .week-button {
+    margin-right: 8px;
+    width: 45%;
+  }
+
+  .main_wrapper .mentors {
+    width: 100%;
+  }
+
+  .main_wrapper .ment {
+    width: 100%;
+  }
+
+  .mentors .new_mentor_para {
+    width: 80%;
+  }
+  .mentors .new_mentor_para h1 {
+    font-size: 36px;
+    margin: 4% auto;
+  }
+
+  .mentors_container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 800px;
+  }
+  .mentors_container .mentor_wraps {
+    width: 60%;
+    height: auto;
+  }
+
+  .mentors_container .mentor_wraps img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mentor_images img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .mentors_container .mentor_para h3 {
+    font-size: 22px;
+  }
+  .mentors_container .mentor_para p {
+    font-size: 16px;
+  }
+
+  .dataepic_mentors_text h1 {
+    width: 100%;
+    font-size: 36px;
+    margin: 4%;
+  }
+  .dataepic_mentors_text .oranges {
+    font-size: 36px;
+  }
+  .dataepic_mentors_text p {
+    width: 80%;
+  }
+
+  .main_wrapper .data_new {
+    width: 100%;
+  }
+
+  .main_wrapper .data_epic {
+    width: 90%;
+  }
+
+  .dataepic_container {
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .dataepic_wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .main_wrapper .session_container {
+    width: 100%;
+    margin: 0;
+  }
+  .session_container h1 {
+    font-size: 36px;
+  }
+  .main_wrapper .oranges {
+    font-size: 36px;
+  }
+
+  .playback_session {
+    width: 100%;
+  }
+
+  .playback_sessions {
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+  }
+  .play_session .playback {
+    width: 70%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+  .playback .entry_level {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main_faqwrapper .mentors_textt {
+    width: 90%;
+    padding: 0;
+  }
+  .main_faqwrapper .mentors_textt h1 {
+    font-size: 36px;
+  }
+  .main_faqwrapper .mentors_textt .oranges {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 991.9px) and (max-width: 1400px) {
+  .hero-content {
+    width: 100%;
+  }
+
+  .maintext_para #first_para {
+    margin-top: 8%;
+    margin-bottom: 0;
+  }
+
+  .maintext_para p {
+    width: 70%;
+  }
+
+  #about {
+    width: 90%;
+  }
+
+  .main_wrapper .mini-text p {
+    margin: 6% auto;
+  }
+
+  .main_wrapper .datamastery-container {
+    height: 1300px;
+  }
+
+  .datamastery-wrapper .datamastery-info h2 {
+    width: 90%;
+  }
+  .datamastery-wrapper .datamastery-info p {
+    margin: auto;
+    position: relative;
+  }
+  .beginner-type,
+  .intermediate-type {
+    width: 96%;
+  }
+
+  .track-type .track {
+    height: auto;
+  }
+  #track {
+    margin-top: 15%;
+  }
+
+  #track_second {
+    margin-top: 15%;
+  }
+
+  .wrapper #last_track {
+    margin-bottom: 10%;
+  }
+  .track .track_modules {
+    gap: 10px;
+    width: 90%;
+    margin-top: 20%;
+  }
+
+  .track_info {
+    margin: 10% auto;
+  }
+  .notes h4 {
+    width: 96%;
+  }
+  .notes p {
+    width: 96%;
+  }
+
+  .main_wrapper .mentors {
+    width: 100%;
+  }
+
+  .mentors .new_mentor_para h1 {
+    width: 100%;
+  }
+
+  .mentors .new_mentor_para p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mentors_container {
+    display: grid;
+    gap: 20px;
+  }
+  .mentors_container .mentor_wraps {
+    width: 40%;
+    height: auto;
+  }
+
+  .main_wrapper .data_epic {
+    width: 90%;
+  }
+  .dataepic_container .dataepic_para h3 {
+    font-size: 22px;
+    padding: 2%;
+  }
+
+  .dataepic_container .dataepic_para p {
+    padding: 2%;
+    font-size: 14px;
+  }
+
+  .main_wrapper .session_container {
+    margin: 2% auto;
+    padding: 0;
+    width: 90%;
+  }
+  .playback_sessions {
+    width: 90%;
+  }
+
+  .playback .entry_level {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main_faqwrapper .mentors_textt h1 {
+    line-height: 1.2;
+  }
+}
+
+
+@media (min-width: 1369.98px) {
+  .web_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .maintext_para #first_para {
+    margin-top: 26%;
+    margin-bottom: 0;
+  }
+
+  .maintext_para p {
+    width: 80%;
+  }
+
+    /* .datamastery-wrapper .datamastery-info p {
+    
+    } */
+
+  
+  #track {
+    margin-top: 5%;
+  }
+
+  #track_second {
+    margin-top: 5%;
+  }
+  #last_track {
+    border: red 3px solid;
+        margin-top: 5%;
+
   }
 }
 
