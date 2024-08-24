@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 import sogo from "../images/image1.png";
 import toba from "../images/image2.png";
 import eri from "../images/image3.png";
-import ag from "../images/image4.png";
+// import ag from "../images/image4.png";
 import bushro from "../images/image15.png";
 import gbotemi from "../images/image11.jpeg";
 import image5 from "../images/image5.png";
