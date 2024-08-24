@@ -6,6 +6,7 @@ import toba from "../images/image2.png";
 import eri from "../images/image3.png";
 import ag from "../images/image4.png";
 import bushro from "../images/image15.png";
+import gbotemi from "../images/image11.jpeg";
 import image5 from "../images/image5.png";
 import image6 from "../images/image6.png";
 import image7 from "../images/image7.png";
@@ -158,7 +159,7 @@ function Home() {
                 <div className="track" id="track_second">
                   <div className="track_info">
                     <div className="intermediate-type">
-                      <h2> Intermediate Track</h2>
+                      <h2> Beginners with Experience Track</h2>
                     </div>
                     <div className="notes">
                       <h4>
@@ -249,16 +250,20 @@ function Home() {
 
             <div className="mentors_container">
               <div className="mentor_wraps">
-                <img src={sogo} alt="Sogo" className="mentor_images" />
+                <div className="mentor_image_wrap ">
+                  <img src={sogo} alt="Sogo" className="mentor_images" />
+                </div>
 
                 <div className="mentor_para">
                   <h3>Sogo Ogundowole</h3>
-                  <p>Senior Data Engineer</p>
+                  <p id="name">Senior Data Engineer</p>
                 </div>
               </div>
 
               <div className="mentor_wraps">
-                <img src={toba} alt="Toba" className="mentor_images" />
+                <div className="mentor_image_wrap ">
+                  <img src={toba} alt="Toba" className="mentor_images" />
+                </div>
                 <div className="mentor_para">
                   <h3>Oluwatoba Adesugba</h3>
                   <p>ML Engineer and Technical Writer</p>
@@ -266,26 +271,42 @@ function Home() {
               </div>
 
               <div className="mentor_wraps">
-                <img src={eri} alt="Eri" className="mentor_images" />
+                <div className="mentor_image_wrap ">
+                  <img src={eri} alt="Eri" className="mentor_images" />
+                </div>
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>
                 </div>
               </div>
 
-              <div className="mentor_wraps">
-                <img src={ag} alt="Ag" className="mentor_images" />
+              {/* <div className="mentor_wraps">
+                <div className="mentor_image_wrap ">
+                  <img src={ag} alt="Ag" className="mentor_images" />
+                </div>
                 <div className="mentor_para">
                   <h3>Amazing-Grace Olutomilayo</h3>
                   <p>Data Engineer</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="mentor_wraps">
-                <img src={bushro} alt="Bushro" className="mentor_images" />
+                <div className="mentor_image_wrap ">
+                  <img src={bushro} alt="Bushro" className="mentor_images" />
+                </div>
                 <div className="mentor_para">
                   <h3>Hammed Bushira</h3>
                   <p>DataOps Engineer</p>
+                </div>
+              </div>
+
+              <div className="mentor_wraps">
+                <div className="mentor_image_wrap ">
+                  <img src={gbotemi} alt="Gbotemi" className="mentor_images" />
+                </div>
+                <div className="mentor_para">
+                  <h3>Gbotemi Bolarinwa</h3>
+                  <p> Data Engineer</p>
                 </div>
               </div>
             </div>
@@ -401,7 +422,6 @@ function Home() {
           </div>
         </div>
 
-
         {/* play session */}
         <div className="session_container">
           <h1>
@@ -451,7 +471,8 @@ function Home() {
                     <span className="sign">{selected === i ? "-" : "+"} </span>
                   </div>
 
-                  <div id="faq_ans"
+                  <div
+                    id="faq_ans"
                     className={
                       selected === i ? "accordion_four" : "accordion_five"
                     }
@@ -469,4 +490,3 @@ function Home() {
 }
 
 export default Home;
-

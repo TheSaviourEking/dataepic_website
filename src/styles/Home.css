@@ -162,7 +162,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* margin: 0 auto 100px; */
+  margin: 0 auto 100px;
   line-height: 30px;
   text-align: center;
 }
@@ -218,8 +218,10 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem auto;
-  border: 3px solid rgba(245, 238, 238, 0.035);
+  padding-top: 2%;
+  padding-bottom: 3%;
+  margin: 1rem auto;
+  border: 3px solid rgba(75, 75, 75, 0.25);
 }
 
 .main_wrapper .datamastery-wrapper {
@@ -233,11 +235,12 @@ html {
 }
 
 .main_wrapper .datamastery-info {
-  height: 40vh;
+  /* height: 40vh; */
 }
 
 .datamastery-info,
 .data-firsttext {
+  /* margin-top: auto; */
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
       180deg,
@@ -254,17 +257,16 @@ html {
       rgba(255, 255, 255, 0) 100%
     );
   color: #f4f4f4;
+  /* color: red; */
   font-family: Eczar;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 85px;
-  letter-spacing: 0em;
+  line-height: 5rem;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto;
-  margin-top: 3rem;
-  width: 761px;
+  margin: 2rem auto;
+  width: 80%;
   height: 170px;
 }
 
@@ -272,15 +274,16 @@ html {
   color: rgba(179, 179, 179, 1);
   font-family: Inter;
   word-spacing: 1px;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 500;
-  width: 715px;
-  height: 96px;
-  line-height: 32px;
+  width: 80%;
+  /* height: 6rem; */
+  /* line-height: 2rem; */
   letter-spacing: 0em;
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 0;
   margin: auto;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -291,7 +294,7 @@ html {
 }
 
 .datamastery-container .wrapper {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .datamastery-info .orange {
@@ -306,7 +309,7 @@ html {
 .track-type {
   border-radius: 16px;
   color: #f4f4f4;
-  height: 450px;
+  height: 40%;
   display: flex;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -324,29 +327,27 @@ html {
   height: 50vh;
   width: 350px;
   border: 4px solid rgba(75, 75, 75, 0.25);
-
   border-radius: 16px;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
-  /* flex-flow: wrap; */
   align-items: center;
-  height: 280px;
+  /* height: 280px; */
   margin: 0 auto;
   gap: 20px;
 }
 
 .track_info {
   border-radius: 10px;
-  height: 36vh;
+  /* height: 36vh; */
 }
 
 .beginner-type,
 .intermediate-type {
-  height: 120px;
-  width: 300px;
+  /* height: 40%; */
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
@@ -354,7 +355,7 @@ html {
   background-image: url("../images/Group\ 873.png"),
     url("../images/Group\ 874.png");
   background-position: center;
-  border-radius: 16px;
+  border-radius: 1rem;
   background-size: contain;
 }
 
@@ -364,13 +365,13 @@ html {
   justify-content: center;
   align-items: center;
   background-color: rgba(207, 112, 3, 0.904);
-  height: 120px;
-  width: 500px;
-  border-radius: 16px;
+  height: 7rem;
+  width: 33rem;
+  border-radius: 1rem;
   display: flex;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 800;
-  line-height: 84px;
+  line-height: 2.4rem;
   text-align: center;
 }
 
@@ -381,13 +382,13 @@ html {
   margin: auto;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 500px;
-  border-radius: 16px;
+  height: 7rem;
+  width: 33rem;
+  border-radius: 1rem;
   display: flex;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 800;
-  line-height: 84px;
+  line-height: 2.4rem;
   text-align: center;
 }
 
@@ -408,15 +409,20 @@ html {
   font-size: 14px;
   line-height: 22px;
   text-align: left;
-  margin: auto;
+  margin: 1rem auto;
   width: 300px;
   font-weight: 400;
-  margin-top: 8px;
+}
+
+.track_btn {
+  width: 100%;
+  gap: 0;
 }
 
 .track_btn .track_modules {
+  width: 100%;
   height: 40px;
-  margin: 1rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -425,30 +431,34 @@ html {
 
 .track_modules .week-button {
   margin: 1rem auto;
+  width: 100%;
 }
+
 .track_btn button {
   background-color: rgba(75, 75, 75, 0.5);
   border-style: none;
   color: #f4f4f4;
-  width: 120px;
+  width: 90%;
   height: 38px;
   border-radius: 4px;
 }
 
-.track_btn {
-  gap: 0;
+.click_button {
+  width: 100%;
 }
 
 .track_select_btn button {
   background-color: rgba(251, 133, 0, 1);
-  width: 170px;
+  /* width: 170px; */
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
   line-height: 32px;
 }
 .track_select_btn2 button {
   background: rgba(33, 158, 188, 1);
-  width: 170px;
+  /* width: 170px; */
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
   line-height: 32px;
@@ -476,6 +486,7 @@ html {
 .mentors_images_container {
   margin: 0 auto;
 }
+
 .ment .mentors_container h3 {
   font-size: 18px;
   width: 100%;
@@ -484,57 +495,90 @@ html {
 .ment .mentors_container p {
   font-size: 12px;
 }
+
 .mentors_container {
   gap: 40px;
   width: 80%;
-
   display: flex;
   flex-wrap: wrap;
   margin: 40px auto;
-  justify-content: center;
+  justify-content: space-around;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .mentor_wraps {
-  border: 3px solid rgba(245, 238, 238, 0.035);
+  /* border: 3px solid rgba(245, 238, 238, 0.035);
   margin-top: 0px;
+   margin-bottom: 20px;
   transition: 0.9s;
-  border-radius: 16px;
-  gap: 20px;
-  height: 373px;
-  background-color: rgba(28, 27, 38, 1);
-  width: 30%;
+   text-align: center; 
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20%;
+  gap: 20px; */
+  /* height: 23rem; */
+  /* background-color: rgba(28, 27, 38, 1); */
+  width: 24%;
+  transition: 1.5s;
 }
+
+.mentor_image_wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 .mentor_wraps:hover {
   transform: scale(1.01);
   box-shadow: 0 0 30px -10px rgba(8, 8, 6, 0.25);
 }
+
 .ment .mentor_wraps p {
-  background-color: rgba(28, 27, 38, 1);
-  text-align: left;
+  /* background-color: rgba(28, 27, 38, 1); */
+  text-align: center;
 }
-.mentor_images {
+
+.ment .mentor_wraps{
+    background: rgba(21, 20, 29, 1);
+}
+
+.ment .mentor_wraps h3{
+  text-align: center;
+  background: rgba(21, 20, 29, 1);
+}
+
+
+/* .mentor_images {
   text-align: center;
   color: azure;
   background-color: rgba(28, 27, 38, 1);
   height: 280px;
   width: 100%;
-}
+} */
+
 
 .mentors .ment h1 {
   height: auto;
 }
+
 
 .mentors .ment h1 .oranges {
   color: rgba(251, 133, 0, 1);
   font-family: Eczar;
 }
 
+
 .new_mentor_para {
   width: 50vw;
   text-align: justify;
   margin: 0 auto;
 }
+
 .mentor_para {
   color: #fff;
   display: block;
@@ -543,7 +587,7 @@ html {
   border: none;
   text-align: left;
   margin: 0.4rem;
-  background-color: rgba(28, 27, 38, 1);
+  /* background-color: rgba(28, 27, 38, 1); */
 }
 
 .mentors .mentors_text p {
@@ -570,6 +614,7 @@ html {
 .ment .mentors_text {
   margin-bottom: 18px;
 }
+
 .mentors_text h1 {
   font-family: Eczar;
   color: #fff;
@@ -577,6 +622,7 @@ html {
   width: 469px;
   height: 85px;
 }
+
 .mentors_text .oranges {
   font-size: 48px;
   line-height: 70px;
@@ -1057,15 +1103,16 @@ html {
   /* DATAMASTERY AREA */
   .main_wrapper .datamastery-container {
     width: 96%;
-    height: auto;
+    height: 100%;
     border-radius: 30px;
     margin: 0 auto;
-    height: 1400px; /* i really dont know how to fix this  */
+    height: 100rem;
   }
 
   .main_wrapper .datamastery-wrapper {
-    margin: 12% auto;
+    margin: 6% auto;
     /* margin-top: 12%; */
+    height: auto;
   }
 
   .datamastery-wrapper .datamastery-info h2 {
@@ -1073,7 +1120,7 @@ html {
     width: 90%;
     line-height: 1.8;
     height: 80px;
-    margin: 2% auto;
+    margin: auto;
   }
 
   .datamastery-wrapper .datamastery-info p {
@@ -1406,6 +1453,12 @@ html {
   }
 }
 
+
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .web_container {
     width: 100%;
@@ -1511,12 +1564,15 @@ html {
     width: 45%;
   }
 
+
+
+
   .main_wrapper .mentors {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .main_wrapper .ment {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .mentors .new_mentor_para {
@@ -1526,6 +1582,11 @@ html {
     font-size: 36px;
     margin: 4% auto;
   }
+
+
+  
+
+
 
   .mentors_container {
     display: grid;
@@ -1540,18 +1601,33 @@ html {
   }
 
   .mentors_container .mentor_wraps img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
   }
 
+  .mentor_image_wrap {
+    width: 10%;
+  }
   .mentor_images img {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     display: block;
   }
 
+   .mentor_wraps .mentor_para p{
+      justify-content: center;
+      align-items: center;
+          color: red;
+          font-size: 10px;
+
+    }
+
+    .mentor_wraps #name{
+      color: yellow;
+    }
   .mentors_container .mentor_para h3 {
     font-size: 22px;
+    text-align: center;
   }
   .mentors_container .mentor_para p {
     font-size: 16px;
@@ -1687,6 +1763,7 @@ html {
   .wrapper #last_track {
     margin-bottom: 10%;
   }
+
   .track .track_modules {
     gap: 10px;
     width: 90%;
@@ -1757,7 +1834,6 @@ html {
   }
 }
 
-
 @media (min-width: 1369.98px) {
   .web_container {
     width: 100%;
@@ -1778,11 +1854,6 @@ html {
     width: 80%;
   }
 
-    /* .datamastery-wrapper .datamastery-info p {
-    
-    } */
-
-  
   #track {
     margin-top: 5%;
   }
@@ -1790,177 +1861,8 @@ html {
   #track_second {
     margin-top: 5%;
   }
+
   #last_track {
-    border: red 3px solid;
-        margin-top: 5%;
-
+    margin-top: 5%;
   }
 }
-
-/* @media screen and (max-width: 1200px) {
-  .container {
-    
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .about_scroll h2 {
-    max-width: 100%;
-    height: 80vh;
-    margin-bottom: 30%;
-  }
-
-  .container .datamastery-container {
-    font-size: 40px;
-    width: 100%;
-  }
-
-  .container .track {
-  }
-  .datamastery-wrapper {
-    max-width: 100%;
-    font-size: 30px;
-    height: 100vh;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .mentors {
-  }
-
-  .mentors_container {
-    max-width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mentor_wrap {
-    width: 80%;
-  }
-  .mentor_images {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .mentor_para {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .mentor_para h3 {
-    font-size: 30px;
-    height: 48px;
-    width: 100%;
-    padding-left: 12px;
-  }
-
-  .mentor_para p {
-    font-size: 18px;
-    font-family: Inter;
-    font-weight: 600;
-    padding-left: 14px;
-  }
-
-  .mentors_text {
-    width: 100%;
-    max-width: 100%;
-
-  }
-  .mentors_text h1 {
-    height: 20vh;
-    padding-bottom: 40px;
-    font-size: 54px;
-    width: 100%;
-    height: 150px;
-  }
-  .mentors_text p {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    line-height: 40px;
-    font-weight: 300;
-    font-size: 30px;
-    width: 100%;
-  }
-
-  .data_epic .dataepic_container {
-    font-size: 30px;
-    flex-basis: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .data_epic .dataepic_wrap {
-    width: 90%;
-    height: 60vh;
-  }
-  .dataepic_para {
-    width: 100%;
-    height: 30vh;
-  }
-
-  .dataepic_images {
-    height: 125px;
-    border-radius: 16px;
-    padding: 12px 16px 18px 16px;
-    background-color: rgba(28, 27, 38, 1);
-  }
-
-  .dataepic_images img {
-    margin-top: 5px;
-    height: 90px;
-    width: 90px;
-  }
-  .dataepic_para h3 {
-    font-size: 42px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .dataepic_para p {
-    font-size: 28px;
-    line-height: 58px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .session_container h1{ 
-    width: 95%;
-  font-size: 46px;
-  line-height: 90px;
-  margin: 0 auto;
-  height: 180px;
-  margin-bottom: 40px;
-  }
-
-  .session_container .oranges {
-  font-size: 46px;
-  line-height: 90px;
-  }
-
-  .play_session{
-    width: 75%;
-  }
-  .entry_level{
-    width: 100%;
-  }
-
-
-.accordion .item{
-  max-width: 100%;
-  height: 24vh;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem auto;
-}
-
-} */

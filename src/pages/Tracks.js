@@ -14,9 +14,9 @@ const Tracks = () => {
     <div className="trackmain_container">
       <div className="track-container">
         <div className="track-content">
-          <Link className="scrolllink" to="/#sectionToScroll">
+          {/* <Link className="scrolllink" to="/#sectionToScroll">
             Go back
-          </Link>
+          </Link> */}
 
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
