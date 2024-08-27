@@ -1,9 +1,8 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   /* background-image: url(); */
   /* background-color: rgb(19, 118, 206); */
   background: rgba(21, 20, 29, 1);
@@ -14,22 +13,23 @@
 } */
 
 @media (max-width: 767.98px) {
-    header, nav, main, footer {
-        padding: 10px;
-    }
+  header,
+  nav,
+  main,
+  footer {
+    padding: 10px;
+  }
 
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
 
-    section {
-        flex: 1 0 100%;
-        /* margin: 10px 0; */
-    }
+  section {
+    flex: 1 0 100%;
+    /* margin: 10px 0; */
+  }
 }
-
-
 
 /* .tracks,
 .events,
@@ -40,4 +40,3 @@
   justify-content: center;
   font-size: 3rem;
 } */
-

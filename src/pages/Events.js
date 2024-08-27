@@ -9,12 +9,6 @@ function Events() {
   return (
     <div className="eventmain_container">
       <div className="event_wrapper">
-        <div>
-          <Link to="/#sectionToScroll" className="reroute_link">
-            Go back to Page One
-          </Link>
-        </div>
-
         <div className="event-container">
           <div className="event-wrapper">
             <div className="event-frame">
@@ -63,11 +57,15 @@ function Events() {
             <div className="first_session">
               <div className="ses-content">
                 <h3>High Level Technical Sessions</h3>
-                <p>
-                  Sharpen your skills and delve deeper into the technical realm
-                  with our high-level intermediate sessions, held every
-                  Wednesday at 10:15 AM.
-                </p>
+
+                <div className="ses_paragraph">
+                  <p>
+                    Sharpen your skills and delve deeper into the technical
+                    realm with our high-level intermediate sessions, held every
+                    Wednesday at 10:15 AM.
+                  </p>
+                </div>
+
                 <button className="session_link">
                   <a href="#form">Join Session</a>
                 </button>
@@ -77,10 +75,12 @@ function Events() {
             <div className="second_session">
               <div className="ses-content">
                 <h3>Weekly Async Sessions</h3>
-                <p>
-                  Join our weekly asynchronous learning sessions, available for
-                  intermediates on Saturdays and beginners on Sundays.
-                </p>
+                <div className="ses_paragraph">
+                  <p>
+                    Join our weekly asynchronous learning sessions, available
+                    for intermediates on Saturdays and beginners on Sundays.
+                  </p>
+                </div>
                 <button className="session_link">
                   <a href="#form">Join Session</a>
                 </button>
@@ -98,6 +98,8 @@ function Events() {
               Past Sessions.
             </h1>
           </div>
+
+          
           <div className="play_sessions">
             <div className="playback_session">
               <div className="playback">

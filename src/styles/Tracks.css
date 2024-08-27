@@ -6,7 +6,7 @@
 }
 
 .trackmain_container {
-  height: 90vh;
+  /* height: 90vh; */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -28,7 +28,7 @@
   margin-top: 28px;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .track-content {
@@ -48,8 +48,11 @@
 .track .notes p {
   background: #15141d;
 }
+
 .track-content h1 {
-  margin-top: 10rem;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3rem;
   font-family: Eczar;
   font-size: 56px;
   font-weight: 600;
@@ -69,6 +72,8 @@
   line-height: 32px;
   text-align: center;
   color: #b3b3b3;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 24px;
 }
 
@@ -244,13 +249,12 @@
   .trackmain_container {
     height: 100%;
     width: 100%;
-    background-color: purple;
+    /* background-color: purple; */
   }
 
   .track-container {
     margin-top: 0;
     width: 100%;
-    background-color: red;
     height: 100%;
   }
 
@@ -258,6 +262,7 @@
     margin-top: 0.5rem;
     width: 100%;
   }
+
   .scrolllink {
     margin-top: 0;
     margin-right: 65%;
@@ -283,7 +288,7 @@
     font-size: 28px;
     margin: 0 auto 40px;
     line-height: 40px;
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
 
@@ -311,22 +316,30 @@
   .trackmain_container .datamastery-container {
     height: 100%;
     width: 96%;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
   .trackmain_container .datamastery-wrapper {
     /* margin: 0 auto; */
-    height: 1350px;
+    height: 1400px;
+    width: 100%;
   }
 
+  
   .datamastery-container {
-    background-color: yelllow;
-    /* width: 90vw; */
+    width: 100%;
   }
+
+ .trackmain_container .datamastery-infos{
+width: 100%;
+ }
+
+
   .trackmain_container .datamastery-infos h2 {
     margin: 24px auto 24px;
     line-height: 40px;
-    font-size: 24px;
+    font-size: 22px;
+    align-items: center;
     width: 280px;
   }
 
@@ -352,7 +365,53 @@
   .trackmain_container .mentors_text .oranges {
     font-size: 24px;
   }
+
+  .datamastery-wrapper .track-types {
+    width: 100%;
+  }
+
+  .track-types .wrapper{
+    height: auto;
+  }
+
+  .track-types .track {
+    width: 96%;
+    height: 100%;
+    padding: auto;
+  }
+
+  .beginner-type,
+  .intermediate-type {
+    width: 100%;
+    height: auto;
+  }
+
+  .mentors .mentors_text h1 {
+    /* margin: 2rem auto; */
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    width: 96%;
+    font-size: 26px;
+  }
+
+  .mentors .mentors_text p {
+    width: 96%;
+    text-align: justify;
+  }
+
+  .mentors_container .mentor_para {
+    background: rgba(21, 20, 29, 1);
+  }
+    .mentors_container .mentor_para h3{
+    margin: 0 auto;
+    }
+
+  .mentor_para p {
+    background: rgba(21, 20, 29, 1);
+  }
 }
+
+
 
 /* @media screen and (max-width: 1200px) {
 .trackmain_container{

@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .beginner-content {
   background-image: url(../images/Vector\ Lines.png);
   background-position: center;
@@ -32,6 +33,15 @@
   /* background-color: aqua; */
 }
 
+.back_home {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
 .beginner-content h1 {
   margin-top: 12rem;
   font-family: Eczar;
@@ -41,6 +51,7 @@
   letter-spacing: 0em;
   text-align: center;
 }
+
 .beginner-content p {
   font-size: 18px;
   width: 60%;
@@ -75,22 +86,18 @@
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px auto;
-  justify-content: center;
+  margin: 40px auto;
+  justify-content: space-around;
   align-items: center;
-  border-radius: 16px;
 }
 
 .beginners_mentor_wraps {
-  border: 3px solid rgba(245, 238, 238, 0.035);
-  margin-top: 0px;
   transition: 0.9s;
-  border-radius: 16px;
   gap: 20px;
-  height: 323px;
-  background-color: rgba(28, 27, 38, 1);
+  background-color: transparent;
   width: 30%;
 }
+
 .beginners_mentor_wraps:hover {
   transform: scale(1.01);
   box-shadow: 0 0 30px -10px rgba(8, 8, 6, 0.25);
@@ -104,11 +111,11 @@
   width: 100%;
 }
 
-.beginners_mentors_text p {
+/* .beginners_mentors_text p {
   height: 20px;
   margin-bottom: 30px;
   margin-top: 0 auto;
-}
+} */
 
 .beginner_wrapper .mentors {
   color: #b3b3b3;
@@ -144,6 +151,10 @@
   margin: 0;
 }
 
+.beginners_mentors_text p {
+  background: rgba(21, 20, 29, 1);
+}
+
 .beginners_mentors_text .oranges {
   font-size: 48px;
   /* height: 85px; */
@@ -151,39 +162,53 @@
   font-family: Eczar;
 }
 
+.beginners_mentor_wraps .mentor_image_wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 .mentor_wrap {
-  height: 241px;
+  /* height: 241px;
   width: 200px;
   transition: 0.9s;
   border-radius: 16px;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
+  width: 24%;
+  transition: 1.5s;
 }
 
 .mentor_wrap:hover {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px rgba(8, 8, 6, 0.25);
 }
+
 .mentor_images {
   text-align: center;
   color: azure;
   background-color: rgba(28, 27, 38, 1);
 }
 
+.beginners_mentor_wraps .mentor_para {
+  background: rgba(21, 20, 29, 1);
+  justify-content: center;
+  text-align: center;
+}
 .mentor_para h3 {
-  height: 36px;
-  width: 190px;
-  justify-content: left;
   align-items: center;
   font-family: Eczar;
   font-size: 16px;
-  /* margin-top: 10px; */
-  background-color: rgba(28, 27, 38, 1);
+  margin: 6px auto;
 }
 
 .mentor_para p {
+  text-align: center;
   font-size: 14px;
-  
+  background: rgba(21, 20, 29, 1);
 }
 
 .mentor_images img {
@@ -192,13 +217,11 @@
   justify-items: center;
   background-color: rgba(28, 27, 38, 1);
 }
-.mentor_para {
-    color: #b3b3b3;
 
-  /* color: #fff; */
+.mentor_para {
+  color: #b3b3b3;
   display: block;
   text-align: center;
-  /* margin-top: 10px; */
   border: none;
   text-align: left;
   margin: 0.4rem;
@@ -229,7 +252,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 48px;
+  margin-top: 6px;
   /* background-color: red; */
 }
 
@@ -331,22 +354,48 @@
   /* margin-top: 2.0rem; */
 }
 
-@media screen and (max-width: 767.98px) {
-  .beginner_wrapper {
-    height: 100%;
-    width: 100%;
-    /* background-color: purple; */
-  }
 
+@media screen and (max-width: 767.98px) {
   .beginner-content,
   .beginners_mentors_text {
     width: 100%;
   }
+
+  .back_home {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    width: auto;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+  }
+
+  .goback {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    background-color: green;
+  }
+
+  .back_home .scrolllink {
+    background-color: yellow;
+    bottom: 10px;
+  }
+
+  .scrolllink {
+    display: inline;
+    color: red;
+    text-decoration: none;
+  }
+
   .beginner-content h1 {
+    background-color: #219ebc;
     font-size: 36px;
     margin: 0 auto;
     width: 90vw;
   }
+
   .beginner-content p {
     font-size: 16px;
     height: auto;
@@ -354,50 +403,75 @@
     margin-top: 32px;
     text-align: justify;
   }
+
   .reserve-btns {
     height: 36px;
     margin: 0;
   }
 
+  .faq_mentors_text {
+    margin-top: 10px;
+  }
   .faq_mentors_text h1 {
     font-size: 30px;
-    margin-top: 24px;
   }
+
   .faq_mentors_text .oranges {
     font-size: 30px;
     margin-bottom: 0;
   }
 
+  .mentors {
+    width: 100%;
+  }
+
   .mentors .beginners_mentors_text h1 {
-    font-size: 30px;
-    width: 90vw;
+    font-size: 24px;
+    width: 100%;
     margin-bottom: 24px;
   }
 
-  .mentors .beginners_mentors_text .oranges {
-    font-size: 30px;
+  .mentors .beginners_mentors_text p {
+    line-height: 26px;
   }
 
-  .mentors .beginners_mentors_container {
+  .mentors .beginners_mentors_text .oranges {
+    font-size: 24px;
+  }
+
+  /* .mentors .beginners_mentors_container {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 800px;
+  } */
 
   .mentors .beginners_mentor_wraps {
-    width: 300px;
-    height: 300px;
-    transition: 0.9s;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto 8px;
+    transition: 0.9s;
+    width: 100%;
+    height: auto;
+  }
+
+  .mentor_image_wrap {
+    width: 100%;
+  }
+
+  .mentor_images img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .beginners_mentor_wraps img {
-    height: 220px;
+    /* height: 220px; */
+    height: 100%;
   }
-  
 }
 
 /* @media screen and (min-width: 800px) {

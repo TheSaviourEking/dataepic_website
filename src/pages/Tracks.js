@@ -21,7 +21,8 @@ const Tracks = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}>
+            transition={{ duration: 1 }}
+          >
             <h1>
               Elevate your data career with our well curated
               <span className="orange"> dual tracks </span>
@@ -29,10 +30,9 @@ const Tracks = () => {
 
             <p>
               Our dual tracks, designed for both beginners and intermediates,
-              are the gateways
-              to a transformative learning experience. Pick a track to
-              join and go through the 
-              curriculum planned out and be part of the cohorts
+              are the gateways to a transformative learning experience. Pick a
+              track to join and go through the curriculum planned out and be
+              part of the cohorts
             </p>
           </motion.div>
           <Link to="/FormInput" className="reserve-btns">
@@ -40,6 +40,7 @@ const Tracks = () => {
           </Link>
         </div>
       </div>
+
 
       <div className="datamastery-container">
         <div className="datamastery-wrapper">
@@ -160,24 +161,28 @@ const Tracks = () => {
             </h1>
             <p>
               At DataEpic, our mentors are seasoned experts at the forefront of
-              their respective <br /> fields, equipped with the knowledge and
-              experience to guide learners through <br /> both the Beginner and
+              their respective fields, equipped with the knowledge and
+              experience to guide learners through both the Beginner and
               Intermediate Tracks.
             </p>
           </div>
 
           <div className="mentors_container">
             <div className="mentor_wraps">
-              <img src={sogo} alt="Sogo" className="mentor_images" />
+              <div className="mentor_image_wrap ">
+                <img src={sogo} alt="Sogo" className="mentor_images" />
+              </div>
 
               <div className="mentor_para">
                 <h3>Sogo Ogundowole</h3>
-                <p>Senior Data Engineer</p>
+                <p id="name">Senior Data Engineer</p>
               </div>
             </div>
 
             <div className="mentor_wraps">
-              <img src={toba} alt="Toba" className="mentor_images" />
+              <div className="mentor_image_wrap ">
+                <img src={toba} alt="Toba" className="mentor_images" />
+              </div>
               <div className="mentor_para">
                 <h3>Oluwatoba Adesugba</h3>
                 <p>ML Engineer and Technical Writer</p>
@@ -185,7 +190,9 @@ const Tracks = () => {
             </div>
 
             <div className="mentor_wraps">
-              <img src={eri} alt="Eri" className="mentor_images" />
+              <div className="mentor_image_wrap ">
+                <img src={eri} alt="Eri" className="mentor_images" />
+              </div>
               <div className="mentor_para">
                 <h3>Erioluwa Asiru</h3>
                 <p>Backend Developer</p>

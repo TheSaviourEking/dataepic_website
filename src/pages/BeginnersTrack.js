@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import sogo from "../images/image1.png";
 import toba from "../images/image2.png";
 import eri from "../images/image3.png";
-import {motion} from "framer-motion"
-
+import { motion } from "framer-motion";
+import back from "../images/goBack.png";
 function BeginnersTrack() {
   const [selected, setSelected] = useState(null);
 
@@ -47,6 +47,13 @@ function BeginnersTrack() {
     <div className="beginner_wrapper">
       <div className="beginner-container">
         <div className="beginner-content">
+          <div className="back_home">
+            <img src={back} alt="goback" className="goback" />
+            <Link className="scrolllink" to="/#sectionToScroll">
+              Back
+            </Link>
+          </div>
+
           <h1>
             Beginners <span className="orange"> tracks</span>
           </h1>
@@ -65,17 +72,13 @@ function BeginnersTrack() {
             <button>Reserve my spot</button>
           </Link>
         </div>
-        {/* </div> */}
 
-        <div className="faq-wrappers">
-          <div className="faq-wrapper">
-            <div className="faq_mentors_text">
-              <h1>
-                Track <span className="oranges"> Modules</span>
-              </h1>
-            </div>
-          </div>
+        <div className="faq_mentors_text">
+          <h1>
+            Track <span className="oranges"> Modules</span>
+          </h1>
         </div>
+
         <div>
           <div className="faq_container">
             <div className="accordion_one">
@@ -115,27 +118,25 @@ function BeginnersTrack() {
             </div>
           </div>
 
+
           <div className="mentors">
             <div className="beginners_mentors_text">
               <h1>
                 Meet your <span className="oranges"> Instructors </span>
               </h1>
-              <motion.p
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1 }}
-              >
-                These are your instructor for the next couple of weeks
-              </motion.p>
+              <p>These are your instructor for the next couple of weeks</p>
             </div>
+
 
             <div className="beginners_mentors_container">
               <div className="beginners_mentor_wraps">
-                <img
-                  src={sogo}
-                  alt="Sogo"
-                  className="beginners_mentor_images"
-                />
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={sogo}
+                    alt="Sogo"
+                    className="beginners_mentor_images"
+                  />
+                </div>
 
                 <div className="mentor_para">
                   <h3>Sogo Ogundowole</h3>
@@ -144,11 +145,14 @@ function BeginnersTrack() {
               </div>
 
               <div className="beginners_mentor_wraps">
-                <img
-                  src={toba}
-                  alt="Toba"
-                  className="beginners_mentor_images"
-                />
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={toba}
+                    alt="Toba"
+                    className="beginners_mentor_images"
+                  />
+                </div>
+
                 <div className="mentor_para">
                   <h3>Oluwatoba Adesugba</h3>
                   <p>ML Engineer and Technical Writer</p>
@@ -156,11 +160,14 @@ function BeginnersTrack() {
               </div>
 
               <div className="beginners_mentor_wraps">
-                <img
-                  src={eri}
-                  alt="Eri"
-                  className="beginners_mentor_images"
-                />
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={eri}
+                    alt="Eri"
+                    className="beginners_mentor_images"
+                  />
+                </div>
+
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>

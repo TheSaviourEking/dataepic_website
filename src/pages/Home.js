@@ -270,6 +270,7 @@ function Home() {
                 </div>
               </div>
 
+
               <div className="mentor_wraps">
                 <div className="mentor_image_wrap ">
                   <img src={eri} alt="Eri" className="mentor_images" />

@@ -23,7 +23,6 @@ html {
   height: 100vh;
   scroll-snap-align: center;
   margin-top: 10%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -134,6 +133,7 @@ html {
   justify-content: center;
   display: flex;
 }
+
 
 /* about section */
 .about_scroll {
@@ -939,9 +939,14 @@ html {
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
 
+
+
+
+
+
+
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
-
   .web_container {
     width: 100%;
     align-items: center;
@@ -1094,6 +1099,7 @@ html {
     bottom: -40%;
   }
 
+
   .deep img {
     position: relative;
     width: 10px;
@@ -1210,6 +1216,7 @@ html {
     width: 100%;
   }
 
+
   /* MENTORS AREA */
 
   .main_wrapper .mentors {
@@ -1272,6 +1279,7 @@ html {
   .mentor_para p {
     font-size: 14px;
   }
+
 
   /* DATAEPIC AREA */
   .main_wrapper .data_new {
@@ -1581,11 +1589,6 @@ html {
     margin: 4% auto;
   }
 
-
-  
-
-
-
   .mentors_container {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -1606,6 +1609,8 @@ html {
   .mentor_image_wrap {
     width: 10%;
   }
+
+
   .mentor_images img {
     /* width: 100%; */
     height: auto;
@@ -1615,14 +1620,13 @@ html {
    .mentor_wraps .mentor_para p{
       justify-content: center;
       align-items: center;
-          color: red;
           font-size: 10px;
 
     }
 
-    .mentor_wraps #name{
-      color: yellow;
-    }
+    
+
+
   .mentors_container .mentor_para h3 {
     font-size: 22px;
     text-align: center;
@@ -1708,6 +1712,9 @@ html {
     font-size: 36px;
   }
 }
+
+
+
 
 @media (min-width: 991.9px) and (max-width: 1400px) {
   .hero-content {
