@@ -7,6 +7,7 @@ import toba from "../images/image2.png";
 import eri from "../images/image3.png";
 // import ag from "../images/image4.png";
 import { motion } from "framer-motion";
+import back from "../images/goBack.png";
 
 function IntermediateTrack() {
   const [selected, setSelected] = useState(null);
@@ -64,11 +65,25 @@ function IntermediateTrack() {
   return (
     <div className="beginner_wrapper">
       <div className="beginner-container">
-        <div className="beginner-content">
+        <div className="beginner-content" id="intermediate-content">
+          <div className="back_home">
+            <Link
+              className="scrolllink"
+              to="/#beginnersPage"
+              id="scroll_display"
+            >
+              <img src={back} alt="goback" className="goback" />
+              <Link className="scrolllink" to="/#sectionToScroll">
+                Back
+              </Link>
+            </Link>
+          </div>
+
           <h1>
             Intermediate <span className="orange"> Modules</span>
           </h1>
           <motion.p
+            id="intermediate_para"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
@@ -78,6 +93,7 @@ function IntermediateTrack() {
             those with some experience in data, this track is designed to refine
             your skills and prepare you for more complex challenges.
           </motion.p>
+
           <Link to="/FormInput" className="reserve-btns">
             <button>Reserve my spot</button>
           </Link>
@@ -143,12 +159,13 @@ function IntermediateTrack() {
 
             <div className="beginners_mentors_container">
               <div className="beginners_mentor_wraps">
-                <img
-                  src={sogo}
-                  alt="Sogo"
-                  className="beginners_mentor_images"
-                />
-
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={sogo}
+                    alt="Sogo"
+                    className="beginners_mentor_images"
+                  />
+                </div>
                 <div className="mentor_para">
                   <h3>Sogo Ogundowole</h3>
                   <p>Senior Data Engineer</p>
@@ -156,11 +173,13 @@ function IntermediateTrack() {
               </div>
 
               <div className="beginners_mentor_wraps">
-                <img
-                  src={toba}
-                  alt="Toba"
-                  className="beginners_mentor_images"
-                />
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={toba}
+                    alt="Toba"
+                    className="beginners_mentor_images"
+                  />
+                </div>
                 <div className="mentor_para">
                   <h3>Oluwatoba Adesugba</h3>
                   <p>ML Engineer and Technical Writer</p>
@@ -168,7 +187,13 @@ function IntermediateTrack() {
               </div>
 
               <div className="beginners_mentor_wraps">
-                <img src={eri} alt="Eri" className="beginners_mentor_images" />
+                <div className="mentor_image_wrap ">
+                  <img
+                    src={eri}
+                    alt="Eri"
+                    className="beginners_mentor_images"
+                  />
+                </div>{" "}
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>

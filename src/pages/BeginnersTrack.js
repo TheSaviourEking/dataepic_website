@@ -44,13 +44,15 @@ function BeginnersTrack() {
   ];
 
   return (
-    <div className="beginner_wrapper">
+    <div className="beginner_wrapper" id="beginnersPage">
       <div className="beginner-container">
         <div className="beginner-content">
           <div className="back_home">
-            <img src={back} alt="goback" className="goback" />
-            <Link className="scrolllink" to="/#sectionToScroll">
-              Back
+            <Link className="scrolllink" to="/#sectionToScroll" id="scroll_display">
+              <img src={back} alt="goback" className="goback" />
+              <Link className="scrolllink" to="/#sectionToScroll">
+                Back
+              </Link>
             </Link>
           </div>
 
@@ -118,7 +120,6 @@ function BeginnersTrack() {
             </div>
           </div>
 
-
           <div className="mentors">
             <div className="beginners_mentors_text">
               <h1>
@@ -126,7 +127,6 @@ function BeginnersTrack() {
               </h1>
               <p>These are your instructor for the next couple of weeks</p>
             </div>
-
 
             <div className="beginners_mentors_container">
               <div className="beginners_mentor_wraps">
