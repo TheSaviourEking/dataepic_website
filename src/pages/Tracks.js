@@ -41,7 +41,6 @@ const Tracks = () => {
         </div>
       </div>
 
-
       <div className="datamastery-container">
         <div className="datamastery-wrapper">
           <div className="datamastery-infos">
@@ -54,7 +53,6 @@ const Tracks = () => {
               Click to view on any you will consider taking this cohort.
             </p>
           </div>
-
 
           <div className="track-types">
             <div className="wrapper">
@@ -81,9 +79,11 @@ const Tracks = () => {
                       <button>3 to 4 weeks</button>
                     </div>
 
-                    <Link to="/BeginnersTrack" className="track_select_btn">
-                      <button>View track modules</button>
-                    </Link>
+                    <div className="click_button">
+                      <Link to="/BeginnersTrack" className="track_select_btn">
+                        <button>View track modules</button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -112,9 +112,14 @@ const Tracks = () => {
                     <div className="week-button">
                       <button>3 to 4 weeks</button>
                     </div>
-                    <Link to="/IntermediateTrack" className="track_select_btn2">
-                      <button>View track modules</button>
-                    </Link>
+                    <div className="click_button">
+                      <Link
+                        to="/IntermediateTrack"
+                        className="track_select_btn2"
+                      >
+                        <button> View track modules </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -142,9 +147,15 @@ const Tracks = () => {
                     <div className="week-button">
                       <button>3 to 4 weeks</button>
                     </div>
-                    <Link to="/IntermediateTrack" className="track_select_btn2">
-                      <button>View track modules</button>
-                    </Link>
+                    
+                    <div className="click_button">
+                      <Link
+                        to="/IntermediateTrack"
+                        className="track_select_btn2"
+                      >
+                        <button> View track modules </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

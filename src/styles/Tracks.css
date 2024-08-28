@@ -83,7 +83,6 @@
   font-family: inter;
   font-weight: 500;
   margin-top: 50px;
-  /* padding: 16px 48px 16px 48px; */
   border-radius: 64px;
   border: solid 1px rgba(255, 223, 188, 1);
   justify-content: center;
@@ -125,8 +124,8 @@
   justify-content: center;
   align-items: center;
   margin: 3rem auto 16px;
-  width: 761px;
-  height: 80px;
+  width: 48rem;
+  height: 5rem;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
       180deg,
@@ -141,19 +140,14 @@
   word-spacing: 1px;
   font-size: 16px;
   font-weight: 400;
-  width: 715px;
-  height: 96px;
+  width: 48rem;
+  height: 6rem;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
-  /* i used 30px as the margin bottom instead of 48px Iyanu used */
-
-  /* height: 100px; */
-  /* margin-top: 10px; */
 }
 
 .wrapper {
@@ -164,7 +158,6 @@
   height: 280px;
   margin: 0 auto;
   gap: 20px;
-  /* padding: 24px; */
   background: #1c1b26;
 }
 .datamastery-track p {
@@ -205,7 +198,6 @@
     );
 }
 
-
 .datamastery-wrapper .track-type {
   border-radius: 16px;
   color: #f4f4f4;
@@ -220,7 +212,6 @@
 }
 
 .track {
-  /* margin-bottom: 14px; */
   justify-content: center;
   align-items: center;
   padding: 2px 12px;
@@ -234,14 +225,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 280px; */
   margin: 0 auto;
   gap: 20px;
 }
 
 .track_info {
   border-radius: 10px;
-  /* height: 36vh; */
 }
 
 .mentors_text p {
@@ -255,10 +244,6 @@
   background: #15141d;
   margin-bottom: 16px;
 }
-
-
-
-
 
 
 @media screen and (max-width: 767.98px) {
@@ -284,21 +269,6 @@
     margin-right: 65%;
     margin-bottom: 80px;
   }
-
-  /* .datamastery-wrapper .datamastery-infos p {
-    font-size: 12px;
-    width: 90%;
-    width: 300px;
-    color: rgb(4, 0, 255);
-    line-height: 20px;
-  }
-   */
-  /* .track {
-    width: 95%;
-    margin: 20px auto 0;
-    height: auto;
-    border: 3px solid rgba(75, 75, 75, 0.25);
-  } */
 
   .track-content h1 {
     font-size: 28px;
@@ -327,6 +297,7 @@
     height: 36px;
     margin-top: 1.5rem;
     font-size: 16px;
+    color: #000000;
   }
 
   .trackmain_container .datamastery-container {
@@ -341,39 +312,40 @@
     width: 100%;
   }
 
-  
   .datamastery-container {
     width: 100%;
   }
+  .datamastery-wrapper {
+    background-color: rgba(28, 27, 38, 1);
+  }
 
- .trackmain_container .datamastery-infos{
-width: 100%;
- }
-
+  .trackmain_container .datamastery-infos {
+    width: 100%;
+    background-color: rgba(28, 27, 38, 1);
+  }
 
   .trackmain_container .datamastery-infos h2 {
     margin: 24px auto 24px;
     line-height: 40px;
-    font-size: 22px;
+    font-size: 1.5rem;
     align-items: center;
     width: 280px;
   }
 
   .trackmain_container .datamastery-infos p {
-    width: 280px;
-    font-size: 16px;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 8% auto;
   }
 
   .trackmain_container .track {
-    /* width: 100%; */
-    /* height: auto; */
-    /* margin: 30px auto 0; */
-    /* background-color: blueviolet; */
     border: 3px solid rgba(75, 75, 75, 0.25);
+    background: rgba(21, 20, 29, 1);
   }
 
   .trackmain_container .mentors_text {
-    /* height: 80vh; */
     margin-top: 0 auto;
     margin-bottom: 40px;
   }
@@ -386,7 +358,7 @@ width: 100%;
     width: 100%;
   }
 
-  .track-types .wrapper{
+  .track-types .wrapper {
     height: auto;
   }
 
@@ -403,9 +375,6 @@ width: 100%;
   }
 
   .mentors .mentors_text h1 {
-    /* margin: 2rem auto; */
-    margin-top: 4rem;
-    margin-bottom: 1rem;
     width: 96%;
     font-size: 26px;
   }
@@ -418,16 +387,18 @@ width: 100%;
   .mentors_container .mentor_para {
     background: rgba(21, 20, 29, 1);
   }
-    .mentors_container .mentor_para h3{
+  .mentors_container .mentor_para h3 {
     margin: 0 auto;
-    }
+  }
 
   .mentor_para p {
     background: rgba(21, 20, 29, 1);
   }
+
+  .trackmain_container .mentors{
+    background-color: red;
+  }
 }
-
-
 
 /* @media screen and (max-width: 1200px) {
 .trackmain_container{
