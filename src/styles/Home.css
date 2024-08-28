@@ -510,8 +510,6 @@ html {
   justify-content: center;
 }
 
-.mentor_image_wrap img {
-}
 .ment .mentor_wraps .mentor_para {
   background: rgba(21, 20, 29, 1);
 }
@@ -534,13 +532,6 @@ html {
   background: rgba(21, 20, 29, 1);
 }
 
-/* .mentor_images {
-  text-align: center;
-  color: azure;
-  background-color: rgba(28, 27, 38, 1);
-  height: 280px;
-  width: 100%;
-} */
 
 .mentors .ment h1 {
   height: auto;
@@ -701,10 +692,8 @@ html {
 }
 
 .dataepic_para {
-  /* padding: 10px 16px 18px 16px; */
   border-radius: 12px;
-  /* color: green; */
-  /* height: 229px; */
+  
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -712,7 +701,6 @@ html {
 }
 
 .dataepic_para h3 {
-  /* margin-top: 10px; */
   justify-content: center;
   text-align: left;
   align-items: center;
