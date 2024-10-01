@@ -49,7 +49,7 @@ const Tracks = () => {
             </h2>
             <p>
               Here is a list of all the tracks you will be exposed to for every
-              cohort <br />
+              cohort
               Click to view on any you will consider taking this cohort.
             </p>
           </div>
@@ -187,7 +187,7 @@ const Tracks = () => {
 
               <div className="mentor_para">
                 <h3>Sogo Ogundowole</h3>
-                <p id="name">Senior Data Engineer</p>
+                <p>Senior Data Engineer</p>
               </div>
             </div>
 
