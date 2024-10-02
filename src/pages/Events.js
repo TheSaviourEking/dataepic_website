@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Events.css";
-import frame7 from "../images/Rectangle 7.png";
+import frame7 from "../images/Rectangle 7.png"
 import entrylevel1 from "../images/entrylevel1.png";
 import entrylevel2 from "../images/entrylevel2.png";
 

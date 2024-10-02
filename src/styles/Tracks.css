@@ -375,20 +375,17 @@
     height: auto;
   }
 
-  .mentors .mentors_text h1 {
+  .mentors .mentors_text h1  .oranges{
     width: 80%;
     font-size: 50px;
   }
 
     .mentors .mentors_text h1  .oranges{
-        font-size: 50px;
-
     }
 
   .mentors .mentors_text p {
     width: 70%;
     text-align: center;
-    font-size: 18px;
   }
 
   .mentors_container .mentor_para {
@@ -398,11 +395,12 @@
     margin: 0 auto;
   }
 
-  /* .mentor_para p {
+  .mentor_para p {
     background: rgba(21, 20, 29, 1);
-  } */
+  }
 
-  
+  .trackmain_container .mentors {
+  }
 }
 
 /* @media screen and (max-width: 1200px) {

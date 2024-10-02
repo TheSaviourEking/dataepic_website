@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/FormInput.css";
 import useForm from "./useForm";
 import "../styles/Form.css";
-import validate from "../pages/validateInfo";
+import validate from "./validateInfo";
 
 function FormInput({ submitForm }) {
   const { handleChange, values, handleSubmit, errors } = useForm(
