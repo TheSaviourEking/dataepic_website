@@ -55,6 +55,7 @@
   line-height: 100px;
   letter-spacing: 0em;
   text-align: center;
+  background: transparent;
 }
 
 .beginner-content p {
@@ -165,6 +166,7 @@
   /* height: 85px; */
   color: rgba(251, 133, 0, 1);
   font-family: Eczar;
+  
 }
 
 .beginners_mentor_wraps .mentor_image_wrap {
@@ -216,11 +218,21 @@
   background: rgba(21, 20, 29, 1);
 }
 
-.mentor_images img {
+/* .mentor_images img {
   width: 100%;
   border-radius: 12px 12px 12px 12px;
   justify-items: center;
   background-color: rgba(28, 27, 38, 1);
+} */
+
+.beginners_mentor_images{
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  overflow: hidden; 
+  display: block;
+  margin: 0 auto; 
 }
 
 .mentor_para {

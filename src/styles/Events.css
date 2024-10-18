@@ -1,5 +1,5 @@
 .event_wrapper {
-  padding-top: 12%;
+  padding-top: 8%;
 }
 
 .event-wrapper {
@@ -9,13 +9,13 @@
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-  height: 100vh;
+  height: auto;
   border-radius: 12px;
 }
 
 
 .event-container {
-  border: 1px solid rgba(212, 215, 218, 0.493);
+  border: 1px solid rgba(226, 40, 7, 0.493);
   color: #fff;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -24,7 +24,7 @@
       rgba(255, 255, 255, 0) 100%
     );
   border-radius: 12px;
-  height: 120vh;
+  height: 130vh;
   width: 80%;
   align-items: center;
   justify-content: center;

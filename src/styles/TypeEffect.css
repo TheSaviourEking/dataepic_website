@@ -5,8 +5,8 @@
   margin: 0 auto;
   position: relative;
   justify-content: center;
-      background-color: transparent;
-
+  background-color: transparent;
+  
 }
 
 .type-wrap {
@@ -17,7 +17,7 @@
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background: transparent;
+  background-color: transparent;
 
   margin: 0 auto;
 }
@@ -54,20 +54,19 @@
   }
 }
 
-@media (min-width: 768px) and (max-width:991.98px){
-.type-wrap{
-  height: auto;
-  margin: 0 auto;
-  background-color: transparent;
-}
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .type-wrap {
+    height: auto;
+    margin: 0 auto;
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 991.9px) and (max-width: 1400px) {
-.type-wrap{
-  height: auto;
-  padding: 0;
-  margin: 0;
-  line-height: 1.2;
-}
+  .type-wrap {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+  }
 }

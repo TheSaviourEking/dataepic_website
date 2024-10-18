@@ -9,11 +9,11 @@
   position: fixed;
   z-index: 5;
   background: rgba(21, 20, 29, 1);
+  padding: 2%;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; 
   align-items: center;
   height: 80px;
   width: 100%;
@@ -68,7 +68,7 @@
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
-  background-color: #d8965f;
+  background-color: #1c1916;
 }
 
 .nav-links.nav-links-last {

@@ -92,6 +92,7 @@ html {
   position: absolute;
   right: 18%;
   top: 16%;
+  background: transparent;
 }
 
 .hero-content img {
@@ -108,31 +109,41 @@ html {
   position: absolute;
   left: 20%;
   bottom: 36%;
+  background: transparent;
 }
 
 .bluestar {
   position: absolute;
   right: 10%;
   bottom: 8%;
+  background: transparent;
 }
 
 .light {
   position: absolute;
   left: 14%;
+  background: transparent;
 }
 
 .deep {
-  /* position: relative; */
+  position: relative;
   position: absolute;
   right: 10%;
   bottom: -37%;
+  background: transparent;
 }
 
+.maintext_para{
+    background: transparent;
+}
 .maintext_para p {
   width: 80%;
   margin: 5% auto;
   justify-content: center;
   display: flex;
+    background: transparent;
+
+
 }
 
 /* about section */
@@ -178,8 +189,7 @@ html {
   font-size: 48px;
   color: #fff;
 
-  /* margin-bottom: 20px; */
-  /* width: 90%; */
+  
 }
 
 .main_wrapper p {
@@ -195,6 +205,7 @@ html {
 
 .orange {
   color: rgba(251, 133, 0, 1);
+  
 }
 .yellow {
   color: rgba(239, 160, 11, 1);
@@ -460,7 +471,6 @@ html {
   font-family: Eczar;
 }
 
-
 /* Mentor's info section */
 
 .main_wrapper .mentors {
@@ -536,7 +546,6 @@ html {
   background: rgba(21, 20, 29, 1);
 }
 
-
 .mentors .ment h1 {
   height: auto;
 }
@@ -568,11 +577,16 @@ html {
   color: #b3b3b3;
 }
 
-.mentor_images {
-  width: 100%;
-  border-radius: 12px 12px 0 0;
-  justify-items: center;
-  background-color: rgba(28, 27, 38, 1);
+
+
+.mentor_image{
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  overflow: hidden; 
+  display: block;
+  margin: 0 auto; 
 }
 
 .ment .mentors_text {
@@ -697,7 +711,7 @@ html {
 
 .dataepic_para {
   border-radius: 12px;
-  
+
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -908,15 +922,6 @@ html {
   padding-right: 12px;
 }
 /* width: 536px; put this back to faq-wrppers incase something goes wrong */
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 767.98px) {
   /* HERO SECTION AREA */
@@ -1431,7 +1436,6 @@ html {
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .web_container {
     width: 100%;
@@ -1561,11 +1565,10 @@ html {
     gap: 10px;
     max-width: 800px;
   } */
-  
+
   .mentors_container .mentor_wraps {
     width: 60%;
     height: auto;
-
   }
 
   /* .mentors_container .mentor_wraps img {
@@ -1677,7 +1680,6 @@ html {
     font-size: 36px;
   }
 }
-
 
 @media (min-width: 991.9px) and (max-width: 1400px) {
   .hero-content {

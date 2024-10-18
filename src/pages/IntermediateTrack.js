@@ -7,7 +7,7 @@ import toba from "../images/image2.png";
 import eri from "../images/image3.png";
 // import ag from "../images/image4.png";
 import { motion } from "framer-motion";
-import back from "../images/goBack.png";
+import back from "../images/back.png";
 
 function IntermediateTrack() {
   const [selected, setSelected] = useState(null);
@@ -24,35 +24,27 @@ function IntermediateTrack() {
     {
       question: "Module 1: Unit Testing",
       answer: "Writing and validating tests for code",
-      // buttons: [{ text: "Button 1", to: "/page1" }],
     },
     {
       question: "Module 2: Data Wrangling",
       answer: "Team tasks (2 students per task)",
-      // buttons: [
-      //   { text: "Button 1", to: "/page2-1" },
-      //   { text: "Button 2", to: "/page2-2" },
-      // ],
+  
     },
     {
       question: "Module 3: Understanding ETL Pipelines",
       answer: "Understanding variations like ELT, LTE, and ETL",
-      // buttons: [{ text: "Button 1", to: "/page3" }],
     },
     {
       question: "Module 4: Tool-specific Training",
       answer: "Python, SQL, Airflow, Docker, Polars, AWS, and more",
-      // buttons: [{ text: "Button 1", to: "/page1" }],
     },
     {
       question: "Module 5: Backend Development",
       answer: "Introduction to Flask for serverless solutions",
-      // buttons: [{ text: "Button 1", to: "/page1" }],
     },
     {
       question: "Module 6: Cloud Technologies",
       answer: "Basics and use-cases",
-      // buttons: [{ text: "Button 1", to: "/page1" }],
     },
     {
       question: "Module 7: Capstone Projects",
@@ -73,9 +65,9 @@ function IntermediateTrack() {
               id="scroll_display"
             >
               <img src={back} alt="goback" className="goback" />
-              <Link className="scrolllink" to="/#sectionToScroll">
+              {/* <Link className="scrolllink" to="/#sectionToScroll">
                 Back
-              </Link>
+              </Link> */}
             </Link>
           </div>
 
@@ -193,7 +185,7 @@ function IntermediateTrack() {
                     alt="Eri"
                     className="beginners_mentor_images"
                   />
-                </div>{" "}
+                </div>
                 <div className="mentor_para">
                   <h3>Erioluwa Asiru</h3>
                   <p>Backend Developer</p>

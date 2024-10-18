@@ -10,29 +10,102 @@ import "../styles/Home.css";
 import "../styles/BeginnersTrack.css";
 
 const Tracks = () => {
+  const trackDetails = [
+    {
+      title: "Beginners Track",
+      description: {
+        heading: "Embark on your data adventure with our Beginner's Track",
+        text: "This track is designed to refine your skills and prepare you for more complex challenges.",
+      },
+      buttonText: "View track modules",
+      link: "/BeginnersTrack",
+      className: "beginner-type",
+    },
+    {
+      title: "Intermediate Track",
+      description: {
+        heading: "Elevate Your Data Mastery to New Heights with our Intermediate Track",
+        text: "This track is designed to refine your skills and prepare you for more complex challenges.",
+      },
+      buttonText: "View track modules",
+      link: "/IntermediateTrack",
+      className: "intermediate-type",
+    },
+    {
+      title: "Intermediate Track",
+      description: {
+        heading: "Elevate Your Data Mastery to New Heights with our Intermediate Track",
+        text: "This track is designed to refine your skills and prepare you for more complex challenges.",
+      },
+      buttonText: "View track modules",
+      link: "/IntermediateTrack",
+      className: "intermediate-type",
+    },
+  ];
+
+  const mentors = [
+    { image: sogo, name: "Sogo Ogundowole", role: "Senior Data Engineer" },
+    { image: toba, name: "Oluwatoba Adesugba", role: "ML Engineer and Technical Writer" },
+    { image: eri, name: "Erioluwa Asiru", role: "Backend Developer" },
+  ];
+
+
+  const TrackCard = ({ title, description, buttonText, link, className }) => (
+    <div className="track">
+      <div className="track_info">
+        <div className={className}>
+          <h2>{title}</h2>
+        </div>
+        <div className="notes">
+          <h4>{description.heading}</h4>
+          <p>{description.text}</p>
+        </div>
+      </div>
+
+      <div className="track_btn">
+        <div className="track_modules">
+          <div className="week-button">
+            <button>3 to 4 weeks</button>
+          </div>
+          <div className="click_button">
+            <Link to={link} className="track_select_btn">
+              <button>{buttonText}</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
+
+  const MentorCard = ({ image, name, role }) => (
+    <div className="mentor_wraps">
+      <div className="mentor_image_wrap">
+        <img src={image} alt={name} className="mentor_images" />
+      </div>
+      <div className="mentor_para">
+        <h3>{name}</h3>
+        <p>{role}</p>
+      </div>
+    </div>
+  );
+
   return (
     <div className="trackmain_container">
       <div className="track-container">
         <div className="track-content">
-          {/* <Link className="scrolllink" to="/#sectionToScroll">
-            Go back
-          </Link> */}
-
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
+            className="track-textarea"
           >
             <h1>
               Elevate your data career with our well curated
               <span className="orange"> dual tracks </span>
             </h1>
-
             <p>
-              Our dual tracks, designed for both beginners and intermediates,
-              are the gateways to a transformative learning experience. Pick a
-              track to join and go through the curriculum planned out and be
-              part of the cohorts
+              Our dual tracks, designed for both beginners and intermediates, are the gateways to a transformative learning experience. Pick a track to join and go through the curriculum planned out and be part of the cohorts.
             </p>
           </motion.div>
           <Link to="/FormInput" className="reserve-btns">
@@ -48,118 +121,14 @@ const Tracks = () => {
               Tracks & Program <span className="orange"> Modules </span>
             </h2>
             <p>
-              Here is a list of all the tracks you will be exposed to for every
-              cohort
-              Click to view on any you will consider taking this cohort.
+              Here is a list of all the tracks you will be exposed to for every cohort. Click to view on any you will consider taking this cohort.
             </p>
           </div>
-
           <div className="track-types">
             <div className="wrapper">
-              <div className="track">
-                <div className="track_info">
-                  <div className="beginner-type">
-                    <h2> Beginners Track</h2>
-                  </div>
-
-                  <div className="notes">
-                    <h4>
-                      Embark on your data adventure with our Beginner's Track
-                    </h4>
-                    <p>
-                      This track is designed to refine your skills and prepare
-                      you for more complex challenges.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="track_btn">
-                  <div className="track_modules">
-                    <div className="week-button">
-                      <button>3 to 4 weeks</button>
-                    </div>
-
-                    <div className="click_button">
-                      <Link to="/BeginnersTrack" className="track_select_btn">
-                        <button>View track modules</button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* intermediate track */}
-
-              <div className="track">
-                <div className="track_info">
-                  <div className="intermediate-type">
-                    <h2> Intermediate Track</h2>
-                  </div>
-                  <div className="notes">
-                    <h4>
-                      Elevate Your Data Mastery to New Heights with our
-                      Intermediate Track
-                    </h4>
-                    <p className="paragraph-skills">
-                      This track is designed to refine your skills and prepare
-                      you for more complex challenges.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="track_btn">
-                  <div className="track_modules">
-                    <div className="week-button">
-                      <button>3 to 4 weeks</button>
-                    </div>
-                    <div className="click_button">
-                      <Link
-                        to="/IntermediateTrack"
-                        className="track_select_btn2"
-                      >
-                        <button> View track modules </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Duplicate intermediate track */}
-              <div className="track">
-                <div className="track_info">
-                  <div className="intermediate-type">
-                    <h2> Intermediate Track</h2>
-                  </div>
-                  <div className="notes">
-                    <h4>
-                      Elevate Your Data Mastery to New Heights with our
-                      Intermediate Track
-                    </h4>
-                    <p className="paragraph-skills">
-                      This track is designed to refine your skills and prepare
-                      you for more complex challenges.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="track_btn">
-                  <div className="track_modules">
-                    <div className="week-button">
-                      <button>3 to 4 weeks</button>
-                    </div>
-                    
-                    <div className="click_button">
-                      <Link
-                        to="/IntermediateTrack"
-                        className="track_select_btn2"
-                      >
-                        <button> View track modules </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* End duplicate intermediate track */}
+              {trackDetails.map((track, index) => (
+                <TrackCard key={index} {...track} />
+              ))}
             </div>
           </div>
         </div>
@@ -172,44 +141,13 @@ const Tracks = () => {
               Learn from <span className="oranges"> The Best </span>
             </h1>
             <p>
-              At DataEpic, our mentors are seasoned experts at the forefront of
-              their respective fields, equipped with the knowledge and
-              experience to guide learners through both the Beginner and
-              Intermediate Tracks.
+              At DataEpic, our mentors are seasoned experts at the forefront of their respective fields, equipped with the knowledge and experience to guide learners through both the Beginner and Intermediate Tracks.
             </p>
           </div>
-
           <div className="mentors_container">
-            <div className="mentor_wraps">
-              <div className="mentor_image_wrap ">
-                <img src={sogo} alt="Sogo" className="mentor_images" />
-              </div>
-
-              <div className="mentor_para">
-                <h3>Sogo Ogundowole</h3>
-                <p>Senior Data Engineer</p>
-              </div>
-            </div>
-
-            <div className="mentor_wraps">
-              <div className="mentor_image_wrap ">
-                <img src={toba} alt="Toba" className="mentor_images" />
-              </div>
-              <div className="mentor_para">
-                <h3>Oluwatoba Adesugba</h3>
-                <p>ML Engineer and Technical Writer</p>
-              </div>
-            </div>
-
-            <div className="mentor_wraps">
-              <div className="mentor_image_wrap ">
-                <img src={eri} alt="Eri" className="mentor_images" />
-              </div>
-              <div className="mentor_para">
-                <h3>Erioluwa Asiru</h3>
-                <p>Backend Developer</p>
-              </div>
-            </div>
+            {mentors.map((mentor, index) => (
+              <MentorCard key={index} {...mentor} />
+            ))}
           </div>
         </div>
       </div>

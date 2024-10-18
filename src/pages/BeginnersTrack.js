@@ -1,23 +1,16 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../styles/BeginnersTrack.css";
-// import '../styles/Home.css'
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import sogo from "../images/image1.png";
 import toba from "../images/image2.png";
 import eri from "../images/image3.png";
-import { motion } from "framer-motion";
-import back from "../images/goBack.png";
-function BeginnersTrack() {
+import back from "../images/back.png"
+
+const BeginnersTrack = () => {
   const [selected, setSelected] = useState(null);
 
-  const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-
-    setSelected(i);
-  };
+  const toggle = (i) => setSelected((prev) => (prev === i ? null : i));
 
   const data = [
     {
@@ -43,21 +36,37 @@ function BeginnersTrack() {
     },
   ];
 
+  const mentors = [
+    {
+      name: "Sogo Ogundowole",
+      role: "Senior Data Engineer",
+      image: sogo,
+    },
+    {
+      name: "Oluwatoba Adesugba",
+      role: "ML Engineer and Technical Writer",
+      image: toba,
+    },
+    {
+      name: "Erioluwa Asiru",
+      role: "Backend Developer",
+      image: eri,
+    },
+  ];
+
   return (
     <div className="beginner_wrapper" id="beginnersPage">
       <div className="beginner-container">
         <div className="beginner-content">
           <div className="back_home">
-            <Link className="scrolllink" to="/#sectionToScroll" id="scroll_display">
+            <Link className="scrolllink" to="/#sectionToScroll">
               <img src={back} alt="goback" className="goback" />
-              <Link className="scrolllink" to="/#sectionToScroll">
-                Back
-              </Link>
+              {/* <span>Back</span> */}
             </Link>
           </div>
 
           <h1>
-            Beginners <span className="orange"> tracks</span>
+            Beginners <span className="orange">tracks</span>
           </h1>
           <motion.p
             initial={{ opacity: 0, scale: 0.5 }}
@@ -77,108 +86,73 @@ function BeginnersTrack() {
 
         <div className="faq_mentors_text">
           <h1>
-            Track <span className="oranges"> Modules</span>
+            Track <span className="oranges">Modules</span>
           </h1>
         </div>
 
-        <div>
-          <div className="faq_container">
-            <div className="accordion_one">
-              <div className="accordion_two">
-                {data.map((item, i) => (
-                  <div className="item" key={i}>
-                    <div className="accordion_three" onClick={() => toggle(i)}>
-                      <h2>{item.question}</h2>
-                      <span className="sign">
-                        {selected === i ? "-" : "+"}{" "}
-                      </span>
-                    </div>
-                    <div
-                      className={
-                        selected === i ? "accordion_four" : "accordion_five"
-                      }
-                    >
-                      {item.answer}
-                      {item.buttons && (
-                        <div className="accordion_buttons">
-                          {item.buttons.map((button, j) => (
-                            <Link key={j} to={button.to}>
-                              <button className={j % 2 === 0 ? "even" : "odd"}>
-                                {button.text}
-                              </button>
-                              {j < item.buttons.length - 1 && (
-                                <span className="button_gap" />
-                              )}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
+        <div className="faq_container">
+          <div className="accordion_one">
+            <div className="accordion_two">
+              {data.map((item, i) => (
+                <div className="item" key={i}>
+                  <div className="accordion_three" onClick={() => toggle(i)}>
+                    <h2>{item.question}</h2>
+                    <span className="sign">{selected === i ? "-" : "+"}</span>
+                  </div>
+                  <div
+                    className={
+                      selected === i ? "accordion_four" : "accordion_five"
+                    }
+                  >
+                    {item.answer}
+                    <div className="accordion_buttons">
+                      {item.buttons.map((button, j) => (
+                        <Link key={j} to={button.to}>
+                          <button className={j % 2 === 0 ? "even" : "odd"}>
+                            {button.text}
+                          </button>
+                          {j < item.buttons.length - 1 && (
+                            <span className="button_gap" />
+                          )}
+                        </Link>
+                      ))}
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
 
-          <div className="mentors">
-            <div className="beginners_mentors_text">
-              <h1>
-                Meet your <span className="oranges"> Instructors </span>
-              </h1>
-              <p>These are your instructor for the next couple of weeks</p>
-            </div>
+        <div className="mentors">
+          <div className="beginners_mentors_text">
+            <h1>
+              Meet your <span className="oranges">Instructors</span>
+            </h1>
+            <p>These are your instructors for the next couple of weeks</p>
+          </div>
 
-            <div className="beginners_mentors_container">
-              <div className="beginners_mentor_wraps">
-                <div className="mentor_image_wrap ">
+          <div className="beginners_mentors_container">
+            {mentors.map((mentor, i) => (
+              <div className="beginners_mentor_wraps" key={i}>
+                <div className="mentor_image_wrap">
                   <img
-                    src={sogo}
-                    alt="Sogo"
+                    src={mentor.image}
+                    alt={mentor.name}
                     className="beginners_mentor_images"
                   />
                 </div>
-
                 <div className="mentor_para">
-                  <h3>Sogo Ogundowole</h3>
-                  <p>Senior Data Engineer</p>
+                  <h3>{mentor.name}</h3>
+                  <p>{mentor.role}</p>
                 </div>
               </div>
-
-              <div className="beginners_mentor_wraps">
-                <div className="mentor_image_wrap ">
-                  <img
-                    src={toba}
-                    alt="Toba"
-                    className="beginners_mentor_images"
-                  />
-                </div>
-
-                <div className="mentor_para">
-                  <h3>Oluwatoba Adesugba</h3>
-                  <p>ML Engineer and Technical Writer</p>
-                </div>
-              </div>
-
-              <div className="beginners_mentor_wraps">
-                <div className="mentor_image_wrap ">
-                  <img
-                    src={eri}
-                    alt="Eri"
-                    className="beginners_mentor_images"
-                  />
-                </div>
-
-                <div className="mentor_para">
-                  <h3>Erioluwa Asiru</h3>
-                  <p>Backend Developer</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default BeginnersTrack;

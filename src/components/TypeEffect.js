@@ -1,3 +1,4 @@
+import { faYenSign } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "../styles/TypeEffect.css";
