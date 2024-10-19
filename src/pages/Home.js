@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.css"; // This file contains the global styles
+import "../styles/Home.css"; 
 import HeroSection from "./HeroSection";
 import MainTrack from "./MainTrack";
 import DataEpic from "./DataEpic";

@@ -1,4 +1,3 @@
-// MainTrack.js
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -14,6 +13,7 @@ const MainTrack = () => {
             Whether you're stepping into the realm of data for the first time or you're an intermediate explorer seeking to refine your skills, our dual tracks cater to your specific needs and ambitions.
           </p>
         </div>
+        
         <div className="track-type">
           <div className="wrapper">
             <div className="track" id="track">

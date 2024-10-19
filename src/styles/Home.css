@@ -45,7 +45,6 @@ html {
   word-break: keep-all;
   display: inline-block;
   width: 60vw;
-  /* margin-top: 4rem; */
   font-family: Eczar;
   font-size: 56px;
   font-weight: 600;
@@ -133,17 +132,15 @@ html {
   background: transparent;
 }
 
-.maintext_para{
-    background: transparent;
+.maintext_para {
+  background: transparent;
 }
 .maintext_para p {
   width: 80%;
   margin: 5% auto;
   justify-content: center;
   display: flex;
-    background: transparent;
-
-
+  background: transparent;
 }
 
 /* about section */
@@ -188,8 +185,6 @@ html {
   /* margin: 8rem auto; */
   font-size: 48px;
   color: #fff;
-
-  
 }
 
 .main_wrapper p {
@@ -205,7 +200,6 @@ html {
 
 .orange {
   color: rgba(251, 133, 0, 1);
-  
 }
 .yellow {
   color: rgba(239, 160, 11, 1);
@@ -577,16 +571,14 @@ html {
   color: #b3b3b3;
 }
 
-
-
-.mentor_image{
-  width: 250px; 
-  height: 250px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  overflow: hidden; 
+.mentor_image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .ment .mentors_text {
@@ -921,19 +913,18 @@ html {
   background-color: rgba(28, 27, 38, 1);
   padding-right: 12px;
 }
-/* width: 536px; put this back to faq-wrppers incase something goes wrong */
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 775.98px) {
   /* HERO SECTION AREA */
   .web_container {
     width: 100%;
+    padding: 10%;
     align-items: center;
     top: 0;
   }
 
   .hero-container {
     width: 100%;
-    /* margin-top: 0; */
     top: 0;
   }
 
@@ -948,9 +939,11 @@ html {
   .hero_font {
     position: sticky;
   }
+
   .maintext_para p {
     width: 100%;
     margin-bottom: 12px;
+
   }
   .whitestar {
     position: relative;
@@ -989,11 +982,10 @@ html {
   }
 
   .hero-content h1 {
-    padding: 0;
-    font-size: 36px;
+    font-size: 30px;
     margin: 0;
     line-height: 50px;
-    width: 90vw;
+    width: 100%;
   }
 
   .custom-heading {
@@ -1008,7 +1000,7 @@ html {
   .hero-content p {
     font-size: 16px;
     height: auto;
-    width: 90vw;
+    width: 100%;
     margin-top: 2px;
     word-break: break-word;
   }
@@ -1016,7 +1008,6 @@ html {
   .hero-content .reserve-btns button {
     width: 160px;
     height: 36px;
-    color: #000000;
     font-size: 16px;
     margin-top: 60px;
   }
@@ -1025,11 +1016,11 @@ html {
   .main_wrapper {
     width: 100%;
     margin: 0 auto;
+    padding: 10%;
   }
 
   #about {
     width: 100%;
-    margin-top: 10px;
   }
 
   .about_scroll {
@@ -1042,9 +1033,9 @@ html {
 
   .about_scroll h1 {
     font-size: 24px;
-    width: 90%;
+    width: 100%;
     text-align: center;
-    margin: 10px auto;
+    margin: auto;
   }
 
   .main_wrapper .about_scroll p {
@@ -1054,8 +1045,11 @@ html {
     padding: 0 20px;
   }
 
+  .main_wrapper .mini-text {
+    margin-top: 10px;
+  }
   .main_wrapper .mini-text p {
-    margin: 40px auto;
+    margin-bottom: 24px;
   }
 
   .light {
@@ -1085,25 +1079,23 @@ html {
 
   /* DATAMASTERY AREA */
   .main_wrapper .datamastery-container {
-    width: 96%;
-    height: 100%;
+    width: 100%;
+    height: 94rem;
     border-radius: 30px;
-    margin: 0 auto;
-    height: 100rem;
   }
 
   .main_wrapper .datamastery-wrapper {
-    margin: 6% auto;
-    /* margin-top: 12%; */
+    margin: 30px auto;
     height: auto;
   }
 
   .datamastery-wrapper .datamastery-info h2 {
-    font-size: 1.5rem;
-    width: 90%;
+    font-size: 1.6rem;
+    width: 100%;
     line-height: 1.8;
     height: 80px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 8px;
   }
 
   .datamastery-wrapper .datamastery-info p {
@@ -1111,11 +1103,12 @@ html {
     width: 90%;
     line-height: 1.5;
     text-align: justify;
-    margin: 10% auto;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   .wrapper {
-    width: 100%;
+    width: 90%;
   }
 
   .main_wrapper .track {
@@ -1138,9 +1131,7 @@ html {
 
   .beginner-type h2,
   .intermediate-type h2 {
-    /* height: auto; */
     font-size: 28px;
-    /* text-align: justify; */
   }
 
   .notes {
@@ -1196,11 +1187,10 @@ html {
   /* MENTORS AREA */
 
   .main_wrapper .mentors {
-    width: 96%;
+    width: 100%;
+    padding: 10%;
   }
-  .mentors_text {
-    width: 90vw;
-  }
+
   .mentors .new_mentor_para {
     width: 100%;
   }
@@ -1211,41 +1201,22 @@ html {
 
   .mentors .new_mentor_para p {
     font-size: 16px;
-    align-items: center;
     text-align: justify;
     padding: 10px;
-    margin: 6% auto;
   }
 
-  .mentors_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+
 
   .mentors_container .mentor_wraps {
     width: 90%;
-    height: 100%;
-    transition: 0.9s;
-    border-radius: 18px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 8px;
+        margin-bottom: 16px;
+    
   }
-
   .mentors_container .mentor_wraps img {
-    width: 100%;
-    height: 100%;
-    /* i just added this */
+   
+        border-radius: 50%;
+        object-fit: cover;
   }
-  .mentor_wrap:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(8, 8, 6, 0.25);
-  }
-
-  /* .mentor_wraps img {
-    height: 220px;
-  } */
 
   .mentors_container .mentor_para h3 {
     font-size: 16px;
@@ -1258,11 +1229,12 @@ html {
 
   /* DATAEPIC AREA */
   .main_wrapper .data_new {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .main_wrapper .data_epic {
-    width: 96%;
+    width: 100%;
     padding: 0;
   }
 
@@ -1341,7 +1313,7 @@ html {
     font-size: 26px;
     height: auto;
     width: 90%;
-    margin: 0;
+    margin: 12px auto 0;
   }
 
   .main_wrapper .oranges {
@@ -1349,15 +1321,19 @@ html {
   }
 
   .main_wrapper .playback {
-    width: 96%;
+    width: 100%;
     height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 16px;
   }
 
   .playback_sessions {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     border: 3px #4b4b4b73 solid;
+    margin: 0 auto;
   }
 
   /* FAQ AREA */
@@ -1437,21 +1413,21 @@ html {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .web_container {
-    width: 100%;
-  }
-
-  .hero-container {
-    width: 100%;
-    justify-content: center;
-  }
-  .hero-content {
-    width: 100%;
-  }
-
   .maintext_para #first_para {
     padding-top: 20%;
     margin-bottom: 20%;
+  }
+  .polygondeep {
+    margin: 40px 10px;
+  }
+
+  .deep {
+    margin: 8px 12px;
+    background: transparent;
+  }
+
+  .light {
+    margin: 70px 0;
   }
 
   #about {
@@ -1460,7 +1436,7 @@ html {
 
   .main_wrapper .datamastery-container {
     width: 80%;
-    height: 1700px;
+    height: 1680px;
   }
 
   .datamastery-wrapper .datamastery-info h2 {
@@ -1475,24 +1451,28 @@ html {
 
   .main_wrapper .track {
     height: auto;
-    width: 70%;
+    width: 80%;
   }
-
-  #track {
-    margin-top: 10%;
+  #track,
+  #track_second,
+  #last_track {
+    margin-top: 3%;
+    width: 60%;
   }
 
   .wrapper #last_track {
-    margin-bottom: 10%;
+    margin-bottom: 6%;
   }
   .track .track_modules {
-    margin-top: 20%;
+    margin-top: 6%;
   }
-
+  .track {
+    height: auto;
+    width: 50%;
+  }
   .beginner-type,
   .intermediate-type {
     width: 96%;
-    /* i changed this from 90 */
   }
 
   .beginner-type h2,
@@ -1541,14 +1521,6 @@ html {
     width: 45%;
   }
 
-  /* .main_wrapper .mentors {
-    width: 100%;
-  } */
-
-  /* .main_wrapper .ment {
-    width: 100%;
-  } */
-
   .mentors .new_mentor_para {
     width: 80%;
   }
@@ -1557,33 +1529,24 @@ html {
     margin: 4% auto;
   }
 
-  /* .mentors_container {
-
-    /* display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 1fr;
-    gap: 10px;
-    max-width: 800px;
-  } */
-
   .mentors_container .mentor_wraps {
-    width: 60%;
+    width: 36%;
     height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  /* .mentors_container .mentor_wraps img {
+  .mentors_container {
     width: 100%;
-    height: 100%;
-  } */
+    display: grid;
+  }
 
   .mentor_image_wrap {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
+    display: grid;
   }
   .mentor_images img {
-    /* width: 100%; */
     height: auto;
-    display: block;
   }
 
   .mentor_wraps .mentor_para p {
@@ -1592,9 +1555,6 @@ html {
     font-size: 10px;
   }
 
-  .mentor_wraps #name {
-    color: yellow;
-  }
   .mentors_container .mentor_para h3 {
     font-size: 22px;
     text-align: center;
@@ -1693,8 +1653,20 @@ html {
 
   .maintext_para p {
     width: 70%;
+    background: transparent;
   }
 
+  .polygondeep {
+    margin: 40px 10px;
+  }
+
+  .deep {
+    background: transparent;
+  }
+
+  .light {
+    margin: 40px 30px;
+  }
   #about {
     width: 90%;
   }
@@ -1704,7 +1676,7 @@ html {
   }
 
   .main_wrapper .datamastery-container {
-    height: 1300px;
+    height: 1200px;
   }
 
   .datamastery-wrapper .datamastery-info h2 {
@@ -1722,12 +1694,10 @@ html {
   .track-type .track {
     height: auto;
   }
-  #track {
-    margin-top: 15%;
-  }
 
+  #track,
   #track_second {
-    margin-top: 15%;
+    margin-top: 4%;
   }
 
   .wrapper #last_track {
@@ -1737,7 +1707,7 @@ html {
   .track .track_modules {
     gap: 10px;
     width: 90%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .track_info {
@@ -1804,7 +1774,7 @@ html {
   }
 }
 
-@media (min-width: 1369.98px) {
+/* @media (min-width: 1369.98px) {
   .web_container {
     width: 100%;
     margin: 0 auto;
@@ -1835,4 +1805,4 @@ html {
   #last_track {
     margin-top: 5%;
   }
-}
+} */

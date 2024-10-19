@@ -33,7 +33,7 @@
   /* background-color: aqua; */
 }
 
-#scroll_display{
+#scroll_display {
   display: flex;
 }
 .back_home {
@@ -44,8 +44,6 @@
   justify-items: center;
   align-items: center;
 }
-
-
 
 .beginner-content h1 {
   margin-top: 12rem;
@@ -166,7 +164,6 @@
   /* height: 85px; */
   color: rgba(251, 133, 0, 1);
   font-family: Eczar;
-  
 }
 
 .beginners_mentor_wraps .mentor_image_wrap {
@@ -225,14 +222,14 @@
   background-color: rgba(28, 27, 38, 1);
 } */
 
-.beginners_mentor_images{
-  width: 250px; 
-  height: 250px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  overflow: hidden; 
+.beginners_mentor_images {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .mentor_para {
@@ -371,7 +368,6 @@
   /* margin-top: 2.0rem; */
 }
 
-
 @media screen and (max-width: 767.98px) {
   .beginner-content,
   .beginners_mentors_text {
@@ -404,7 +400,7 @@
     background-color: transparent;
   }
 
-  #intermediate-content h1{
+  #intermediate-content h1 {
     height: auto;
     line-height: 3rem;
     margin: 2rem auto;
@@ -423,7 +419,7 @@
     text-align: justify;
   }
 
-  #intermediate_para{
+  #intermediate_para {
     margin: 0 auto;
   }
   .reserve-btns {
@@ -472,7 +468,6 @@
     max-width: 800px;
   } */
 
-
   .mentors .beginners_mentor_wraps {
     margin: 0 auto 8px;
     transition: 0.9s;
@@ -493,6 +488,13 @@
   .beginners_mentor_wraps img {
     /* height: 220px; */
     height: 100%;
+  }
+}
+
+@media (min-width: 991.9px) and (max-width: 1400px) {
+  .mentors h1 {
+    color: red;
+    font-size: 40px;
   }
 }
 

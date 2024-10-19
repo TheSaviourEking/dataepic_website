@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: column;
   /* height: 90vh; */
-  
 }
 
 .track-content {
@@ -43,21 +42,19 @@
   color: #f4f4f4;
   height: 100vh;
   width: 80%;
-  
+
   margin: auto;
 }
 
-.track-textarea{
-    background: transparent;
-
+.track-textarea {
+  background: transparent;
 }
 .track .notes p {
   background: #15141d;
-  
 }
 
 .track-content h1 {
-    background: transparent;
+  background: transparent;
   width: 60%;
   margin: 0 auto;
   margin-top: 3rem;
@@ -86,8 +83,7 @@
   width: 80%;
   margin: 0 auto;
   margin-bottom: 24px;
-    background: transparent;
-
+  background: transparent;
 }
 
 .reserve-btns button {
@@ -258,14 +254,14 @@
   margin-bottom: 16px;
 }
 
-.mentor_images{
-  width: 250px; 
-  height: 250px; 
-  border-radius: 50%; 
-  object-fit: cover; 
-  overflow: hidden; 
+.mentor_images {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -283,24 +279,26 @@
     height: auto;
     width: 90%;
   }
-  
-    .trackmain_container .datamastery-container {
+
+  .trackmain_container .datamastery-container {
     background-color: teal;
-    }
+  }
 
-      .trackmain_container .datamastery-wrapper {
-background-color: red;
-width: 100%;
-      }
+  .trackmain_container .datamastery-wrapper {
+    background-color: red;
+    width: 100%;
+  }
 
-      .trackmain_container .datamastery-infos {
-color: yellow;
-      }
+  .trackmain_container .datamastery-infos {
+    color: yellow;
+  }
 }
+
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .trackmain_container {
     width: 100%;
+
   }
 
   .track-container {
@@ -325,6 +323,7 @@ color: yellow;
     line-height: 60px;
     width: 90%;
     justify-content: center;
+    
   }
 
   .track-content p {
@@ -430,8 +429,6 @@ color: yellow;
     font-size: 50px;
   }
 
-  
-
   .mentors .mentors_text p {
     width: 70%;
     text-align: center;
@@ -447,8 +444,6 @@ color: yellow;
   .mentor_para p {
     background: rgba(21, 20, 29, 1);
   }
-
-  
 }
 
 /* @media screen and (max-width: 1200px) {
