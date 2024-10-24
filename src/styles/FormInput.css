@@ -3,23 +3,19 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
-
-
 }
 
 .form-container {
-
   width: 100%;
   /* height: 100vh; */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   margin: 0 auto;
-background:  #15141D;
- animation-name: dissolve;
+  background: #15141d;
+  animation-name: dissolve;
   animation-timing-function: ease-out;
   animation-duration: 300ms;
 
-;
   /* animation-name: dissolve;
   animation-timing-function: ease-out;
   animation-duration: 300ms;
@@ -37,25 +33,20 @@ background:  #15141D;
   height: 100%; */
 }
 
-.forms-container{
+.forms-container {
 }
-.form{
-background:  #15141D; 
-
+.form {
+  background: #15141d;
 }
 .main-container {
   width: 935px;
   /* width: 50%; */
-    border: 3px solid rgba(245, 238, 238, 0.035);
-margin: 100px auto 0;
-padding: 40px;
+  border: 3px solid rgba(245, 238, 238, 0.035);
+  margin: 100px auto 0;
+  padding: 40px;
   border-radius: 16px;
-    height: 100%; 
-    background-color: rgba(28, 27, 38, 1);
-
-
-
-
+  height: 100%;
+  background-color: rgba(28, 27, 38, 1);
 }
 
 .form-info h3 {
@@ -65,21 +56,18 @@ padding: 40px;
   line-height: 40px;
   letter-spacing: 0em;
   justify-content: flex-start;
-  
 }
 
-.forminput-container{
+.forminput-container {
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-    /*  */
+  /*  */
   /* background-color: purple; */
 }
-
-
 
 .formInput,
 .form-info h3,
@@ -94,11 +82,10 @@ padding: 40px;
 }
 .form-inputs {
   font-size: 14px;
-      font-family: 'Inter';
-  
+  font-family: "Inter";
 }
 .form-inputs input {
-      font-family: Inter;
+  font-family: Inter;
   padding: 1rem;
   background-color: white;
   color: #cacaca;
@@ -107,15 +94,13 @@ padding: 40px;
   line-height: 32px;
   align-items: center;
   justify-content: center;
-  
 }
-
 
 .form-inputs label {
   display: inline-block;
   /* font-size: 1rem; */
-    margin-top: 28px;
-    margin-bottom: 10px;
+  margin-top: 28px;
+  margin-bottom: 10px;
   color: #fff;
   font-weight: 400;
   font-family: "Inter";
@@ -125,33 +110,32 @@ padding: 40px;
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     );
-
 }
 
-.form-text h3{
-  color: #FFFBF7;
-margin-top: 24px;
-font-family: Eczar;
+.form-text h3 {
+  color: #fffbf7;
+  margin-top: 24px;
+  font-family: Eczar;
   font-size: 24px;
   font-weight: 500;
   line-height: 40px;
 }
 
-.form-text p{
+.form-text p {
   font-family: "Inter";
-  color:  #B3B3B3;
+  color: #b3b3b3;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 12px;
   line-height: 28px;
 }
 
-.btn-container button{
-color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 32px;
+.btn-container button {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
 }

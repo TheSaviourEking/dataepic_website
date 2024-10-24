@@ -13,9 +13,8 @@
   border-radius: 12px;
 }
 
-
 .event-container {
-  border: 1px solid rgba(226, 40, 7, 0.493);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -30,7 +29,6 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  /* margin: 4rem auto; */
 }
 
 .event-frame {
@@ -72,7 +70,6 @@ p {
 }
 
 .event_text {
-  /* confirm thia margin and that the image */
   margin: auto 3.5rem;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -107,7 +104,7 @@ p {
   top: 412px;
   margin: auto 3.5rem;
 }
-.reserve-btn{
+.reserve-btn {
   background-color: rgba(28, 27, 38, 1);
 }
 .reserve-btn button {
@@ -121,17 +118,11 @@ p {
   /* margin-top: 20px; */
   gap: 10px;
   padding: 0;
-    margin: auto 3.5rem;
+  margin: auto 3.5rem;
 
   width: 192px;
   background-color: rgba(251, 133, 0, 1);
 }
-
-
-
-
-
-
 
 /* session area */
 
@@ -217,12 +208,10 @@ p {
     linear-gradient(0deg, rgba(75, 75, 75, 0.25), rgba(75, 75, 75, 0.25));
 }
 
-
-.ses_paragraph{
+.ses_paragraph {
   height: 100px;
   margin: 10px 0;
-    background-color: rgba(28, 27, 38, 1);
-
+  background-color: rgba(28, 27, 38, 1);
 }
 .ses-content button {
   background-color: rgba(251, 133, 0, 1);
@@ -231,7 +220,6 @@ p {
   border-radius: 4px;
   border: 1px solid #ffccbc51;
   margin: 0 auto;
-
 }
 
 .session_link {
@@ -241,9 +229,8 @@ p {
   /* width: 300px; */
 }
 
-.session_link button{
-  border: 3px solid red;
-
+.session_link button {
+  border: 3px solid ;
 }
 .session_link a {
   font-family: Eczar;
@@ -296,7 +283,6 @@ p {
   height: 100%;
 }
 
-
 .playback .entry_level {
   flex-wrap: wrap;
   margin-top: 16px;
@@ -315,11 +301,7 @@ p {
   height: 180px;
 }
 
-
-
-
-
-
+/* 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .reroute_link {
     font-size: 12px;
@@ -354,12 +336,10 @@ p {
   }
   .event-content {
     width: 100%;
-    /* line-height: 20px; */
   }
 
   .event-content h4 {
     font-size: 20px;
-    /* line-height: 20px; */
   }
 
   .event-content p {
@@ -370,13 +350,14 @@ p {
   .event-btn {
     margin: auto 1rem;
     width: 60%;
-    /* height: 40px; */
   }
   .event-btn a {
     padding: auto 0;
     font-size: 1rem;
   }
-  /* SESSION AREA */
+
+
+
   .replay_session_container {
     width: 90vw;
     height: auto;
@@ -388,11 +369,11 @@ p {
     font-size: 22px;
     height: 0;
   }
-.replay_session_container .text {
-  width: 90vw;
-  height: auto;
-  margin-bottom: 24px;
-}
+  .replay_session_container .text {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 24px;
+  }
   .replay_session_container h3 {
     font-size: 22px;
   }
@@ -437,16 +418,13 @@ p {
   }
   .ses-content button {
     height: 30px;
-    width: 30vw ;
+    width: 30vw;
   }
-      
 
-  /* PLAYBACK AREA */
 
   .replay {
     height: 100%;
     margin-top: 24px;
-    /* background-color: green; */
   }
   .replay_playback_container {
     width: 90vw;
@@ -472,7 +450,6 @@ p {
     width: 90vw;
   }
   .playback_session {
-    /* padding: 10px; */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -481,20 +458,18 @@ p {
   }
   .play_sessions .playback {
     width: 80vw;
-        margin: 0 auto;
+    margin: 0 auto;
   }
   .playback img {
-        margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
-            height: 120px;
-
+    height: 120px;
   }
-  .playback .entry img{
-            height: 20vh;
-background-color: aqua;
+  .playback .entry img {
+    height: 20vh;
+    background-color: aqua;
   }
-  .entry_level img{
-        height: 30vh;
-
+  .entry_level img {
+    height: 30vh;
   }
-}
+} */

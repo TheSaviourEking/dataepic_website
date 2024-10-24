@@ -12,15 +12,17 @@ html {
 
 .container {
   height: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 .web_container {
   scroll-behavior: smooth;
   overflow-y: scroll;
-  /* height: 100vh; */
 }
 
 .hero-container {
-  height: 100vh;
+  height: 90vh;
   scroll-snap-align: center;
   margin-top: 10%;
   display: flex;
@@ -37,7 +39,7 @@ html {
   flex-direction: column;
   color: #f4f4f4;
   height: 100%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -145,15 +147,14 @@ html {
 
 /* about section */
 .about_scroll {
-  width: 80%;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
 }
 .about_scroll h1 {
-  width: 90%;
-  margin: 12px auto;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 /* .main_wrapper {
@@ -219,13 +220,13 @@ html {
     );
   border-radius: 16px;
   height: 100vh;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-top: 2%;
   padding-bottom: 3%;
-  margin: 1rem auto;
+  margin: auto;
   border: 3px solid rgba(75, 75, 75, 0.25);
 }
 
@@ -280,7 +281,7 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 3%;
   margin: auto;
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -314,14 +315,16 @@ html {
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0) 100%
     );
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .track {
-  /* margin-bottom: 14px; */
   justify-content: center;
   align-items: center;
   padding: 2px 12px;
-  height: 50vh;
+  /* height: 50vh; */
+  /* i just commented this out */
   width: 350px;
   border: 12px solid rgba(75, 75, 75, 0.25);
   border-radius: 16px;
@@ -339,6 +342,14 @@ html {
 
 .track_info {
   border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .beginner-type,
@@ -387,7 +398,18 @@ html {
   line-height: 2.4rem;
   text-align: center;
 }
-
+.notes {
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 250px;
+  max-width: 400px;
+  text-align: center;
+}
 .notes h4 {
   width: 300px;
   font-size: 17px;
@@ -471,11 +493,12 @@ html {
   color: #fff;
   border-radius: 16px;
   height: 70%;
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 3rem auto;
+  /* background-color: green; */
 }
 
 .mentors_images_container {
@@ -493,20 +516,22 @@ html {
 
 .mentors_container {
   gap: 40px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 40px auto;
   justify-content: space-around;
   /* justify-content: center; */
   align-items: center;
+  /* background-color: red; */
 }
 
 .mentor_wraps {
   gap: 20px;
   background-color: transparent;
-  width: 24%;
   transition: 1.5s;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .mentor_image_wrap {
@@ -635,11 +660,12 @@ html {
 .main_wrapper .data_epic {
   border-radius: 16px;
   height: 70%;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0 auto 0;
+  /* background-color: yellow; */
 }
 
 .dataepic_container {
@@ -687,7 +713,6 @@ html {
 }
 .data_epic .dataepic_para {
   background-color: rgba(28, 27, 38, 1);
-  /* width: 386px; */
 }
 .dataepic_wrap:hover {
   transform: scale(1.03);
@@ -703,7 +728,6 @@ html {
 
 .dataepic_para {
   border-radius: 12px;
-
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -746,7 +770,7 @@ html {
 /* play session */
 
 .main_wrapper .session_container {
-  width: 80%;
+  width: 100%;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -761,9 +785,10 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 778px;
+  width: 100%;
   margin: 0 auto;
   height: 170px;
+  /* background-color: red; */
 }
 
 .session_container .oranges {
@@ -781,33 +806,31 @@ html {
 }
 
 .playback_sessions {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 14px;
   border-radius: 15px;
   border: 3px solid rgba(245, 238, 238, 0.159);
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 .playback {
-  width: 1488px;
-  width: 373px;
   height: 370px;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
+  margin: 2% auto;
 }
 
 .playback .entry {
   height: 20px;
   width: 33%;
+  margin: 0 auto;
 }
 
 .entry_level {
-  /* background-color: red; */
-  margin: 10px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .main_faqwrapper .mentors_textt {
@@ -824,8 +847,9 @@ html {
   font-family: Eczar;
   color: #f4f4f4;
   font-size: 48px;
-  width: 536px;
+  width: 100%;
   height: auto;
+  /* background-color: purple; */
 }
 
 .mentors_textt .oranges {
@@ -838,7 +862,7 @@ html {
 .accordion_one {
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: 50px auto 0;
@@ -847,7 +871,6 @@ html {
 .accordion_two {
   width: 100%;
   color: #b3b3b3;
-  /* background-color: #fff; */
 }
 
 .accordion_three {
@@ -914,14 +937,121 @@ html {
   padding-right: 12px;
 }
 
+@media (min-width: 1200px) {
+  .about_scroll,
+  .datamastery-container {
+    padding: 0;
+  }
 
+  .about_scroll h1 {
+    width: 100%;
+  }
+  .main_wrapper .datamastery-container {
+    height: 120vh;
+    padding: 10px;
+    width: 96%;
+  }
+  .datamastery-info p {
+    padding: 1%;
+  }
 
-@media screen and (max-width: 775.98px) {
+  #track,
+  #track_second,
+  #last_track {
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-content p {
+    margin-top: 12%;
+  }
+
+  .main_wrapper .datamastery-container {
+    width: 90%;
+    height: 130vh;
+  }
+
+  .track-type .track {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  #track,
+  #track_second,
+  #last_track {
+    height: auto;
+  }
+  .notes {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  .notes h4 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .notes p {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+  }
+
+  .track_modules{
+    background-color: red;
+    margin: 0;
+    width: 100%;
+  }
+  .datamastery-info,
+  .hero-content p {
+    background: transparent;
+  }
+
+  .new_mentor_para p {
+    padding: 20px;
+  }
+  .mentors_container {
+    width: 90%;
+  }
+  .mentor_wraps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .dataepic_mentors_text,
+  .main_faqwrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hero-content,
+  .about_scroll,
+  .about_scroll,
+  .dataepic_mentors_text p,
+  .session_container h1,
+  .play_session,
+  .playback,
+  .entry_level,
+  .new_mentor_para {
+    width: 90%;
+  }
+
+  .dataepic_container {
+    width: 90%;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   /* HERO SECTION AREA */
-  
+  /*   
   .web_container {
     width: 100%;
-    /* padding: 10%; */
     align-items: center;
     top: 0;
   }
@@ -948,8 +1078,6 @@ html {
     background: transparent;
     text-align: justify;
     margin-top: 0 ;
-    /* margin-bottom: 12px; */
-
   }
 
   .whitestar {
@@ -1012,13 +1140,13 @@ html {
     word-break: break-word;
   }
 
-  .reserve-btns{
+  .reserve-btns button{
     color: #15141d;
   }
-  
+   */
 
   /* about section */
-  .main_wrapper {
+  /* .main_wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 10%;
@@ -1080,10 +1208,10 @@ html {
     position: relative;
     width: 10px;
     height: 10px;
-  }
+  } */
 
   /* DATAMASTERY AREA */
-  .main_wrapper .datamastery-container {
+  /* .main_wrapper .datamastery-container {
     width: 100%;
     height: 100rem;
     border-radius: 30px;
@@ -1186,11 +1314,11 @@ html {
 
   .track_select_btn2 button {
     width: 100%;
-  }
+  } */
 
   /* MENTORS AREA */
 
-  .main_wrapper .mentors {
+  /* .main_wrapper .mentors {
     width: 100%;
     padding: 10%;
   }
@@ -1229,10 +1357,10 @@ html {
   }
   .mentor_para p {
     font-size: 14px;
-  }
+  } */
 
   /* DATAEPIC AREA */
-  .main_wrapper .data_new {
+  /* .main_wrapper .data_new {
     width: 90%;
     margin: 0 auto;
   }
@@ -1302,7 +1430,7 @@ html {
   .dataepic_images img {
     margin: 10px 0;
     padding: 0;
-  }
+  } */
 
   /* PLAYBACK SESSION */
 
@@ -1350,7 +1478,7 @@ html {
     flex-direction: column;
   } */
 
-  .main_faqwrapper .mentors_textt {
+  /* .main_faqwrapper .mentors_textt {
     margin: 0 auto 4px;
   }
 
@@ -1413,10 +1541,10 @@ html {
   }
   .footer {
     height: 100%;
-  }
+  } */
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
   .maintext_para #first_para {
     padding-top: 20%;
     margin-bottom: 20%;
@@ -1643,8 +1771,8 @@ html {
   .main_faqwrapper .mentors_textt .oranges {
     font-size: 36px;
   }
-}
-
+} */
+/* 
 @media (min-width: 991.9px) and (max-width: 1400px) {
   .hero-content {
     width: 100%;
@@ -1776,7 +1904,7 @@ html {
   .main_faqwrapper .mentors_textt h1 {
     line-height: 1.2;
   }
-}
+} */
 
 /* @media (min-width: 1369.98px) {
   .web_container {

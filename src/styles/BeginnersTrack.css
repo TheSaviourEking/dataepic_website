@@ -10,12 +10,16 @@
   overflow-y: scroll;
   /* padding-bottom: 50px; */
   height: 100%;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .beginner-container {
   height: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 
 .beginner-content {
@@ -28,9 +32,9 @@
   flex-direction: column;
   color: #f4f4f4;
   height: 100vh;
-  width: 80%;
+  /* ask Iyanu if to adjust this to 90vh */
+  width: 100%;
   margin: 0 auto 0;
-  /* background-color: aqua; */
 }
 
 #scroll_display {
@@ -54,11 +58,12 @@
   letter-spacing: 0em;
   text-align: center;
   background: transparent;
+  width: 70%;
 }
 
 .beginner-content p {
   font-size: 18px;
-  width: 60%;
+  width: 70%;
   background: #15141d;
   font-family: inter;
   word-spacing: 1px;
@@ -87,7 +92,7 @@
 
 .beginners_mentors_container {
   gap: 40px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 40px auto;
@@ -247,7 +252,7 @@
   font-family: Eczar;
   color: #fff;
   margin: 0 auto 0;
-  width: 80%;
+  width: 100%;
   margin: 0 auto 0;
   justify-content: center;
   align-items: center;
@@ -262,7 +267,7 @@
 }
 .faq_container {
   /* height: 100vh; */
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -286,7 +291,6 @@
   color: #b3b3b3;
 }
 .accordion_three {
-  /* background-color: red; */
   font-size: 24px;
   padding-left: 16px;
   padding-top: 12px;
@@ -367,6 +371,7 @@
   padding: 10px 40px 10px 52px;
   /* margin-top: 2.0rem; */
 }
+
 
 @media screen and (max-width: 767.98px) {
   .beginner-content,
@@ -491,12 +496,24 @@
   }
 }
 
-@media (min-width: 991.9px) and (max-width: 1400px) {
+
+
+
+/* @media (min-width: 991.9px) and (max-width: 1400px) {
   .mentors h1 {
     color: red;
     font-size: 40px;
   }
-}
+} */
+
+
+
+
+
+
+
+
+
 
 /* @media screen and (min-width: 800px) {
   .home-content .reserve-btn {

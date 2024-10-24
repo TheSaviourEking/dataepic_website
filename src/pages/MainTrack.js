@@ -39,6 +39,7 @@ const MainTrack = () => {
                 </div>
               </div>
             </div>
+            
             {/* Intermediate Track */}
             <div className="track" id="track_second">
               <div className="track_info">

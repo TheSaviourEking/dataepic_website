@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import MainTrack from "./MainTrack";
 import DataEpic from "./DataEpic";
 import MentorSection from "./MentorSection";
+// import TypeEffect from "../components/TypeEffect";
 import FAQ from "./FAQ";
 import polygondeep from "../images/Polygon_deep.png";
 import polygonlight from "../images/Polygon_light.png";
@@ -40,6 +41,8 @@ function Home() {
     </div>
   );
 }
+
+
 
 function AboutSection() {
   return (

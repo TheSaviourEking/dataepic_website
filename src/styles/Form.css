@@ -5,7 +5,6 @@
 input {
   width: 100%;
   height: 50px;
-  /* margin-top: 10px; */
   border-radius: 8px;
   outline: none;
   border: none;
@@ -131,7 +130,7 @@ input {
   font-family: Ezcar;
 }
 
-
+/* 
 @media screen and (max-width: 767.98px) {
   .forminput-container {
     margin-bottom: 22px;
@@ -152,7 +151,6 @@ input {
     line-height: 28px;
   }
   .form-inputs label {
-    /* margin-top: 22px; */
     font-size: 16px;
   }
 
@@ -170,4 +168,4 @@ input {
     width: 50%;
     height: 40px;
   }
-}
+} */
