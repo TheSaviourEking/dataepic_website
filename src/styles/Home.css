@@ -291,10 +291,6 @@ html {
     );
 }
 
-/* .datamastery-container .wrapper {
-  margin-top: 20px;
-} */
-
 .datamastery-info .orange {
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
@@ -398,6 +394,7 @@ html {
   line-height: 2.4rem;
   text-align: center;
 }
+
 .notes {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -474,7 +471,6 @@ html {
 }
 .track_select_btn2 button {
   background: rgba(33, 158, 188, 1);
-  /* width: 170px; */
   width: 100%;
   font-size: 14px;
   font-weight: 500;
@@ -708,9 +704,6 @@ html {
   background-color: rgba(28, 27, 38, 1);
 }
 
-.data_epic .dataepic_images {
-  background-color: rgba(28, 27, 38, 1);
-}
 .data_epic .dataepic_para {
   background-color: rgba(28, 27, 38, 1);
 }
@@ -947,7 +940,7 @@ html {
     width: 100%;
   }
   .main_wrapper .datamastery-container {
-    height: 120vh;
+    height: 110vh;
     padding: 10px;
     width: 96%;
   }
@@ -959,6 +952,19 @@ html {
   #track_second,
   #last_track {
     height: auto;
+  }
+  .dataepic_container,
+  .play_session {
+    width: 90%;
+  }
+  .main_faqwrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .notes,
+  .notes p {
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -972,9 +978,20 @@ html {
     height: 130vh;
   }
 
+  .main_wrapper .datamastery-wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .datamastery-info,
+  .hero-content p {
+    background: transparent;
+  }
+
   .track-type .track {
-    width: 30%;
-    display: grid;
+    width: 31%;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
@@ -999,22 +1016,35 @@ html {
   .notes p {
     max-width: 100%;
     width: 100%;
-    height: fit-content;
     padding: 0;
   }
 
-  .track_modules{
-    background-color: red;
-    margin: 0;
+  .track_btn {
     width: 100%;
   }
-  .datamastery-info,
-  .hero-content p {
-    background: transparent;
+  .track_btn .track_modules {
+    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 
+  .track_modules .week-button {
+    width: 80%;
+  }
+  .track_select_btn button,
+  .track_select_btn2 button {
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .beginner-type h2,
+  .intermediate-type h2 {
+    font-size: 1.6rem;
+  }
   .new_mentor_para p {
     padding: 20px;
+    width: 80%;
+    margin: 0 auto;
   }
   .mentors_container {
     width: 90%;
@@ -1032,7 +1062,6 @@ html {
   .hero-content,
   .about_scroll,
   .about_scroll,
-  .dataepic_mentors_text p,
   .session_container h1,
   .play_session,
   .playback,
@@ -1041,14 +1070,243 @@ html {
     width: 90%;
   }
 
+  .dataepic_mentors_text p {
+    width: 80%;
+  }
   .dataepic_container {
     width: 90%;
     gap: 20px;
   }
+
+  .dataepic_images {
+    padding: 0.5rem;
+  }
+
+  .dataepic_para h3,
+  .dataepic_para p {
+    padding: 0;
+  }
+  .dataepic_para {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    /* padding: 0;
+  background-color: red;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 90%;
+  }
+  .about_scroll {
+    width: 80%;
+  }
+
+  .main_wrapper .datamastery-container {
+    height: 190vh;
+  }
+  .datamastery-info h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .datamastery-info p {
+    background-color: yellow;
+    padding: 0;
+    padding-bottom: 2%;
+  }
+  #track,
+  #track_second,
+  #last_track {
+    height: auto;
+  }
+
+  .track_btn .track_modules {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .new_mentor_para {
+    width: 80%;
+  }
+
+  .mentors_container {
+    display: grid;
+  }
+  .mentor_wraps {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .dataepic_para {
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dataepic_mentors_text p {
+    width: 80%;
+  }
+  .dataepic_images {
+    padding: 0.5rem;
+  }
+  .dataepic_para h3 {
+    height: 80px;
+    margin: 0;
+    padding: 8px 10px 0 10px;
+  }
+
+  .dataepic_para p {
+    padding: 0 10px 0 10px;
+  }
+
+  .playback .entry_level {
+    background-color: green;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 830px) {
+  /* .container{
+  width: 100%;
+} */
+  .main_wrapper .datamastery-container {
+    height: 220vh;
+  }
+  .about_scroll,
+  .track-type {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+  .beginner-type,
+  .intermediate-type {
+    width: 90%;
+  }
+
+  .beginner-type h2,
+  .intermediate-type h2 {
+    height: 6rem;
+    font-size: 2rem;
+  }
+
+  .track-type,
+  .wrapper,
+  #track,
+  #track_second,
+  #last_track {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .notes {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .notes h4,
+  .notes p {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    justify-content: left;
+  }
+  .track_btn {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .track_btn .track_modules {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .track_btn button {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .track_select_btn button,
+  .track_select_btn2 button {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dataepic_container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  }
+  .dataepic_wrap {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .dataepic_para h3 {
+    margin: 0;
+    height: 10%;
+  }
+  
+  .playback .entry_level {
+    width: 80%;
+  }
+  /* 
+.track_info{
+  width: 100%;
+  margin: 0 auto;
+}
+.beginner-type,
+.intermediate-type {
+color: red;
+} */
 }
 
 @media screen and (max-width: 768px) {
   /* HERO SECTION AREA */
+  
+/* PLAYBACK SESSION */
+
+  /* .main_wrapper .session_container {
+    margin: 24px auto;
+    height: auto;
+    width: 100%;
+  } */
+
+  /* .session_container h1 {
+    line-height: 20px;
+    font-size: 26px;
+    height: auto;
+    width: 90%;
+    margin: 12px auto 0;
+  } */
+
+  /* .main_wrapper .oranges {
+    font-size: 26px;
+  }
+
+  .main_wrapper .playback {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 16px;
+  }
+
+  .playback_sessions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 3px #4b4b4b73 solid;
+    margin: 0 auto;
+  } */
+
+
+
+
   /*   
   .web_container {
     width: 100%;
@@ -1432,42 +1690,7 @@ html {
     padding: 0;
   } */
 
-  /* PLAYBACK SESSION */
-
-  .main_wrapper .session_container {
-    margin: 24px auto;
-    height: auto;
-    width: 100%;
-  }
-
-  .session_container h1 {
-    line-height: 20px;
-    font-size: 26px;
-    height: auto;
-    width: 90%;
-    margin: 12px auto 0;
-  }
-
-  .main_wrapper .oranges {
-    font-size: 26px;
-  }
-
-  .main_wrapper .playback {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    border-radius: 16px;
-  }
-
-  .playback_sessions {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 3px #4b4b4b73 solid;
-    margin: 0 auto;
-  }
-
+  
   /* FAQ AREA */
   /* .main_faqwrapper {
     height: 0%;
