@@ -162,40 +162,30 @@ html {
 } */
 
 .main_wrapper .about_scroll p {
-  background: #15141d;
-  color: #b3b3b3;
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
   width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin: 0 auto 100px;
-  line-height: 30px;
-  text-align: center;
 }
 
 .main_wrapper h1 {
   font-family: Eczar;
   text-align: center;
-  /* width: 1153px; */
-  /* height: 340px; */
   justify-content: center;
   align-items: center;
-  /* margin: 8rem auto; */
   font-size: 48px;
   color: #fff;
 }
 
-.main_wrapper p {
+.main_wrapper p,
+.main_wrapper .about_scroll p {
   background: #15141d;
   color: #b3b3b3;
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
@@ -231,17 +221,15 @@ html {
 }
 
 .main_wrapper .datamastery-wrapper {
-  background: linear-gradient(0deg, #1c1b26, #1c1b26),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
   border-radius: 16px;
 }
 
 .datamastery-info,
-.data-firsttext {
+.data-firsttext,
+.datamastery-info h2,
+.datamastery-info p,
+.datamastery-info .orange,
+.main_wrapper .datamastery-wrapper {
   background: linear-gradient(0deg, #1c1b26, #1c1b26),
     linear-gradient(
       180deg,
@@ -251,23 +239,20 @@ html {
 }
 
 .datamastery-info h2 {
-  background: linear-gradient(0deg, #1c1b26, #1c1b26),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
   color: #f4f4f4;
   font-family: Eczar;
   font-size: 3rem;
   font-weight: 700;
   line-height: 5rem;
+  height: 170px;
+}
+.datamastery-info h2,
+.datamastery-info p {
   text-align: center;
   justify-content: center;
-  align-items: center;
-  margin: auto;
   width: 80%;
-  height: 170px;
+  margin: auto;
+  align-items: center;
 }
 
 .datamastery-info p {
@@ -276,28 +261,8 @@ html {
   word-spacing: 1px;
   font-size: 1.1rem;
   font-weight: 500;
-  width: 80%;
   letter-spacing: 0em;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 3%;
-  margin: auto;
-  background: linear-gradient(0deg, #1c1b26, #1c1b26),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-}
-
-.datamastery-info .orange {
-  background: linear-gradient(0deg, #1c1b26, #1c1b26),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
 }
 
 .track-type {
@@ -362,12 +327,12 @@ html {
   background-size: contain;
 }
 
-.beginner-type h2 {
+.beginner-type h2,
+.intermediate-type h2 {
   font-family: Eczar;
   margin: auto;
   justify-content: center;
   align-items: center;
-  background-color: rgba(207, 112, 3, 0.904);
   height: 7rem;
   width: 33rem;
   border-radius: 1rem;
@@ -377,22 +342,12 @@ html {
   line-height: 2.4rem;
   text-align: center;
 }
+.beginner-type h2 {
+  background-color: rgba(207, 112, 3, 0.904);
+}
 
 .intermediate-type h2 {
-  font-family: Eczar;
   background-color: rgba(9, 202, 250, 0.911);
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  height: 7rem;
-  width: 33rem;
-  border-radius: 1rem;
-  display: flex;
-  font-size: 1.8rem;
-  font-weight: 800;
-  line-height: 2.4rem;
-  text-align: center;
 }
 
 .notes {
@@ -464,6 +419,9 @@ html {
 
 .track_select_btn button {
   background-color: rgba(251, 133, 0, 1);
+}
+.track_select_btn button,
+.track_select_btn2 button {
   width: 100%;
   font-size: 14px;
   font-weight: 500;
@@ -471,10 +429,6 @@ html {
 }
 .track_select_btn2 button {
   background: rgba(33, 158, 188, 1);
-  width: 100%;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 32px;
 }
 
 .orange,
@@ -547,17 +501,13 @@ html {
   box-shadow: 0 0 30px -10px rgba(8, 8, 6, 0.25);
 }
 
-.ment .mentor_wraps p {
+.ment .mentor_wraps p,
+.ment .mentor_wraps h3 {
   background: rgba(21, 20, 29, 1);
   text-align: center;
 }
 
 .ment .mentor_wraps {
-  background: rgba(21, 20, 29, 1);
-}
-
-.ment .mentor_wraps h3 {
-  text-align: center;
   background: rgba(21, 20, 29, 1);
 }
 
@@ -580,7 +530,6 @@ html {
   color: #fff;
   display: block;
   text-align: center;
-  /* margin-top: 10px; */
   border: none;
   text-align: left;
   margin: 0.4rem;
@@ -1115,7 +1064,6 @@ html {
     line-height: 4rem;
   }
   .datamastery-info p {
-    background-color: yellow;
     padding: 0;
     padding-bottom: 2%;
   }
@@ -1163,7 +1111,6 @@ html {
   }
 
   .playback .entry_level {
-    background-color: green;
     width: 100%;
   }
 }
@@ -1240,7 +1187,6 @@ html {
 
   .dataepic_container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
   }
   .dataepic_wrap {
     margin: 0 auto;
@@ -1250,914 +1196,197 @@ html {
     margin: 0;
     height: 10%;
   }
-  
+
   .playback .entry_level {
     width: 80%;
   }
-  /* 
-.track_info{
-  width: 100%;
-  margin: 0 auto;
-}
-.beginner-type,
-.intermediate-type {
-color: red;
-} */
 }
 
 @media screen and (max-width: 768px) {
-  /* HERO SECTION AREA */
-  
-/* PLAYBACK SESSION */
-
-  /* .main_wrapper .session_container {
-    margin: 24px auto;
-    height: auto;
-    width: 100%;
-  } */
-
-  /* .session_container h1 {
-    line-height: 20px;
-    font-size: 26px;
-    height: auto;
+  .container {
     width: 90%;
-    margin: 12px auto 0;
-  } */
-
-  /* .main_wrapper .oranges {
-    font-size: 26px;
-  }
-
-  .main_wrapper .playback {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    border-radius: 16px;
-  }
-
-  .playback_sessions {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 3px #4b4b4b73 solid;
-    margin: 0 auto;
-  } */
-
-
-
-
-  /*   
-  .web_container {
-    width: 100%;
-    align-items: center;
-    top: 0;
-  }
-
-  .hero-container {
-    width: 100%;
-    top: 0;
-  }
-
-  .hero-content img {
-    width: 22px;
-    height: 22px;
-    left: 60%;
-    top: 0%;
-    position: relative;
-  }
-
-  .hero_font {
-    position: sticky;
-  }
-
-  .maintext_para p {
-    width: 100%;
-    background: transparent;
-    text-align: justify;
-    margin-top: 0 ;
-  }
-
-  .whitestar {
-    position: relative;
-    top: 5px;
-    left: 124px;
-  }
-
-  .whitestar img {
-    width: 18px;
-    height: 18px;
-  }
-  .bluestar {
-    position: relative;
-    width: 8px;
-    height: 6px;
-    top: 60px;
-    left: 130px;
-  }
-
-  .bluestar img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .polygondeep {
-    position: relative;
-    width: 8px;
-    height: 6px;
-    left: -4%;
-    top: 45%;
-  }
-
-  .polygondeep img {
-    width: 14px;
-    height: 14px;
-  }
-
-  .hero-content h1 {
-    font-size: 30px;
-    margin: 0;
-    line-height: 50px;
-    width: 100%;
-  }
-
-  .custom-heading {
-    padding: 0;
-  }
-
-  .custom-heading .break-point {
-    width: 0;
-    word-break: break-word;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-    height: auto;
-    width: 100%;
-    margin-top: 2px;
-    word-break: break-word;
-  }
-
-  .reserve-btns button{
-    color: #15141d;
-  }
-   */
-
-  /* about section */
-  /* .main_wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 10%;
-  }
-
-  #about {
-    width: 100%;
   }
 
   .about_scroll {
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     width: 100%;
-    height: 100%;
+  }
+  .mentors_textt h1,
+  .session_container h1,
+  .dataepic_mentors_text h1,
+  .datamastery-info h2 {
+    font-size: 2rem;
+    line-height: 60px;
   }
 
-  .about_scroll h1 {
-    font-size: 24px;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-  }
-
-  .main_wrapper .about_scroll p {
-    font-size: 16px;
-    width: 100%;
-    text-align: justify;
-    padding: 0 20px;
-  }
-
-  .main_wrapper .mini-text {
-    margin-top: 10px;
-  }
-  .main_wrapper .mini-text p {
-    margin-bottom: 24px;
-  }
-
-  .light {
-    position: relative;
-    width: 8px;
-    height: 6px;
-    left: 1%;
-    top: 25%;
-  }
-
-  .light img {
-    width: 14px;
-    height: 14px;
-  }
-
-  .deep {
-    width: 8px;
-    height: 8px;
-    bottom: -40%;
-  }
-
-  .deep img {
-    position: relative;
-    width: 10px;
-    height: 10px;
-  } */
-
-  /* DATAMASTERY AREA */
-  /* .main_wrapper .datamastery-container {
-    width: 100%;
-    height: 100rem;
-    border-radius: 30px;
-  }
-
-  .main_wrapper .datamastery-wrapper {
-    margin: 30px auto;
-    height: auto;
-  }
-
-  .datamastery-wrapper .datamastery-info h2 {
-    font-size: 1.6rem;
-    width: 100%;
-    line-height: 1.8;
-    height: 80px;
-    margin: 18px auto;
-  }
-
-  .datamastery-wrapper .datamastery-info p {
+  .maintext_para p {
     font-size: 1rem;
-    width: 90%;
-    line-height: 1.5;
-    text-align: justify;
-    margin: 0 auto;
-    margin-bottom: 24px;
-  }
-
-  .wrapper {
-    width: 90%;
-  }
-
-  .main_wrapper .track {
-    width: 90%;
+    width: 96%;
     height: auto;
-    border: 3px solid #4b4b4b73;
   }
-
-  .main_wrapper .track_info {
-    height: auto;
-    margin: auto;
-    text-align: justify;
-  }
-
-  .beginner-type,
-  .intermediate-type {
+  .about_scroll,
+  .track-type {
     width: 100%;
-    height: auto;
   }
-
-  .beginner-type h2,
-  .intermediate-type h2 {
-    font-size: 28px;
-  }
-
-  .notes {
-    justify-content: center;
-    text-align: justify;
-  }
-
-  .notes h4 {
-    width: 100%;
-    margin: 0 auto 12px;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    text-align: justify;
+  .about_scroll h1 {
+    font-size: 1.6rem;
     line-height: 1.7;
   }
 
-  .notes p {
-    width: 100%;
-    text-align: justify;
-    background: #1c1b26;
-    margin: 0 auto;
-  }
-
-  .track_btn {
-    width: 100%;
-  }
-  .track_btn .track_modules {
-    width: 100%;
-  }
-
-  .track_modules .week-button {
-    margin-right: 8px;
-    width: 45%;
-  }
-
-  .track_modules .week-button button {
-    width: 100%;
-  }
-
-  .track_modules .click_button {
-    width: 55%;
-  }
-
-  .track_select_btn button {
-    width: 100%;
-  }
-
-  .track_select_btn2 button {
-    width: 100%;
-  } */
-
-  /* MENTORS AREA */
-
-  /* .main_wrapper .mentors {
-    width: 100%;
-    padding: 10%;
-  }
-
-  .mentors .new_mentor_para {
-    width: 100%;
-  }
-
-  .mentors .new_mentor_para h1 {
-    font-size: 26px;
-  }
-
-  .mentors .new_mentor_para p {
-    font-size: 16px;
-    text-align: justify;
-    padding: 10px;
-  }
-
-
-
-  .mentors_container .mentor_wraps {
-    width: 90%;
-        margin-bottom: 16px;
-    
-  }
-  .mentors_container .mentor_wraps img {
-   
-        border-radius: 50%;
-        object-fit: cover;
-  }
-
-  .mentors_container .mentor_para h3 {
-    font-size: 16px;
-    width: 240px;
-    height: 30px;
-  }
-  .mentor_para p {
-    font-size: 14px;
-  } */
-
-  /* DATAEPIC AREA */
-  /* .main_wrapper .data_new {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .main_wrapper .data_epic {
-    width: 100%;
-    padding: 0;
-  }
-
-  .dataepic_container {
-    flex-direction: column;
+  .about_scroll .mini-text p {
+    font-size: 1rem;
     width: 96%;
-    gap: 20px;
-  }
-
-  .dataepic_wrap {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .dataepic_mentors_text p {
-    width: 100%;
-    text-align: justify;
-    padding: 10px;
-  }
-
-  .dataepic_wrap p {
-    font-size: 16px;
-    justify-content: center;
-  }
-
-  .data_epic .dataepic_mentors_text h1 {
-    margin-top: 0;
-    font-size: 26px;
-  }
-
-  .dataepic_mentors_text {
-    margin-bottom: 48px;
-  }
-
-  .dataepic_wrap:last-child {
-    margin-bottom: 30px;
-  }
-
-  .dataepic_para {
-    padding: 0px 10px;
-    margin: 0 auto;
-  }
-
-  .dataepic_para h3 {
-    padding: 0;
-    margin-top: 0;
-  }
-
-  .dataepic_para p {
-    text-align: justify;
-    width: 100%;
-    font-size: 14px;
-    line-height: 28px;
-    padding: 0;
-  }
-
-  .dataepic_images {
-    padding: 0px 0px 0px 4px;
-  }
-
-  .dataepic_images img {
-    margin: 10px 0;
-    padding: 0;
-  } */
-
-  
-  /* FAQ AREA */
-  /* .main_faqwrapper {
-    height: 0%;
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
-  } */
-
-  /* .main_faqwrapper .mentors_textt {
-    margin: 0 auto 4px;
-  }
-
-  .main_faqwrapper .mentors_textt h1 {
-    font-size: 26px;
-    width: 100%;
-    line-height: 1.2;
-    padding: 0;
-  }
-
-  .main_faqwrapper .mentors_textt .oranges {
-    font-size: 26px;
-  }
-
-  .item {
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .item p {
-    font-size: 16px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-  }
-  #faq_ans {
-    margin-top: 20px;
-  }
-  .accordion_one {
-    width: 96%;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .accordion_three {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease;
-  }
-
-  .accordion_three h2 {
-    font-size: 14px;
-  }
-
-  .accordion_three p {
-    font-size: 8px;
-  }
-
-  .accordion_four {
-    margin: 0 auto;
-  }
-  .accordion_five {
-    font-size: 8px;
-  }
-  .footer {
-    height: 100%;
-  } */
-}
-
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-  .maintext_para #first_para {
-    padding-top: 20%;
-    margin-bottom: 20%;
-  }
-  .polygondeep {
-    margin: 40px 10px;
-  }
-
-  .deep {
-    margin: 8px 12px;
-    background: transparent;
-  }
-
-  .light {
-    margin: 70px 0;
-  }
-
-  #about {
-    width: 90%;
+    margin: 2rem auto;
   }
 
   .main_wrapper .datamastery-container {
-    width: 80%;
-    height: 1680px;
+    height: 360vh;
   }
-
-  .datamastery-wrapper .datamastery-info h2 {
+  .datamastery-info h2 {
+    line-height: 1.5;
+    font-size: 1.6rem;
     width: 90%;
-    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 0.6rem;
   }
 
-  .datamastery-wrapper .datamastery-info p {
-    position: relative;
-    width: 80%;
+  .datamastery-info p {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    font-size: 1rem;
   }
-
-  .main_wrapper .track {
-    height: auto;
-    width: 80%;
+  .wrapper {
+    width: 100%;
   }
   #track,
   #track_second,
   #last_track {
-    margin-top: 3%;
-    width: 60%;
-  }
-
-  .wrapper #last_track {
-    margin-bottom: 6%;
-  }
-  .track .track_modules {
-    margin-top: 6%;
-  }
-  .track {
+    width: 100%;
     height: auto;
-    width: 50%;
   }
   .beginner-type,
   .intermediate-type {
-    width: 96%;
+    width: 98%;
   }
 
   .beginner-type h2,
-  .intermediate-type h2 {
-    font-size: 36px;
+  .intermediate-type h2,
+  .new_mentor_para h1 {
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    line-height: 1.1;
   }
 
-  .notes h4 {
-    width: 90%;
-    display: flex;
-    margin: 4% auto;
-    padding: 0;
-    font-size: 20px;
-  }
-
-  .notes p {
-    font-size: 14px;
-    width: 90%;
-    margin-top: 4%;
-  }
-
-  .track_btn .track_modules {
-    width: 90%;
-    margin-top: 12%;
-    gap: 12px;
-  }
-  .track_modules .week-button {
-    width: 45%;
-  }
-
-  .track_modules .week-button button {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .track_modules .click_button {
-    width: 55%;
-  }
-  .track_modules .click_button button {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .track_modules .week-button {
-    margin-right: 8px;
-    width: 45%;
-  }
-
-  .mentors .new_mentor_para {
-    width: 80%;
-  }
-  .mentors .new_mentor_para h1 {
-    font-size: 36px;
-    margin: 4% auto;
-  }
-
-  .mentors_container .mentor_wraps {
-    width: 36%;
+  .track-type,
+  .wrapper {
+    width: 98%;
+    margin: 1rem auto;
     height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .notes {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .notes h4,
+  .notes p {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    justify-content: left;
+  }
+  .track_btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .track_btn button {
+    width: 96%;
+    line-height: 1.2;
+    height: 45px;
+  }
+
+  .click_button {
+    width: 100%;
+  }
+
+  .new_mentor_para h1 {
+    margin: 1rem auto;
+  }
+  .new_mentor_para p {
+    font-size: 1rem;
+  }
+
+  .new_mentor_para,
+  .new_mentor_para p {
+    width: 100%;
   }
 
   .mentors_container {
     width: 100%;
     display: grid;
+    padding: 0;
   }
-
-  .mentor_image_wrap {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
+  .mentor_wraps {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  .mentor_images img {
-    height: auto;
-  }
-
-  .mentor_wraps .mentor_para p {
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-  }
-
-  .mentors_container .mentor_para h3 {
-    font-size: 22px;
-    text-align: center;
-  }
-  .mentors_container .mentor_para p {
-    font-size: 16px;
-  }
-
-  .dataepic_mentors_text h1 {
-    width: 100%;
-    font-size: 36px;
-    margin: 4%;
-  }
-  .dataepic_mentors_text .oranges {
-    font-size: 36px;
-  }
-  .dataepic_mentors_text p {
-    width: 80%;
-  }
-
-  .main_wrapper .data_new {
-    width: 100%;
-  }
-
-  .main_wrapper .data_epic {
-    width: 90%;
-  }
-
-  .dataepic_container {
-    flex-direction: column;
-    width: 80%;
-    height: 100%;
-    max-height: 100%;
-  }
-
-  .dataepic_wrap {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .main_wrapper .session_container {
-    width: 100%;
+  .mentor_para {
     margin: 0;
   }
-  .session_container h1 {
-    font-size: 36px;
-  }
-  .main_wrapper .oranges {
-    font-size: 36px;
-  }
-
-  .playback_session {
-    width: 100%;
-  }
-
-  .playback_sessions {
-    flex-direction: column;
-    margin: 0 auto;
-    display: flex;
-    width: 80%;
-  }
-  .play_session .playback {
-    width: 70%;
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-  }
-  .playback .entry_level {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .main_faqwrapper .mentors_textt {
-    width: 90%;
-    padding: 0;
-  }
-  .main_faqwrapper .mentors_textt h1 {
-    font-size: 36px;
-  }
-  .main_faqwrapper .mentors_textt .oranges {
-    font-size: 36px;
-  }
-} */
-/* 
-@media (min-width: 991.9px) and (max-width: 1400px) {
-  .hero-content {
-    width: 100%;
-  }
-
-  .maintext_para #first_para {
-    margin-top: 8%;
-    margin-bottom: 0;
-  }
-
-  .maintext_para p {
-    width: 70%;
-    background: transparent;
-  }
-
-  .polygondeep {
-    margin: 40px 10px;
-  }
-
-  .deep {
-    background: transparent;
-  }
-
-  .light {
-    margin: 40px 30px;
-  }
-  #about {
-    width: 90%;
-  }
-
-  .main_wrapper .mini-text p {
-    margin: 6% auto;
-  }
-
-  .main_wrapper .datamastery-container {
-    height: 1200px;
-  }
-
-  .datamastery-wrapper .datamastery-info h2 {
-    width: 90%;
-  }
-  .datamastery-wrapper .datamastery-info p {
-    margin: auto;
-    position: relative;
-  }
-  .beginner-type,
-  .intermediate-type {
-    width: 96%;
-  }
-
-  .track-type .track {
-    height: auto;
-  }
-
-  #track,
-  #track_second {
-    margin-top: 4%;
-  }
-
-  .wrapper #last_track {
-    margin-bottom: 10%;
-  }
-
-  .track .track_modules {
-    gap: 10px;
-    width: 90%;
-    margin-top: 10%;
-  }
-
-  .track_info {
-    margin: 10% auto;
-  }
-  .notes h4 {
-    width: 96%;
-  }
-  .notes p {
-    width: 96%;
-  }
-
-  .main_wrapper .mentors {
-    width: 100%;
-  }
-
-  .mentors .new_mentor_para h1 {
-    width: 100%;
-  }
-
-  .mentors .new_mentor_para p {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .mentors_container {
-    display: grid;
-    gap: 20px;
-  }
-  .mentors_container .mentor_wraps {
-    width: 40%;
-    height: auto;
-  }
-
-  .main_wrapper .data_epic {
-    width: 90%;
-  }
-  .dataepic_container .dataepic_para h3 {
-    font-size: 22px;
-    padding: 2%;
-  }
-
-  .dataepic_container .dataepic_para p {
-    padding: 2%;
-    font-size: 14px;
-  }
-
-  .main_wrapper .session_container {
-    margin: 2% auto;
-    padding: 0;
-    width: 90%;
-  }
-  .playback_sessions {
-    width: 90%;
-  }
-
-  .playback .entry_level {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .main_faqwrapper .mentors_textt h1 {
+  .mentor_para p,
+  .mentor_para h3 {
     line-height: 1.2;
   }
-} */
 
-/* @media (min-width: 1369.98px) {
-  .web_container {
+  .dataepic_mentors_text {
+    margin: 4rem auto;
     width: 100%;
-    margin: 0 auto;
+    padding: 0;
   }
-
-  .hero-container {
+  .dataepic_mentors_text p {
     width: 100%;
+  }
+  .dataepic_mentors_text .oranges {
+    font-size: 2rem;
+  }
+  .dataepic_container {
+    display: grid;
+    width: 100%;
+  }
+  .dataepic_wrap {
     margin: 0 auto;
+    width: 100%;
+  }
+  .dataepic_para h3 {
+    margin: 0;
   }
 
-  .maintext_para #first_para {
-    margin-top: 26%;
-    margin-bottom: 0;
+  .session_container {
+    margin: 0;
+    padding: 0;
+  }
+  .session_container h1,
+  .session_container .oranges {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    height: auto;
+  }
+  .playback_sessions {
+    display: grid;
+    width: 100%;
+  }
+  .playback {
+    display: flex;
+  }
+  .playback img {
+    width: 280px;
   }
 
-  .maintext_para p {
-    width: 80%;
+  .mentors_textt .oranges,
+  .mentors_textt h1 {
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
-
-  #track {
-    margin-top: 5%;
-  }
-
-  #track_second {
-    margin-top: 5%;
-  }
-
-  #last_track {
-    margin-top: 5%;
-  }
-} */
+}

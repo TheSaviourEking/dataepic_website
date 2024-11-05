@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.css"; 
+import "../styles/Home.css";
 import HeroSection from "./HeroSection";
 import MainTrack from "./MainTrack";
 import DataEpic from "./DataEpic";
@@ -18,7 +18,7 @@ import entrylevel2 from "../images/entrylevel2.png";
 
 const mentors = [
   { name: "Sogo Ogundowole", role: "Senior Data Engineer", image: sogo },
-  { name: "Oluwatoba Adesugba", role: "ML Engineer and Technical Writer", image: toba},
+  { name: "Oluwatoba Adesugba", role: "ML Engineer and Technical Writer", image: toba },
   { name: "Erioluwa Asiru", role: "Backend Developer", image: eri },
   { name: "Hammed Bushira", role: "DataOps Engineer", image: bushro },
   { name: "Gbotemi Bolarinwa", role: "Data Engineer", image: gbotemi },
@@ -87,9 +87,11 @@ function PastSessions() {
           </div>
           <div className="playback">
             <img src={entrylevel2} alt="Entry Level 2" className="entry_level" />
-          </div>          <div className="playback">
+          </div>          
+          <div className="playback">
             <img src={entrylevel1} alt="Entry Level 1" className="entry_level" />
-          </div>        </div>
+          </div>      
+            </div>
       </div>
     </div>
   );

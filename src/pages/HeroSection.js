@@ -5,7 +5,7 @@ import white_star from "../images/white_star.png";
 import polygon_deep from "../images/Polygon_deep.png";
 import "../styles/Home.css";
 import { motion } from "framer-motion";
-import TypeEffect from "../components/TypeEffect";
+// import TypeEffect from "../components/TypeEffect";
 
 function HeroSection() {
   return (
@@ -14,7 +14,7 @@ function HeroSection() {
         <div className="hero-content">
           <div className="typewriter-container">
 
-            <TypeEffect />
+            {/* <TypeEffect /> */}
 
             <div className="whitestar">
               <img src={white_star} alt="white star" />

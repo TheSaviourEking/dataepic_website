@@ -6,7 +6,7 @@ const MainTrack = () => {
     <div className="datamastery-container">
       <div className="datamastery-wrapper">
         <div className="datamastery-info">
-          <h2>
+          <h2> 
             <span className="orange">Beginner and Intermediate</span> Paths to Data Mastery
           </h2>
           <p>
