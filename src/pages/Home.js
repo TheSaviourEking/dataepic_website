@@ -30,11 +30,22 @@ function Home() {
     <div className="container">
       <HeroSection />
 
-      <div className="main_wrapper">
-        <AboutSection />
-        <MainTrack />
-        <MentorSection mentors={mentors} />
-        <DataEpic />
+      <div >
+        <div className="main_wrapper" >
+          <AboutSection />
+        </div>
+
+        <div className="red"> 
+          <MainTrack />
+        </div>
+        <div className="main_wrapper" >
+          <MentorSection mentors={mentors} />
+
+        </div>
+        <div className="main_wrapper">
+          <DataEpic />
+
+        </div>
         <PastSessions />
         <FAQ />
       </div>
@@ -87,11 +98,11 @@ function PastSessions() {
           </div>
           <div className="playback">
             <img src={entrylevel2} alt="Entry Level 2" className="entry_level" />
-          </div>          
+          </div>
           <div className="playback">
             <img src={entrylevel1} alt="Entry Level 1" className="entry_level" />
-          </div>      
-            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

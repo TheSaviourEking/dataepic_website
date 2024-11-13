@@ -14,8 +14,6 @@ let errors = {};
   if (!values.github.trim()) {
     errors.github = "Correct Username required";
   }
-
-
     return errors;
 
 }
