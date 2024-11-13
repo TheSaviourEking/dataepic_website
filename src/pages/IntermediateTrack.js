@@ -65,9 +65,7 @@ function IntermediateTrack() {
               id="scroll_display"
             >
               <img src={back} alt="goback" className="goback" />
-              {/* <Link className="scrolllink" to="/#sectionToScroll">
-                Back
-              </Link> */}
+              
             </Link>
           </div>
 

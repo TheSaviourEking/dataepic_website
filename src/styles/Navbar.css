@@ -59,10 +59,7 @@
   padding: 0 0.5rem;
 }
 
-/* .nav-menu:last-child {
-  margin-right: 0;
-  margin-left: auto;
-} */
+
 
 .nav-links:hover {
   border-bottom: 4px solid #fff;
@@ -73,7 +70,6 @@
 .nav-links.nav-links-last {
   margin-right: -16px;
   padding-right: 0;
-  /* padding-left: 16px; */
   text-align: end;
 }
 

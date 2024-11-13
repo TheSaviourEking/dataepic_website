@@ -8,7 +8,6 @@
 .beginner_wrapper {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  /* padding-bottom: 50px; */
   height: 100%;
   max-width: 1200px;
   width: 100%;
@@ -19,7 +18,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  
 }
 
 .beginner-content {
@@ -32,7 +30,6 @@
   flex-direction: column;
   color: #f4f4f4;
   height: 100vh;
-  /* ask Iyanu if to adjust this to 90vh */
   width: 100%;
   margin: 0 auto 0;
 }
@@ -72,7 +69,6 @@
   line-height: 32px;
   text-align: center;
   color: #b3b3b3;
-  /* margin-top: 2.5rem; */
   margin-bottom: 60px;
 }
 
@@ -115,21 +111,13 @@
   text-align: center;
   color: azure;
   background-color: rgba(28, 27, 38, 1);
-  /* height: 200px; */
   border-radius: 16px 16px 0 0;
   width: 100%;
 }
 
-/* .beginners_mentors_text p {
-  height: 20px;
-  margin-bottom: 30px;
-  margin-top: 0 auto;
-} */
-
 .beginner_wrapper .mentors {
   color: #b3b3b3;
   border-radius: 16px;
-  /* linear-gradient: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0); */
   height: 70%;
   width: 80%;
   align-items: center;
@@ -156,7 +144,6 @@
   font-family: Eczar;
   color: #fff;
   font-size: 48px;
-  /* height: 145px; */
   margin: 0;
 }
 
@@ -166,7 +153,6 @@
 
 .beginners_mentors_text .oranges {
   font-size: 48px;
-  /* height: 85px; */
   color: rgba(251, 133, 0, 1);
   font-family: Eczar;
 }
@@ -181,12 +167,6 @@
 }
 
 .mentor_wrap {
-  /* height: 241px;
-  width: 200px;
-  transition: 0.9s;
-  border-radius: 16px;
-  margin-top: 40px;
-  margin-bottom: 40px; */
   width: 24%;
   transition: 1.5s;
 }
@@ -219,13 +199,6 @@
   font-size: 14px;
   background: rgba(21, 20, 29, 1);
 }
-
-/* .mentor_images img {
-  width: 100%;
-  border-radius: 12px 12px 12px 12px;
-  justify-items: center;
-  background-color: rgba(28, 27, 38, 1);
-} */
 
 .beginners_mentor_images {
   width: 250px;
@@ -266,13 +239,11 @@
   font-family: Eczar;
 }
 .faq_container {
-  /* height: 100vh; */
   width: 100%;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 6px;
-  /* background-color: red; */
 }
 
 .faq_mentext .accordion {
@@ -296,19 +267,12 @@
   padding-top: 12px;
 }
 .accordion_four {
-  /* color: red; */
   padding-left: 16px;
   padding-bottom: 16px;
-  /* margin: auto;
-  font-size: 16px;
-  line-height: 12px;
-  justify-content: center;
-  align-items: center; */
 }
 .accordion_buttons {
   background-color: #1c1b26;
   margin-top: 16px;
-  /* margin-bottom: 10px; */
   padding-bottom: 12px;
 }
 .accordion_buttons button.even {
@@ -368,175 +332,16 @@
   font-family: Eczar;
   font-size: 12px;
   font-weight: 300;
-  padding: 10px 40px 10px 52px;
-  /* margin-top: 2.0rem; */
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  height: 20px;
 }
 
-
-@media screen and (max-width: 767.98px) {
-  .beginner-content,
-  .beginners_mentors_text {
-    width: 100%;
-  }
-
-  .back_home {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    width: auto;
-    position: absolute;
-    top: 16%;
-    left: 10%;
-  }
-
-  .goback {
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
-  }
-
-  .back_home .scrolllink {
-    bottom: 10px;
-  }
-
-  .scrolllink {
-    display: inline;
-    text-decoration: none;
-    background-color: transparent;
-  }
-
-  #intermediate-content h1 {
-    height: auto;
-    line-height: 3rem;
-    margin: 2rem auto;
-  }
-  .beginner-content h1 {
-    font-size: 36px;
-    margin: 0 auto;
-    width: 90vw;
-  }
-
-  .beginner-content p {
-    font-size: 16px;
-    height: auto;
-    width: 90vw;
-    margin-top: 32px;
-    text-align: justify;
-  }
-
-  #intermediate_para {
-    margin: 0 auto;
-  }
-  .reserve-btns {
-    height: 36px;
-    margin: 0;
-  }
-
-  .faq_mentors_text {
-    margin-top: 10px;
-  }
-  .faq_mentors_text h1 {
-    font-size: 30px;
-  }
-
-  .faq_mentors_text .oranges {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-
-  .mentors {
-    width: 100%;
-  }
-
-  .mentors .beginners_mentors_text h1 {
-    font-size: 24px;
-    width: 100%;
-    margin-bottom: 24px;
-  }
-
-  .mentors .beginners_mentors_text p {
-    line-height: 26px;
-  }
-
-  .mentors .beginners_mentors_text .oranges {
-    font-size: 24px;
-  }
-
-  /* .mentors .beginners_mentors_container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 1fr;
-    gap: 10px;
-    max-width: 800px;
-  } */
-
-  .mentors .beginners_mentor_wraps {
-    margin: 0 auto 8px;
-    transition: 0.9s;
-    width: 100%;
-    height: auto;
-  }
-
-  .mentor_image_wrap {
-    width: 100%;
-  }
-
-  .mentor_images img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .beginners_mentor_wraps img {
-    /* height: 220px; */
-    height: 100%;
-  }
+.head_wrap {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0;
 }
-
-
-
-
-/* @media (min-width: 991.9px) and (max-width: 1400px) {
-  .mentors h1 {
-    color: red;
-    font-size: 40px;
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (min-width: 800px) {
-  .home-content .reserve-btn {
-    margin: 2rem;
-  }
-  .reserve-btn button {
-  }
-
-  .mentors_container {
-    gap: 30px;
-    height: 70%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    display: flex;
-    padding: 20px;
-  }
-
-  .mentor_wrap {
-    height: 60%;
-  }
-  .home_wrapper {
-    height: 200vh;
-  }
-  
-} */
