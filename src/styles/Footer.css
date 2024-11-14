@@ -1,18 +1,20 @@
 
 .footer {
-  
-  height: 80px;
-  width: 90%;
+  /* height: 80px; */
+  /* width: 90%; */
   margin: 100px auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
-  bottom: 0;
+  /* position: sticky; */
+  /* bottom: 0; */
   /* padding: 0 40px; */
 }
 
+.foot {
+  position: relative;
+}
 
 .footer-logo {
   width: 145px;
@@ -148,5 +150,3 @@ font-size: 18px;
   color: #fff;
   margin-bottom: 16px;
 }
-
-
