@@ -10,14 +10,14 @@ const Footer = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <footer className="footer navbar foot">
-      <div className="navbar-container">
+    <footer className="foote navbar foot">
+      <div className="navbar-containe">
         <div>
           <Link to="/" className="navbar-logo" onClick={handleClick}>
             <img src={logo} alt="" className="footer-logo" />
           </Link>
         </div>
-        <div className="middle-menu">
+        {/* <div className="middle-menu">
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/About" className="nav-link" onClick={handleClick}>
@@ -40,7 +40,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="social-media">
           <div className="social-media-wrap">
             <div className="social-icons">
