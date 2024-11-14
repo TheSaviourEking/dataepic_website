@@ -20,12 +20,11 @@
 .navbar-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
   width: 100%;
   padding: 0 20px;
 }
-
-
 
 .navbar-logo img {
   width: 130px;

@@ -7,7 +7,7 @@ import Tracks from "./pages/Tracks";
 import HeroSection from "./pages/HeroSection";
 import BeginnersTrack from "./pages/BeginnersTrack";
 import IntermediateTrack from "./pages/IntermediateTrack";
-// import Footer from "./pages/Footer";
+import Footer from "./pages/Footer";
 import FormInput from "./pages/FormInput";
 // import About from "./pages/About";
 
@@ -35,7 +35,7 @@ function App() {
           <Route path="forminput" exact element={<FormInput />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

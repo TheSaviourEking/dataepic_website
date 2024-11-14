@@ -35,7 +35,7 @@ function Home() {
           <AboutSection />
         </div>
 
-        <div className="red"> 
+        <div className="red">
           <MainTrack />
         </div>
         <div className="main_wrapper" >
@@ -84,7 +84,7 @@ function AboutSection() {
 
 function PastSessions() {
   return (
-    <div>
+    <div className="section">
       <div className="session_container">
         <h1>
           Run a Play back on our <br />

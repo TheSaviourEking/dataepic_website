@@ -28,7 +28,7 @@ const playbackSessions = [
 
 function Events() {
   return (
-    <div className="eventmain_container">
+    <div className="events_div">
       <div className="event_wrapper">
         <div className="event-container">
           <div className="event-wrapper">
@@ -86,7 +86,7 @@ function Events() {
             <div className="playback_session">
               {playbackSessions.map((session, index) => (
                 <div key={index} className="playback">
-                  <Link to="/" className="entry">
+                  <Link to="/" className="entry" style={{ display: 'block' }} >
                     <img
                       src={session.src}
                       alt={session.alt}
